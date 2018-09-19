@@ -13,6 +13,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+		
     
    		
 }
@@ -21,10 +22,11 @@ li {
     float: left;
     align-items: center;
 
+
 }
 
 li a {
-	align-items: center;
+    align-items: center;
     display: block;
     color: white;
     text-shadow: black;
@@ -32,6 +34,10 @@ li a {
     padding: 20px 16px;
     border-right: solid 1px white;
     text-decoration: none;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 li a:hover:not(.active) {
