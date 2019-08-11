@@ -13,6 +13,30 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
+
+<script type="text/javascript">
+function copyToClipboard(elementId) {
+
+  // Create an auxiliary hidden input
+  var aux = document.createElement("input");
+
+  // Get the text from the element passed into the input
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append the aux input to the body
+  document.body.appendChild(aux);
+
+  // Highlight the content
+  aux.select();
+
+  // Execute the copy command
+  document.execCommand("copy");
+
+  // Remove the input from the body
+  document.body.removeChild(aux);
+
+}
+</script>
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -58,8 +82,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Github</h2>
         
         <div class="w3-container">
-          <h5 class="w3-opacity" align = "justify" ><p>Comming Soon...</p>
- 
+          <h5  align = "justify" ><p>
+            
+            <p>Update ubuntu sysstem</p>
+            <div class="copy-to-clipboard">
+              <table width="100%" padding="0">
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command">sudo apt-get update</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+              </table>
+            </div>
+             <p>Install git</p>
+            <div class="copy-to-clipboard">
+              <table width="100%">
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command2">sudo apt-get install git-core git-gui git-doc</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command2')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+              </table>
+            </div>
+
+
+
+          </p>
 
 </h5>  
           <br>

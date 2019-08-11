@@ -32,3 +32,51 @@
 .stop{
     color: blue;
 }
+
+.copy-to-clipboard{
+    width: 100%; 
+    align-items: center;
+
+        
+}
+.copy-to-clipboard-button{
+   
+    display: inline-block;
+    background-color: #2996f0;
+    border: none;
+    box-shadow:2px 2px 2px #666;
+
+}
+
+.copy-to-clipboard-button:hover{
+    
+    background-color: #000000;
+    border: none;
+    box-shadow:2px 2px 2px #666;
+
+}
+
+.copy-to-clipboard-button .tooltiptext {
+      visibility: hidden;
+      background-color: #c6cbcf;
+      color: black;
+      text-align: center;
+      border-radius: 6px;
+      padding: 2px 10px;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+}
+
+.copy-to-clipboard-button:hover .tooltiptext {
+  visibility: visible;
+}
+.copy-to-clipboard-text{
+    padding-left: 3%; 
+    color: white;
+    background-color: #0d7dd9;
+    box-shadow:2px 2px 2px #666;
+
+}
+
