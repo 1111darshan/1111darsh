@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Darshan Mistry</title>
+<title-image></title>
+</head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+<script type="text/javascript">
+function copyToClipboard(elementId) {
+
+  // Create an auxiliary hidden input
+  var aux = document.createElement("input");
+
+  // Get the text from the element passed into the input
+  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+  // Append the aux input to the body
+  document.body.appendChild(aux);
+
+  // Highlight the content
+  aux.select();
+
+  // Execute the copy command
+  document.execCommand("copy");
+
+  // Remove the input from the body
+  document.body.removeChild(aux);
+
+}
+</script>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+         <a href="index.html">  <div class="w3-display-container">
+              <img src="images/DarshRE.jpg" style="width:100%" alt="Avatar">
+              <div class="w3-display-bottomleft w3-container w3-text-black">
+                <h2 style="color: white">Darshan Mistry</h2>
+              </div>
+            </div>
+          </a>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>DevOps Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.google.com/maps?q=13.0551356,77.6111849&z=17&hl=en">Bengalore, Karnataka , India.</a></p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"><a href="mailto:1111darsh@gmail.com"></i>1111darsh@gmail.com</a></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="tel:+91 9727977391">9727977391</a>, <a href="tel:+91 8200955211">8200955211</a></p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-arrow-circle-o-down fa-fw w3-margin-right w3-text-teal"></i>Blogs</b></p>
+          <a class="remove-line" href="Blog1.html"><p>DevOps</p></a>
+          <a class="remove-line" href="Blog2.html"><p><b>Github</b></p></a>
+          <a class="remove-line" href="Blog3.html"><p>Docker</p></a>
+          <a class="remove-line" href="Blog4.html"><p>Ansible</p></a>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-arrow-right fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Github</h2>
+        
+        <div class="w3-container">
+          <h5  align = "justify" >
+
+              <p>
+              DevOps automation.  Let's start with the version Control system. To learn the concept of Version Control System let take Real World Example. There are 4 coders they are known to code web sites. If there is 4 coder start independently the website comes with 4 different styles and design.
+              </p>
+              
+              <p>  
+              Instead of that they meet and diced 1 Leader and 3 supporters. First coder code main module and Design and disturbed 3 tasks. If 3 tasks are independent, then it works good but there is a task which depends on each other than 2nd coder code and gives to the leader. Then Leader gives code to 3rd coder and 4th coder and also give a change to 2nd coder. When they come with their work done there is conflict.  See the video it can clarify more.
+
+              </p>
+            
+              <video width="100%" controls>
+                <source src="VCT.mp4" type="video/mp4">
+              </video>
+            
+
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <table  width="100%">
+                <tr><td class="copy-to-clipboard-head">Update System</td></tr>
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command0">sudo apt-get update</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command0')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command1">sudo yum update</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command1')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+              </table>
+              <table  width="100%">
+                <tr><td class="copy-to-clipboard-head">Install Git</td></tr>
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command2">sudo apt install git-all</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command2')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr>
+                <td width="95%"><p class="copy-to-clipboard-text" id="command3">sudo yum install git-all</p></td>
+                <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command3')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+              </table>
+
+              <p> GIT COMMON COMMANDS</p>
+              <hr>
+              <table  width="100%">
+                <tr><td class="copy-to-clipboard-head">Initialize a git repository</td></tr>
+
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text" id="command4">git init</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command4')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Check the status of the files</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text" id="command5">git status</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command5')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Add files in staging area</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text" id="command6">git add :/</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command6')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Commit the files</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span id="command7">git commit –m </span>"custom message"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command7')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Set remote repository</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command8">git remote add origin </span>"&ltURL to repository&gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command8')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To push the changes to your repository</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command9">git push origin </span>"&ltbranch name&gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command9')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                
+                <tr><td class="copy-to-clipboard-head">Download the remote repository to our local system</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command10">git clone </span>"&ltURL&gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command10')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">pulling the latest changes from the repository</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command11">git pull</span>"&lt URL of link &gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command11')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To create a branch</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command12">git branch </span>"&lt name-of-new-branch &gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command12')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To delete a branch</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command13">git branch –D </span>"&lt name-of-new-branch &gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command13')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To switch to the new branch</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command14"> git checkout </span>"&lt branch-name &gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command14')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To check the log for every commit detail</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command15">git log</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command15')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">To stash your staged files without commit</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command16">git stash . </span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command16')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Stash your untracked files</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command17">git stash –u</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command17')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Back and want to retrieve working</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command18">git stash pop</span></p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command18')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+                <tr><td class="copy-to-clipboard-head">Reverting a commit, to a previous version</td></tr>
+                <tr>
+                  <td width="95%"><p class="copy-to-clipboard-text"><span  id="command19">git revert </span>"&lt commit-id &gt"</p></td>
+                  <td width="5%"><button class="copy-to-clipboard-button" onclick="copyToClipboard('command19')"><img width="100%" src="images/copy.png"/><span class="tooltiptext">Copy</span></button></td>
+                </tr>
+              </table>
+                <p>
+                  After knowing of All git Command, Let’s Understand Company work flow which will help us. 5 Type of branch available on any project Master, Develop, Feature, Release, Hotfix. Master and Develop is lifelong Branches.
+                  <br/>
+                  <br/>Master- It is main branch with Real code
+                  <br/>Develop- It is main developing branch
+                  <br/>Feature- It branch come from Develop for adding new feature
+                  <br/>Release – It is developed code before last check to release
+                  <br/>Hotfix – If there is some urgent problem to solve then this branch will helpful      
+                  <br/>
+
+                  <br/>Let try to understand with simple project
+                  <br/>Task - Develop a project with 2 feature without any problem.
+                   
+                  <br/>All project with master branch. To start develop project pull this project in Develop branch. After start developing a project there adding is 2 features in the project so make a two more branch feature1 and feature2. This branch comes from develop branch. When the feature code is developing then it merges with develop branch. Code is near about to completed so release code goes for a last check for release branch. There a one urgent problem is a code so it goes to Hotfix branch. In a hotfix branch problem solve as fast as possible. Then it once again in to release branch.it there is no problem then it goes to the master branch. 
+
+                  </p>
+                  <p>This image and my Git project link will help full to understand above porject</p>
+                  <p><img src="images/gitflow.png" style="width:100%" alt="gitflow.png"></p>
+                  <p><a href="images/gitlog.png"><img src="images/gitlog.png" style="width:100%" alt="gitlog.pngs"></a></p>
+                  <a href="https://github.com/1111darsh/Project">https://github.com/1111darsh/Project</a>
+             
+          </h5>  
+          <br>
+        </div> 
+      </div>
+      
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+          
+
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+
+  <a href="https://www.facebook.com/1111darshan"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/1111darsh"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+ 
+  <a href="https://twitter.com/1111darshan"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/1111darsh"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  
+</footer>
+
+</body>
+</html>
