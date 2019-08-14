@@ -14,29 +14,7 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 
-<script type="text/javascript">
-function copyToClipboard(elementId) {
-
-  // Create an auxiliary hidden input
-  var aux = document.createElement("input");
-
-  // Get the text from the element passed into the input
-  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-
-  // Append the aux input to the body
-  document.body.appendChild(aux);
-
-  // Highlight the content
-  aux.select();
-
-  // Execute the copy command
-  document.execCommand("copy");
-
-  // Remove the input from the body
-  document.body.removeChild(aux);
-
-}
-</script>
+<script type="text/javascript" src="script/script.js"></script>
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -85,11 +63,11 @@ function copyToClipboard(elementId) {
           <h5  align = "justify" >
 
               <p>
-              DevOps automation.  Let's start with the version Control system. To learn the concept of Version Control System let take Real World Example. There are 4 coders they are known to code web sites. If there is 4 coder start independently the website comes with 4 different styles and design.
+              Let's start with DevOps automation the version Control system. To learn the concept of Version Control System. let's take Real World Example, there are 4 coders they are known to code websites. If 4 coders start independently the website comes with 4 different styles and designs.
               </p>
               
               <p>  
-              Instead of that they meet and diced 1 Leader and 3 supporters. First coder code main module and Design and disturbed 3 tasks. If 3 tasks are independent, then it works good but there is a task which depends on each other than 2nd coder code and gives to the leader. Then Leader gives code to 3rd coder and 4th coder and also give a change to 2nd coder. When they come with their work done there is conflict.  See the video it can clarify more.
+              Instead of that they meet and diced 1 Leader and 3 supporters. First coder codes main module and Design and distribute 3 tasks. If 3 tasks are independent, then it works good. But, there is a task which depends on each other than 2nd coder codes and gives to the leader. Then Leader gives code to 3rd coder and 4th coder and also give a change to 2nd coder. After completion all the coder submit their codes, a conflict arises. To understand this concept better please watch the video below.
 
               </p>
             
@@ -212,7 +190,7 @@ function copyToClipboard(elementId) {
                 </tr>
               </table>
                 <p>
-                  After knowing of All git Command, Let’s Understand Company work flow which will help us. 5 Type of branch available on any project Master, Develop, Feature, Release, Hotfix. Master and Develop is lifelong Branches.
+                  After knowing of All git Command, Let’s Understand Company work flow which will help us to develop project. 5 Type of branch available on any project Master, Develop, Feature, Release, Hotfix. Master and Develop is lifelong Branches.
                   <br/>
                   <br/>Master- It is main branch with Real code
                   <br/>Develop- It is main developing branch
@@ -224,7 +202,7 @@ function copyToClipboard(elementId) {
                   <br/>Let try to understand with simple project
                   <br/>Task - Develop a project with 2 feature without any problem.
                    
-                  <br/>All project with master branch. To start develop project pull this project in Develop branch. After start developing a project there adding is 2 features in the project so make a two more branch feature1 and feature2. This branch comes from develop branch. When the feature code is developing then it merges with develop branch. Code is near about to completed so release code goes for a last check for release branch. There a one urgent problem is a code so it goes to Hotfix branch. In a hotfix branch problem solve as fast as possible. Then it once again in to release branch.it there is no problem then it goes to the master branch. 
+                  <br/>All project start with master branch. To start developing project pull this project in Develop branch. After start developing a project there adding 2 features in the project which makes a two more branch feature1 and feature2. This branch comes from develop branch. When the feature code is developing then it merges with develop branch. When the Code is about to completed so release code goes for a last check for release branch. There a one urgent problem is a code so it goes to Hotfix branch. In a hotfix branch problem solve as fast as possible. Then it once again in to release branch.it there is no problem then it goes to the master branch. 
 
                   </p>
                   <p>This image and my Git project link will help full to understand above porject</p>
