@@ -5,6 +5,12 @@ body{
 
 
 }
+.body{
+  background-image: url("images/flag.jpg");
+  background-color: #f8f8f8;
+
+
+}
 .blink_text {
 
     animation:1s blinker linear infinite;
