@@ -2,15 +2,12 @@
 body{
   background-image: url("images/flag.jpg");
   background-color: #f8f8f8;
-
-
-}
-.body{
-  background-image: url("images/flag.jpg");
-  background-color: #f8f8f8;
-
+  background-attachment: fixed;
+  background-position: center; 
 
 }
+
+
 .blink_text {
 
     animation:1s blinker linear infinite;
