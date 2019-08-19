@@ -1,0 +1,4 @@
+You work as a Devops Engineer in Ventura Soft Pvt Ltd. Recently a new product has been released by the company which demands creating of test cases from scratch. This product is a search engine. You being new in the team have been asked to present a POC for your skills.  Assume the search engine is bing.com, search on bing for the term "intellipaat", and print the title of the search webpage in the console.
+
+This test case should be packaged, and should run on AWS.
+
