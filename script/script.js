@@ -31,3 +31,7 @@ function copyToClipboard(elementId) {
   document.body.removeChild(aux);
 
 }
+
+
+
+

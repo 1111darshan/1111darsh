@@ -61,6 +61,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         
         <div class="w3-container">
           <h5  align = "justify" >
+            <div class="highlight"><div class="copy-code-icon" style="text-align:right"><a href="https://raw.githubusercontent.com/kubernetes/website/master/content/en/examples/application/deployment.yaml" download="application/deployment.yaml"><code>application/deployment.yaml</code></a>
+              <img src="https://d33wubrfki0l68.cloudfront.net/0901162ab78eb4ff2e9e5dc8b17c3824befc91a6/44ccd/images/copycode.svg" style="max-height:24px;cursor:pointer" onclick="copyCode('application-deployment-yaml')" title="Copy application/deployment.yaml to clipboard"></div><div class="includecode" id="application-deployment-yaml"><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:green;font-weight:700">apiVersion</span>:<span style="color:#bbb"> </span>apps/v1<span style="color:#bbb">
+              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">kind</span>:<span style="color:#bbb"> </span>Deployment<span style="color:#bbb">
+              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">metadata</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">name</span>:<span style="color:#bbb"> </span>nginx-deployment<span style="color:#bbb">
+              </span><span style="color:#bbb"></span><span style="color:green;font-weight:700">spec</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">selector</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">matchLabels</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">app</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
+              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">replicas</span>:<span style="color:#bbb"> </span><span style="color:#666">2</span><span style="color:#bbb"> </span><span style="color:#080;font-style:italic"># tells deployment to run 2 pods matching the template</span><span style="color:#bbb">
+              </span><span style="color:#bbb">  </span><span style="color:green;font-weight:700">template</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">metadata</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">labels</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">app</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
+              </span><span style="color:#bbb">    </span><span style="color:green;font-weight:700">spec</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">      </span><span style="color:green;font-weight:700">containers</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">      </span>- <span style="color:green;font-weight:700">name</span>:<span style="color:#bbb"> </span>nginx<span style="color:#bbb">
+              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">image</span>:<span style="color:#bbb"> </span>nginx:1.14.2<span style="color:#bbb">
+              </span><span style="color:#bbb">        </span><span style="color:green;font-weight:700">ports</span>:<span style="color:#bbb">
+              </span><span style="color:#bbb">        </span>- <span style="color:green;font-weight:700">containerPort</span>:<span style="color:#bbb"> </span><span style="color:#666">80</span><span style="color:#bbb">
+              </span></code></pre></div></div></div>
            <h5 class="w3-opacity" align = "justify" ><p>Comming Soon</p>
            </h5>  
              
