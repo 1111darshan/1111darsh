@@ -62,7 +62,10 @@ Set a system variable in winndows machine
 ## Terraform Files
 
 ## Practice Project
+[apache](./apache.tf)
 1. Create a VPC
+   
+
 2. Create Internet Gateway
 3. Create custom Route Table
 4. Create a subnet
@@ -70,12 +73,32 @@ Set a system variable in winndows machine
 6. Create a security Group to allow port 22, 80, 443
 7. Create a network interface wiht an ip in the subnets that was create in step 4
 8. Assign an elastic IP to the network interface that was created in step 7
-9. Create Ubentu server and install/enable apache?
+9.  Create Ubentu server and install/enable apache?
     
-## Terraform State Commands
 
+> EC2 > key pair > [name] > create key pair > 
+
+    terraform destory --auto-approve
+
+
+## Terraform State Commands
+    tarrpform state list
+    tarrpform state show aws_eip.one
 ## Terraform Output
 
+    output "server_public_ip"{
+        value = aws_eip.one.public_ip
+    }
+
+##
+    terraform refrash
+
 ## Target Resources
+    terraform destory -target aws_instance.web-server-instance
+    terraform apply -target aws_instance.web-server-instance
+
 
 ## Terraform Variables
+
+    tarraform apply --
+
