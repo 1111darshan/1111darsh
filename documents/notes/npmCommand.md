@@ -24,8 +24,8 @@ Initializing Project
 	
 	npm init  
 
-	npm init -y Quick pagecakge.json
-	npm init react-app ./myapp Qucick create react app
+	npm init -y    # Quick pagecakge.json
+	npm init react-app ./myapp # Qucick create react app
 
 Installing Package
 	
