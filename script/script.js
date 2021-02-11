@@ -35,3 +35,40 @@ function copyToClipboard(elementId) {
 
 
 
+// // get markdown content  
+// var body_location = './documents/notes/K8s.md';
+        
+// function getText(myUrl){
+//     var result = null;
+//     $.ajax( { url: myUrl, 
+//               type: 'get', 
+//               dataType: 'html',
+//               async: false,
+//               success: function(data) { result = data; } 
+//             }
+//     );
+//     FileReady = true;
+//     return result;
+// }
+
+// var markdown_source = getText(body_location);
+
+// // convert markdown to html
+// var output = markdown.toHTML( markdown_source );
+// document.write(output);
+
+
+let md;
+md = window.markdownit({html: true}).use(window.markdownitFootnote);
+// Load the Markdown file with jQuery.
+$.ajax({
+  url: "https://the-javascripting-english-major.org/v1/examples/markdown/hastings-street.md",
+  success: function(markdown){
+    // Convert the Markdown to HTML.
+    let html;
+    html = md.render(markdown);
+    // Print the HTML to #content using jQuery.
+    $("#content").html(html);
+  }
+});
+
