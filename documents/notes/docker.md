@@ -135,7 +135,7 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
 
      docker run -d \
     -p 8081:8081 \
-    -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin 
+    -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
     -e ME_CONFIG_MONGODB_ADMINPASSWORD=password \
     --net mongo-network  \
     --name mongo-express \
@@ -143,10 +143,80 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
     mongo-expres
 
 ## Docker Compose - Running multiple services
+[mongo-docker-compose.yaml](./mongo-docker-compose.yaml)
+
+
+     version: '3'
+     services:
+     mongodb:
+     image: mongo
+     ports:
+          - 27017:27017
+     enviroment:
+          - MONGO_INITDB_ROOT_USERNAME=admin 
+          - MONGO_INITDB_ROOT_PASSWORD=password
+     
+     mongo-express:
+     image: mongo-express
+     ports:
+          - 8081:8081
+     enviroment:
+          - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+          - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+          - ME_CONFIG_MONGODB_SERVER="mongodb"  
+  
+
+> docker-compose -f mongo.yaml up
+>
+> docker-compose -f mongo.yaml down
  
 ## Dockerfile - Building our own Docker Image
-## Private Docker Repository - Pushing our built Docker Image into a private   Registry on AWS
+Blueprint of docker images
+
+- FROM :-  Main image
+- ENV :-  Optionally define environment variables
+- RUN :-  execute any Linux Commands 
+- COPY :- execute on a host. cp [host path] [cointainer path]
+- CMD :- entrypoint command
+ 
+[Dockerfile](./Dockerfile)
+
+     FROM node
+     ENV ME_CONFIG_MONGODB_ADMINUSERNAME=admin \
+     ME_CONFIG_MONGODB_ADMINPASSWORD=password
+
+     RUN  mkdir -p /home/app
+     COPY ./app /home/app
+
+     CMD ["node", "/home/app/server.js"]
+
+> docker build -t [image-name] [path-of-Dockerfile]
+
+     docker build -t my-app 
+## Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
+
+
+// TODO
+
+
+
 ## Deploy our containerized app
+
+
+//TODO
+
 ## Docker Volumes - Persist data in Docker
+user for data persistance
+
+3 Volume Types
+- Host Volume
+     `docker run -v [host-path]:[cointainer-path]`
+- Anonotmous Volumes
+     `docker run -v [cointainer-path]`
+- Named volumes
+    `docker run -v name:[cointeiner-path]`
 ## Volumes Demo - Configure persistence for our demo project
+
+
+
 ## Wrap Up
