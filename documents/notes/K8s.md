@@ -34,7 +34,8 @@ Deployement |<| Replicaset |<| Pod |<| Continer
 	kubectl create deployment name image
 	kubectl apply -f config-file.yaml
 
-##
+## namesapce
+
 	kubectl get all -n my-namespace
 	kubectl apply -f mysql-configmap.yaml --namespace=my-namespace
 	kubectl get all -n my-namespace
