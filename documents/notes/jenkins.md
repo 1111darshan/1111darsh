@@ -111,7 +111,7 @@ Creadintial Types
 		}
 	}
 
-### pileline Sysntex
+### pipeline Sysntex
 Scriped
 - first syntax
 - Groovy engine
@@ -321,7 +321,7 @@ Types of Parametes
 - string
 - choice
 - boolenParam
-######
+###### ---
 	pipeline {
 		agent any
 		parameters {

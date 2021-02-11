@@ -25,5 +25,6 @@ Docker
 Jenkins
 
 - Deploye jenkins as barematl on linux, mac or windoes server, or Docker Continer
-- Able to create and manage Freestayle, Pipline and Multibranch Pipelines
+- Able to create and manage Freestayle, Pipline and Multibranch Pipelines Jobs
+- Haveing a knowlage to setup a Diffrent types of credentionals in jenkins
 - 
