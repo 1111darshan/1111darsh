@@ -22,7 +22,7 @@ Check jenkins container runing
 	Multibranch Pipeline
 		like pipeline for multibranch branches
 
-#
+
 ## Create Multibranch Pipeline with Git Repo
 
 > New Item > Enter am item name [  ] > Multibranch Pipeline >
@@ -53,7 +53,7 @@ Creadintial Types
 	Certificate
 	Secret Files
 	`New types  based on plugin`
-#
+
 ## Jenkinsfile
 
 	pipeline {
@@ -81,7 +81,7 @@ Creadintial Types
 		}
 	}
 
-##
+#### ----
 	pipeline {
 		agent any 
 		stages {	
@@ -137,7 +137,7 @@ Push notifaction => Version Control notifies Jenkins on new commit
 
 polling => Jenking polls in regular intervalls
 
-#
+
 ## Configure Build Tools in Jenkins and Jenkinsfile
 
 ### How to use build tools in Jenkins
@@ -174,7 +174,7 @@ Manage jenkins > Manage plugin > Install nodeJs
 							
 		}
 	}
-##
+#### ---
 	pipeline {
 			agent any
 			
@@ -292,7 +292,7 @@ pipeline {
 		}
 	}
 
-##
+#### ---
 	pipeline {
 		agent any
 		environmant{
