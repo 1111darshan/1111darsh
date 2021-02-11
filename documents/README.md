@@ -14,4 +14,4 @@
 
 [npm command](./notes/npmCommand.md)
 
-[tarraform](./notes/tarraform.md)
+[terraform](./notes/terraform.md)

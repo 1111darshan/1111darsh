@@ -12,6 +12,13 @@ I am Darshan Mistry. I am a DevOps Engineer. I worked at Borndigital for 14 mont
 
 
 
+
+
+Git
+
+- 
+
+
 Docker
 
 - Able to install docker on mac, linux and windows system.
@@ -27,4 +34,15 @@ Jenkins
 - Deploye jenkins as barematl on linux, mac or windoes server, or Docker Continer
 - Able to create and manage Freestayle, Pipline and Multibranch Pipelines Jobs
 - Haveing a knowlage to setup a Diffrent types of credentionals in jenkins
-- 
+- Easy setup Scripet and Declarative Jenkinsfile 
+- Set up master slave artitacture to to build effeincy of jenkins
+
+
+
+k8s
+
+terraform
+
+- Setup terraform on mac, linux or windoes system.
+- Able to create a terraformfile to create VPC, Internet Gatewat, Routetable, subnets, security groups, network interface, elastic ip, apacaserver over linux ubuntu server on AWS Cloud platforms.
+- Manage secrates in terraforms
