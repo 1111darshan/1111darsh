@@ -244,9 +244,279 @@ echo -n 'username' | base64
 
 ## Organizing your components with K8s Namespaces
 
+Namespace
+- Organice resources in namespaces
+- Virtual cluster inside a cluster 
+
+4 Namespaces per Default
+- kube-system
+  - Do not creatre or modify in kube-system  
+  - system processes
+- kube-public
+  - publicely accessible date
+  - A confingmap, which, contains cluster information
+- kube-node-least
+  - heartbeats of node
+  - each node has associated lease object in namespace
+  - determines tht availability of a node
+- kubernetes-deshboard
+  - only with minikube
+- default 
+
+
+Create a namesapce with a configuration file
+```
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-confingmap
+  namespace: my-namespace
+data:
+  db_url: mysql-service.database
+```
+`What is name space?`
+- Cluster inside a cluster
+- Default Namespaces
+
+`Need of namespaces`
+- Resources grouped in Namespaces
+  - ig. Database, Monitoring ....
+- Conflicts: Many treams, same application 
+- Resource Sharing: Staging and Development
+- Resource Sharing: Blue/Green Deployment
+- Access and Resources Limits on Namespaces
+  
+
+`You can't access most resources from another Namaspaces`
+
+Each NS must define own ConfigMap
+
+> Compoinents, which can't be created within a Namespace
+- live globally in a cluster
+- you can't isolate them
+
+
+```
+kubectl api-resources --namespaced=false
+kuvectl api-resources --namespaced=true
+```
+### Change active namespace 
+kubens 
+```
+kubens my-namespace
+```
 
 ## K8s Ingress explained
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app
+spec:
+  rules:
+  - host: myapp.com
+    http:
+      paths:      //URL path 
+      - backend:
+          serviceName: kubernetes-dashboard
+          servicePort: 80
+``` 
+Routing rules:
+    Forward request to the internal service.
+
+Host:
+-  vaild domain address
+-  map domain name to Node's IP address, which is th entrypoint  
+
+  
+
+You need an implemetation for Ingress! Which is Ingress Controller
+- evaluates and provesses Ingress rules
+- evaluates all the rules 
+- manages rediractions
+- entrypint to cluster
+- many third-party implementations 
+- K8s Nginx Ingress Controller   
 ## Helm - Package Manager
+// todo
+
+
 ## Persisting Data in K8s with Volumes
+1. Persistent Volume 
+2. Persistent Volume Claim
+3. Storage class
+    
+
+Stroage Requiments
+- Stroage that doesn't depend on the pod lifecycle.
+- Storage must be available on all node
+- Storage needs to servive even if cluster crashes.
+
+### Persistent Volume          
+- a cluster resource 
+- created via YAML file
+  - kind: PersistentVolume
+  - spec: e.g. How much storage? 
+
+#### NFS Stroage
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-name
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: slow
+  mountOptions:
+    - hard
+    - nfsvers=4.0
+  nfs:
+    path: /dir/path/on/nfs/server
+    server: nfs-server-ip-address
+
+```
+
+####  Google Cloud
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: test-volume
+  labels:
+    failure-domain.beta.kubernetes.io/zone: us-central1-a__us-central1-b
+spec:
+  capacity:
+    storage: 400Gi
+  accessModes:
+  - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: my-data-disk
+    fsType: ext4
+```
+
+#### local stroage
+
+``` 
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: example-pv
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: local-storage
+  local:
+    path: /mnt/disks/ssd1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - example-node   
+```
+  
+
+### Stroage Class
+kind: StrageClass
+ 
+  -  via "Provisioner" attribute
+  -  each stroage beckend has own provisioner
+  -  internal provisioner - "kubernetes.io"
+  -  external provisioner
+  
+
+// review ^^^^^^
+
 ## Deploying Stateful Apps with StatefulSet
+  
+Statefulset for statful application
+statful applications
+- examples of stateful applications: 
+  databases:- mysql, elasticsearch, mongoDB
+applications that stores data    
+
+
 ## K8s Services explained
+  
+1. ClusterIP Services
+   1. default   type of service
+   - microservice app deployed
+   - side-car container
+2. Headless services
+3. NodePort Service
+4. LoadBalancer
+       
+-Each Pod has its own IP address
+  Pods are eohemeral -are destroyed frequently
+- service:
+  - Stable IP address
+  - loadbalancing
+  - loose coupling
+  - within and outside cluster
+
+
+
+### ClusterIP
+- microservice container
+- side-car container
+10.2.1.x Node 1
+10.2.2.x Node 2 
+10.2.3.x Node 3  
+
+
+### headless services
+ - Client wants to communicate with 1 specific Pod directly
+ - pods want to talk directly with specific pod
+ - So, not redomly selected
+ - Use case: statful application, like mysql
+  
+
+3 Sevice Type attributes
+
+ClusterIP
+```
+apiVersion: v1
+kind: service
+metadata:
+  name: my-service
+spec:
+  type:ClusterIP
+```
+Nodeport
+```
+apiVersion: v1
+kind: service
+metadata:
+  name: my-service
+spec:
+  type:NodePort
+```
+
+Loadbalancer
+```
+apiVersion: v1
+kind: service
+metadata:
+  name: my-service
+spec:
+  type:LoadBalancer
+```
+
+
+NodePort Range: 30000-32767
+
+
+### LoadBalancer Service
+Becomes accessible externally through cloud providers LoadBalancer
+NodePort and ClusterIP Service are created automatically

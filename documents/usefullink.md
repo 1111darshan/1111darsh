@@ -46,3 +46,11 @@
 ### Terraform 
 [Terraform Course - Automate your AWS cloud infrastructure](https://youtu.be/SLB_c_ayRMo)
 
+
+
+
+
+
+https://cloud.google.com/products/calculator
+https://calculator.aws/#/
+https://calculator.s3.amazonaws.com/index.html 
