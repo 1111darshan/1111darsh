@@ -22,9 +22,11 @@
 - Volumes Demo - Configure persistence for our demo project
 - Wrap Up
 
-A way to package application  with all the necessary dependencies and configuration
-Protable artifact, easily shared and moved around 
-Makes development and deployment more efficient
+## What is Docker?
+- A way to package application  with all the necessary dependencies and configuration
+
+- Protable artifact, easily shared and moved around 
+- Makes development and deployment more efficient
 
 
 ## where do containeres live?
@@ -145,27 +147,36 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
 ## Docker Compose - Running multiple services
 [mongo-docker-compose.yaml](./mongo-docker-compose.yaml)
 
+```
+version: '3'
+services:
+  my-app:
+    image: <usaername>/my-app:0.1
+    ports:
+     - 3000:3000
+  mongodb:
+    image: mongo
+    ports:
+     - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+    enviroment:
+     - MONGO_INITDB_ROOT_USERNAME=admin 
+     - MONGO_INITDB_ROOT_PASSWORD=password
+    
+  mongo-express:
+    image: mongo-express
+    ports:
+     - 8081:8081
+    enviroment:
+     - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+     - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+     - ME_CONFIG_MONGODB_SERVER="mongodb"  
 
-     version: '3'
-     services:
-     mongodb:
-     image: mongo
-     ports:
-          - 27017:27017
-     enviroment:
-          - MONGO_INITDB_ROOT_USERNAME=admin 
-          - MONGO_INITDB_ROOT_PASSWORD=password
-     
-     mongo-express:
-     image: mongo-express
-     ports:
-          - 8081:8081
-     enviroment:
-          - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
-          - ME_CONFIG_MONGODB_ADMINPASSWORD=password
-          - ME_CONFIG_MONGODB_SERVER="mongodb"  
-  
-
+volumes:
+  mongo-data:
+    driver: local
+```
 > docker-compose -f mongo.yaml up
 >
 > docker-compose -f mongo.yaml down
@@ -193,6 +204,8 @@ Blueprint of docker images
 > docker build -t [image-name] [path-of-Dockerfile]
 
      docker build -t my-app 
+
+     
 ## Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
 
 
@@ -215,6 +228,8 @@ user for data persistance
      `docker run -v [cointainer-path]`
 - Named volumes
     `docker run -v name:[cointeiner-path]`
+
+
 ## Volumes Demo - Configure persistence for our demo project
 
 

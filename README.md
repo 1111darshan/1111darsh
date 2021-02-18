@@ -18,7 +18,6 @@ Git
 
 - 
 
-
 Docker
 
 - Able to install docker on mac, linux and windows system.
@@ -40,9 +39,34 @@ Jenkins
 
 
 k8s
+- Set Up a New Infrastructure over a AWS or GCP using EKS and kubenernets engine. 
+- Create a Yaml file with ingress, services, pod, Persitent Volume, StatfulSet.
+  
 
 terraform
 
 - Setup terraform on mac, linux or windoes system.
 - Able to create a terraformfile to create VPC, Internet Gatewat, Routetable, subnets, security groups, network interface, elastic ip, apacaserver over linux ubuntu server on AWS Cloud platforms.
 - Manage secrates in terraforms
+
+nagios
+
+- Monotoring Server, SSl certificas, Memory, Cup logs.
+
+
+AWS
+Configure a IAM policies and managed it
+Create a S3 and worked imlipmantation lifecycle
+Manage Billing, Account and Organized
+EC2 scaliable and avaliablilty
+able to monitor intance using cloud watch
+set a Route 53 to DNS record
+configure RDS database and DynamoDB
+Create a private VPC to secure cloud Infra 
+Estabish a SQS, SNS, workflow
+
+Developed next-generation strategic architecture and existing infrastructure management
+tools for AWS reducing costs by $372,000 annually
+
+Using Python, automated the deployment of 100+ cloud servers using Docker, Kubernetes
+and AWS
