@@ -326,20 +326,20 @@ Types of Parametes
 - string
 - choice
 - boolenParam
-###### ---
-	pipeline {
-		agent any
-		parameters {
-			string(name: 'VERSION', defaultValue: '', description:'')
-			choice(name: 'VERSION', choices: '['','','']', descritions: '')
-		}
-		stages {	
-			stage('build') {
-				steps {
-					echo ""
-				}
-			}					
-		}
+```
+pipeline {
+	agent any
+	parameters {
+		string(name: 'VERSION', defaultValue: '', description:'')
+		choice(name: 'VERSION', choices: '['','','']', descritions: '')
 	}
-
+	stages {	
+		stage('build') {
+			steps {
+				echo ""
+			}
+		}					
+	}
+}
+```
 ## Using external Groovy scripts
