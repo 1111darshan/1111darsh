@@ -16,7 +16,8 @@ I am Darshan Mistry. I am a DevOps Engineer. I worked at Borndigital for 14 mont
 
 Git
 
-- 
+- Able to create a android apk using Github action and relase it
+- Able to manage a workflow using diffrent branches
 
 Docker
 
