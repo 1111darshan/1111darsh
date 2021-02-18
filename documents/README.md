@@ -28,7 +28,7 @@
 [Docker cheetsheet](./docker-cheat-sheet.pdf)
 
 [Docker cheetsheet](./docker_cheatsheet_r3v2.pdf)
-i
+
 [intellipaat](./intellipaat.pdf)
 
 [SimpaliLearn](./SimpaliLearn.pdf)
