@@ -33,3 +33,7 @@ i
 [intellipaat](./intellipaat.pdf)
 
 [SimpaliLearn](./SimpaliLearn.pdf)
+
+[linux-cheat-sheet](./linux-cheat-sheet.pdf)
+
+[linux command](./Linux%20commands%20cheat%20sheet%20by%20PhoenixNAP.pdf)
