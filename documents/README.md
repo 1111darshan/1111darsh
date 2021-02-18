@@ -18,7 +18,9 @@
 
 ## Documents
 
-[AWS CLI](./AWS%20CLI.pdf)
+[AWS CLI](./AWS%20CLI.pdf).
+
+[AWS Cheetsheet](./AWS1cheetsheet.pdf)
 
 [Git cheatsheet](./git-cheat-sheet-education.pdf)
 
@@ -27,3 +29,7 @@
 [Docker cheetsheet](./docker-cheat-sheet.pdf)
 
 [Docker cheetsheet](./docker_cheatsheet_r3v2.pdf)
+i
+[intellipaat](./intellipaat.pdf)
+
+[SimpaliLearn](./SimpaliLearn.pdf)
