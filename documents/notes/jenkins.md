@@ -55,62 +55,63 @@ Creadintial Types
 	`New types  based on plugin`
 
 ## Jenkinsfile
+```
+pipeline {
+	agent any 
+	stages {	
+		stage('build') {
+			steps {
+				echo 'building the appications...'
 
-	pipeline {
-		agent any 
-		stages {	
-			stage('build') {
-				steps {
-					echo 'building the appications...'
-
-				}
 			}
-
-			stage('test') {
-				steps {
-					echo 'testing the appications...'
-				}
-			}
-
-			stage('deploy') {
-				steps {
-					echo 'deploying the appication'
-			
-				}
-			}									
 		}
-	}
 
-#### ----
-	pipeline {
-		agent any 
-		stages {	
-			stage('build') {
-				steps {
-					echo 'building the appications...'
-					
-					script{
-						def test = 2 + 2 > 3 ? 'cool' : 'not cool' 
-					} 
-
-				}
+		stage('test') {
+			steps {
+				echo 'testing the appications...'
 			}
-
-			stage('test') {
-				steps {
-					echo 'testing the appications...'
-				}
-			}
-
-			stage('deploy') {
-				steps {
-					echo 'deploying the appication'
-			
-				}
-			}									
 		}
-	}
 
+		stage('deploy') {
+			steps {
+				echo 'deploying the appication'
+		
+			}
+		}									
+	}
+}
+
+```
+```
+pipeline {
+	agent any 
+	stages {	
+		stage('build') {
+			steps {
+				echo 'building the appications...'
+				
+				script{
+					def test = 2 + 2 > 3 ? 'cool' : 'not cool' 
+				} 
+
+			}
+		}
+
+		stage('test') {
+			steps {
+				echo 'testing the appications...'
+			}
+		}
+
+		stage('deploy') {
+			steps {
+				echo 'deploying the appication'
+		
+			}
+		}									
+	}
+}
+```
 ### pipeline Sysntex
 Scriped
 - first syntax
@@ -149,8 +150,41 @@ Manage jenkins > Global Tool Configuration
 Manage jenkins > Manage plugin > Install nodeJs
 
 ### Use build tools (gradle and yarn) in Jenkinsfile
-	pipeline {
-		agent any 
+```
+pipeline {
+	agent any 
+	stages {	
+		stage('run front') {
+			steps {
+				echo 'exicuting yarn...'
+				nodejs('Node-10.17'){
+					sh 'yarn install'
+				}
+			}
+		}
+
+		stage('run backend') {
+			steps {
+				echo 'executing gradle...'
+				withGradle(){
+					sh './gradlew -v'
+
+
+				}
+			}
+		}
+						
+	}
+}
+```
+```
+pipeline {
+		agent any
+		
+		tools {
+			grable 'Gradle-6.2'
+		} 
+		
 		stages {	
 			stage('run front') {
 				steps {
@@ -166,43 +200,12 @@ Manage jenkins > Manage plugin > Install nodeJs
 					echo 'executing gradle...'
 					withGradle(){
 						sh './gradlew -v'
-
-
 					}
 				}
-			}
-							
+			}					
 		}
 	}
-#### ---
-	pipeline {
-			agent any
-			
-			tools {
-				grable 'Gradle-6.2'
-			} 
-			
-			stages {	
-				stage('run front') {
-					steps {
-						echo 'exicuting yarn...'
-						nodejs('Node-10.17'){
-							sh 'yarn install'
-						}
-					}
-				}
-
-				stage('run backend') {
-					steps {
-						echo 'executing gradle...'
-						withGradle(){
-							sh './gradlew -v'
-						}
-					}
-				}					
-			}
-		}
-
+```
 
 ### Alternative to using build tools in Jenkinsfile
 
@@ -238,23 +241,25 @@ Declarative
 - success
 - failure
 
-	pipeline {
-		agent any
-		
-		stages {	
-			stage('build') {
-				steps {
-					echo 'exicuting yarn...'
-				}
-			}					
-		}
+```
+pipeline {
+	agent any
 	
-		post{
-			always{
-
+	stages {	
+		stage('build') {
+			steps {
+				echo 'exicuting yarn...'
 			}
+		}					
+	}
+
+	post{
+		always{
+
 		}
 	}
+}
+```
 
 ## Define Conditionals / When expression
 
@@ -276,45 +281,45 @@ pipeline {
 	}
 
 ## Environmentals Variables
-
-	pipeline {
-		agent any
-		environmant{
-			NEW_VERSION = '1.3.0'
-		}
-
-		stages {	
-			stage('build') {
-				steps {
-					echo "building version ${NEW_VERSION}"
-				}
-			}					
-		}
+```
+pipeline {
+	agent any
+	environmant{
+		NEW_VERSION = '1.3.0'
 	}
 
-#### ---
-	pipeline {
-		agent any
-		environmant{
-			NEW_VERSION = '1.3.0'
-			// SERVER_CREDENTIALS = credentials('server-credentials') 
-		}
-
-		stages {	
-			stage('build') {
-				steps {
-					echo "building version ${NEW_VERSION}"
-					withCredentials([
-						usernamePassword(credentials: 'erver-credentials', usernameVariable: USER, passwordVariable: PWD)
-					]) {
-						sh "some script ${UESR}  ${PWD}"
-
-					}
-				}
-			}					
-		}
+	stages {	
+		stage('build') {
+			steps {
+				echo "building version ${NEW_VERSION}"
+			}
+		}					
+	}
+}
+```
+```
+pipeline {
+	agent any
+	environmant{
+		NEW_VERSION = '1.3.0'
+		// SERVER_CREDENTIALS = credentials('server-credentials') 
 	}
 
+	stages {	
+		stage('build') {
+			steps {
+				echo "building version ${NEW_VERSION}"
+				withCredentials([
+					usernamePassword(credentials: 'erver-credentials', usernameVariable: USER, passwordVariable: PWD)
+				]) {
+					sh "some script ${UESR}  ${PWD}"
+
+				}
+			}
+		}					
+	}
+}
+```
 
 ## Using Parameters for a Parameterized Build
 Types of Parametes
@@ -331,7 +336,7 @@ Types of Parametes
 		stages {	
 			stage('build') {
 				steps {
-					echo "
+					echo ""
 				}
 			}					
 		}
