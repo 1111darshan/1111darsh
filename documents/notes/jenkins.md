@@ -264,6 +264,7 @@ pipeline {
 ## Define Conditionals / When expression
 
 CODE_CHANGES = getGitChanges()
+```
 pipeline {
 		agent any
 		
@@ -279,7 +280,7 @@ pipeline {
 			}					
 		}
 	}
-
+```
 ## Environmentals Variables
 ```
 pipeline {
@@ -326,6 +327,7 @@ Types of Parametes
 - string
 - choice
 - boolenParam
+  
 ```
 pipeline {
 	agent any
