@@ -29,7 +29,7 @@
 ### Feature do orchestration
 - `Hign availability` or no downtime
 - `scalability` or high perfomance
-- `Dusaster recovery` - backup and restore
+- `Disaster recovery` - backup and restore
   
 
 ## Main K8s Components
@@ -39,13 +39,14 @@ pod:
 - Abstraction over Continer
 - Usually 1 application per pod
 - Each Pod gets its own IP address
-- new Ip address on re-creation
+- New IP address on re-creation
 
 
 Service:
-- permanent IP address
-- lifecycle of Pod and Service NOT Connected
-- load balancer
+- Permanent IP address
+- Lifecycle of Pod and Service NOT Connected
+- Load balancer
+  
 ---
 - External Service
 - Internal Service
@@ -74,7 +75,7 @@ StatefulSet
      
 
 ## K8s Architecture
----
+
 ### Node Processer( Worker machiene in k8s cluster)
 - Each Node has miltiple Pods on it
 - 3 Processer must be installed on every Node
@@ -90,7 +91,7 @@ StatefulSet
 ### Master Process
 1. API server 
     - cluster gateway
-    - acts as a gatekeeprt for aunthentication
+    - acts as a gatekeeper for aunthentication
 2.  Scheduler
     - scheduler just decides on which Node new pod should be scheduled
     - where to put the Pod?
@@ -123,8 +124,10 @@ Basic kubectl commands
 - kubectl describe pod [pode-name]
 
 ### Use configuration file for CRUD
-kubectl apply -f [filename]
-kuvectl delete -f [filename]
+
+>kubectl apply -f [filename]
+
+>kubectl delete -f [filename]
   
 e.g.
     
@@ -134,12 +137,12 @@ e.g.
 
 ###  layers of Abstraction
 
-`Depoyment`   manages a > `ReplicaSet` manages a >`Pod` is an abstraction of >`Container`
+`Deployment`   manages a > `ReplicaSet` manages a >`Pod` is an abstraction of >`Container`
 
 
 Debugging pods
 
-    kubectl cearate deployment mongo-depl --image=mongo
+    kubectl create deployment mongo-depl --image=mongo
     kubectl describe pod [pode-name]
     kubectl logs mongo-depl-XXX-xxx
     kubectl exec -it mongo-depl-XXX-xxx -- bin/bash
@@ -298,7 +301,7 @@ Each NS must define own ConfigMap
 
 ```
 kubectl api-resources --namespaced=false
-kuvectl api-resources --namespaced=true
+kubectl api-resources --namespaced=true
 ```
 ### Change active namespace 
 kubens 
@@ -334,7 +337,7 @@ You need an implemetation for Ingress! Which is Ingress Controller
 - evaluates and provesses Ingress rules
 - evaluates all the rules 
 - manages rediractions
-- entrypint to cluster
+- entrypoint to cluster
 - many third-party implementations 
 - K8s Nginx Ingress Controller   
 ## Helm - Package Manager
@@ -457,8 +460,7 @@ applications that stores data
 3. NodePort Service
 4. LoadBalancer
        
--Each Pod has its own IP address
-  Pods are eohemeral -are destroyed frequently
+-Each Pod has its own IP address, Pods are eohemeral, pods are destroyed frequently
 - service:
   - Stable IP address
   - loadbalancing
@@ -470,9 +472,12 @@ applications that stores data
 ### ClusterIP
 - microservice container
 - side-car container
-10.2.1.x Node 1
-10.2.2.x Node 2 
-10.2.3.x Node 3  
+  
+  > 10.2.1.x Node 1
+  
+  > 10.2.2.x Node 2 
+  
+  > 10.2.3.x Node 3  
 
 
 ### headless services

@@ -24,7 +24,6 @@
 
 ## What is Docker?
 - A way to package application  with all the necessary dependencies and configuration
-
 - Protable artifact, easily shared and moved around 
 - Makes development and deployment more efficient
 
@@ -205,7 +204,7 @@ Blueprint of docker images
 
      docker build -t my-app 
 
-     
+
 ## Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
 
 
