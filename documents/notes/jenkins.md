@@ -264,6 +264,7 @@ pipeline {
 ## Define Conditionals / When expression
 
 CODE_CHANGES = getGitChanges()
+
 ```
 pipeline {
 		agent any
