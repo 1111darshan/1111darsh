@@ -1,17 +1,29 @@
 # This is new readme
 
-[USEFUL link](./usefullink.md)
+[Useful Link](./usefullink.md)
 
 [Online Drow Digram](https://app.diagrams.net/)
 
-## notes
+## Notes
 
 [Docker](./notes/docker.md)
 
-[kubernets](./notes/kubernetes.md)
+[Kubernets](./notes/kubernetes.md)
 
-[jenkins](./notes/jenkins.md)
+[Jenkins](./notes/jenkins.md)
 
 [npm command](./notes/npmCommand.md)
 
-[terraform](./notes/terraform.md)
+[Terraform](./notes/terraform.md)
+
+## Documents
+
+[AWS CLI](./AWS%20CLI.pdf)
+
+[Git cheatsheet](./git-cheat-sheet-education.pdf)
+
+[Git cheat sheet](./github-git-cheat-sheet.pdf)
+
+[Docker cheetsheet](./docker-cheat-sheet.pdf)
+
+[Docker cheetsheet](./docker_cheatsheet_r3v2.pdf)
