@@ -1,4 +1,3 @@
-# This is new readme
 
 [Useful Link](./usefullink.md)
 
