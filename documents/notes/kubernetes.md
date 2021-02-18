@@ -339,7 +339,8 @@ You need an implemetation for Ingress! Which is Ingress Controller
 - manages rediractions
 - entrypoint to cluster
 - many third-party implementations 
-- K8s Nginx Ingress Controller   
+- K8s Nginx Ingress Controller 
+    
 ## Helm - Package Manager
 // todo
 
