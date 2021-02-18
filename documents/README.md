@@ -36,3 +36,11 @@
 [linux-cheat-sheet](./linux-cheat-sheet.pdf)
 
 [linux command](./Linux%20commands%20cheat%20sheet%20by%20PhoenixNAP.pdf)
+
+[github action](./actions-cheat-sheet.pdf)
+
+[GCP cheet sheet](./gcloud-cheat-sheet.pdf)
+
+[Ansible](./Ansible-Cheat_Sheet_Edureka.pdf)
+
+[Terraform](./terraform-cheat-sheet.pdf)
