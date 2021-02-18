@@ -1,7 +1,7 @@
 
 [Useful Link](./usefullink.md)
 
-[Online Drow Digram](https://app.diagrams.net/)
+[Online Draw Digram](https://app.diagrams.net/)
 
 ## Notes
 
