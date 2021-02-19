@@ -79,3 +79,7 @@ the performance which reduced network down-time by 11% through
 quicker response times
 - Actively contributed to the architecture, design, and improvement of
 DevOps processes and successfully onboarded
+
+## Upstox
+
+[Upstox](https://www.upwork.com/o/profiles/users/~011408d1541194b628/?s=1110580753140797440)
