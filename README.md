@@ -7,9 +7,9 @@ Hi,
 
 I am Darshan Mistry. I am a DevOps Engineer. I worked at Borndigital for 14 months as an association DevOps Engineer. I have the skills to manage an Aws and GCP cloud platform as a oversee access. I can deploy an application over a cloud platform with load balancing and auto scaleing.
 
+- Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
-
-
+Able to Deploy , `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker and kubernets and monitor it.
 
 Git
 - Able to manage path and branchiens
@@ -52,8 +52,6 @@ AWS
 -  Microservices architecture and Hybrid cloud integration architecture
 
 
-
-
 - building, deploying, and scaling robust AWS infrastructures
 - scalability, automation, and performance
 - Designed, developed, managed, and ensured the reliability of a wide range of critical infrastructure systems, services, tools, and automation
@@ -70,4 +68,17 @@ DevOps processes and successfully onboarded
 
 
 
-- Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
+Your attitude to a work?
+I am very interest and passionete to Leran DevOPs and it practics
+
+Are you good fit for the job?
+
+Who are you?
+
+Good morning.
+
+(optional) Thank you for visiting me website.
+
+I'm Darshan Mistry. For the last 14 months I have been a DevOps Enginner at Borndigital. Managing a AWS, GCP and manages all servers deploy in the company with good network handling. I have worked closely with my project manager and other sinors and build some key relationships. I have complated a professional DevOps cource from IBM and I get a certificate from a IBM. I have done some courece from udamy so it will help me on my works. Altho I love my currnet expirence, I feel I'm now ready for a more challenging assignment and this position really excites me.
+ 
+

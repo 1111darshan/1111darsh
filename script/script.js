@@ -32,6 +32,9 @@ function copyToClipboard(elementId) {
 
 }
 
+document.getElementById("Good-wish").innerHTML = "Hi";
+
+
 
 
 
