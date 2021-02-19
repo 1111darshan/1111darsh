@@ -25,3 +25,4 @@ pip3 install -r requirements.txt
 
 # Install MySQL server
 sudo apt install mysql-server -y
+
