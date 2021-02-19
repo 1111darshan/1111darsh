@@ -7,6 +7,21 @@
 
 2.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
+- Having a Good Professional experience with 1 year 2 Months including 7+ months "Work from Home" Experience.
+- Worked in a GCP and AWS the main cloud Platforms with overseer access
+- Oversees 25+ Servers with appropriate monitoring in a current profession with great Linux hands-on.
+- Having good hands-on practice to setup Jenkins master-slave environment setup and Making CI/CD pipeline
+- Deploys a Python and Node server in a docker environment
+- SSL certificate update and overseeing using "Let's Encrypted"
+- Monitor services running on numbers of server using Nagios
+- Design a new infrastructure diagram on draw.io.
+- Create a new infrastructure on AWS with basic security along with VPC environment, AIM rules, load balancer, and good monitoring skill.
+- Create this infrastructure with a terraform and cloud formation.
+- Maintain infrastructure with a Linux and normal troubleshooting command
+
+
+
+
 ## Career high light
 Able to Deploy, `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker, and Kubernetes and monitor it.
 
