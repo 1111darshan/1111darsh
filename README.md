@@ -3,13 +3,9 @@
 
 ## Introdction
 
-1. I'm Darshan Mistry. For the last 14 months I have been a DevOps Enginner at Borndigital. Managing a AWS, GCP and manages all servers deploy in the company with good network handling. I have worked closely with my project manager and other sinors and build some key relationships. I have complated a professional DevOps cource from IBM and I get a certificate from a IBM. I have done some courece from udamy so it will help me on my works. Altho I love my currnet expirence, I feel I'm now ready for a more challenging assignment and this position really excites me.
+1. I'm Darshan Mistry. For the last 14 months I have been a DevOps Enginner at Borndigital. Managing a AWS, GCP  as a oversee access and manages all linux servers and load balancing and auto scaleing Network created between tham. Deployed a CI/CD pilelins using Jenkins and GitHub action. Secure network using creart a personal VPN service. I have worked closely with my project manager and other sinors and build some key relationships. I have complated a professional DevOps cource from IBM and I get a certificate from a IBM. I have done some courece from udamy so it will help me on my works. Altho I love my currnet expirence, I feel I'm now ready for a more challenging assignment and this position really excites me.
 
-2. I am a DevOps Engineer.I have a 14th months of experience as a DevOps Engineer at [Borngidital](https://www.linkedin.com/company/borndigital-limited/).I am able to handle a AWS ans GCP platform using admistator access. I can manage a Git hub, Deploy a CI/CD pipeline.
-
-3.  I am Darshan Mistry. I am a DevOps Engineer. I worked at Borndigital for 14 months as an association DevOps Engineer. I have the skills to manage an Aws and GCP cloud platform as a oversee access. I can deploy an application over a cloud platform with load balancing and auto scaleing.
-
-4.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
+2.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
 
 
