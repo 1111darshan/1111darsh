@@ -16,12 +16,12 @@
 ## Carrier high light
 Able to Deploy , `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker and kubernets and monitor it.
 
-Git
+## Git
 - Able to manage path and branchiens
 - Able to create a android apk using Github action and relase it
 - Able to manage a workflow using diffrent branches
 
-Docker
+## Docker
 - Able to install docker on mac, linux and windows system.
 - Create a docker enviroments with a spacific isolated docker network
 - Debugging a contianers
@@ -29,13 +29,13 @@ Docker
 - able to create a Dockerfile to confort to deploy any where docker imageas
 - Able to setup a private Registry on AWS to manage docker private docker repositoy
 - able to setup a docker volumes to persist data.
-Jenkins
+## Jenkins
 - Deploye jenkins as barematl on linux, mac or windoes server, or Docker Continer
 - Able to create and manage Freestayle, Pipline and Multibranch Pipelines Jobs
 - Haveing a knowlage to setup a Diffrent types of credentionals in jenkins
 - Easy setup Scripet and Declarative Jenkinsfile 
 - Set up master slave artitacture to to build effeincy of jenkins
-k8s
+## k8s
 - Set Up a New Infrastructure over a AWS or GCP using EKS and kubenernets engine. 
 - Create a Yaml file with ingress, services, pod, Persitent Volume, StatfulSet.
 terraform
@@ -44,7 +44,7 @@ terraform
 - Manage secrates in terraforms
 nagios
 - Monotoring Server, SSl certificas, Memory, CPU logs.
-AWS
+## AWS
 - Configure a IAM policies and managed it
 - Create a S3 and worked imlipmantation lifecycle
 - Manage Billing, Account and Organized
