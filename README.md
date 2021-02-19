@@ -7,8 +7,7 @@
 
 2.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
-
-## Carrier high light
+## Career high light
 Able to Deploy, `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker, and Kubernetes and monitor it.
 
 ## Git
@@ -27,14 +26,14 @@ Able to Deploy, `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, 
 ## Jenkins
 - Deploy Jenkins as bare-metal on Linux, Mac or Windows server, or Docker Container
 - Able to create and manage Freestyle, Pipeline, and Multibranch Pipelines Jobs
-- Having the knowledge to set up a Different type of credentials in Jenkins
+- Knowing to set up a Different type of credentials in Jenkins
 - Easy setup Script and Declarative Jenkinsfile 
 - Set up master-slave architecture to build efficient Jenkins
 ## k8s
 - Set Up a New Infrastructure over AWS or GCP using EKS and Kubernetes engine. 
 - Create a Yaml file with ingress, services, pod, Persistent Volume, StatfulSet.
 terraform
-- Setup terraform on mac, Linux or Windows system.
+- Setup terraform on mac, Linux, or Windows system.
 - Able to create a terraform file to create VPC, Internet Gateway, Route table, subnets, security groups, network interface, elastic IP, apache over Linux ubuntu server on AWS Cloud platforms.
 - Manage secrets in terraforms
 Nagios
