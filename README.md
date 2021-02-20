@@ -7,17 +7,32 @@
 
 2.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
-- Having a Good Professional experience with 1 year 2 Months including 7+ months "Work from Home" Experience.
+- Having a Good Professional experience with 1 year 4 Months including 7+ months "Work from Home" Experience.
 - Worked in a GCP and AWS the main cloud Platforms with overseer access
 - Oversees 25+ Servers with appropriate monitoring in a current profession with great Linux hands-on.
-- Having good hands-on practice to setup Jenkins master-slave environment setup and Making CI/CD pipeline
-- Deploys a Python and Node server in a docker environment
-- SSL certificate update and overseeing using "Let's Encrypted"
-- Monitor services running on numbers of server using Nagios
+- Configure Jenkins as bare-metal on Linux, Mac or Windows server, or Docker Container
+- Able to creates and manages Freestyle, Pipeline, and Multibranch Pipelines Jobs
+- Knowing to set up a Different type of credentials in Jenkins
+- Easly setup Scripted and Declarative Jenkinsfile 
+- Set up master-slave architecture to build efficient handle a jenkins load
 - Design a new infrastructure diagram on draw.io.
+- Professionalism to deploy `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker, and Kubernetes and  Monitor them.
+- Easly set up a docker over the Mac, Linux, or Windows system, and Cloud platform
+- Familiar with Docker Network to isolate docker containers from the internet
+- Debug containers using logs and get into the docker container
+- Write Docker-compose files to deploy multiple services in a minimum time.
+- Have experience in creating Dockerfile.
+- Sets a private Docker Registry on AWS
+- Can be set up different Docker Volumes
+- Set Up a New Infrastructure over AWS or GCP using EKS and Kubernetes engine. 
+- Creates a YAML files with ingress, services, pod, Persistent Volume, StatfulSet.
+- SSL certificate update and overseeing using "Let's Encrypted"
+- Monitoring Server, SSL certificates, Memory, CPU uses in Nagios setup.
 - Create a new infrastructure on AWS with basic security along with VPC environment, AIM rules, load balancer, and good monitoring skill.
-- Create this infrastructure with a terraform and cloud formation.
-- Maintain infrastructure with a Linux and normal troubleshooting command
+- Setup terraform on mac, Linux, or Windows system.
+- Able to creates a terraform file to create VPC, Internet Gateway, Route table, subnets, security groups, network interface, elastic IP, apache over Linux ubuntu server on AWS Cloud platforms.
+- Manages secrets in terraforms
+
 
 
 
@@ -69,7 +84,7 @@
 - configure RDS database and DynamoDB
 - Create a private VPC to secure cloud Infra 
 - Establish an SQS, SNS, workflow
--  Microservices architecture and Hybrid cloud integration architecture
+- Microservices architecture and Hybrid cloud integration architecture
 
 
 - building, deploying and scaling robust AWS infrastructures
@@ -89,3 +104,5 @@ DevOps processes and successfully onboarded
 ## Upwork
 
 [Upwork](https://www.upwork.com/o/profiles/users/~011408d1541194b628/?s=1110580753140797440)
+
+
