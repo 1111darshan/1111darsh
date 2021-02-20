@@ -22,37 +22,43 @@
 
 
 
-## Career high light
-Able to Deploy, `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker, and Kubernetes and monitor it.
+## Career Hignlight
+- professionalism to deploy `MEAN`, `MERN`, `MEVN`, `LAMP`, `LEMP`, `LLMP`, `LAPP`, `LEAP`, `LEMP`, `LAPP`, `LEAP`, `LLMP` on AWS. GCP, bare metal, Docker, and Kubernetes and  Monitor them.
 
 ## Git
+
+
 - Able to manage path and branches
 - Able to create an android app using Github action and release it
 - Able to manage a workflow using different branches
 
 ## Docker
-- Able to install docker on Mac, Linux, and Windows system.
-- Create a docker environment with a specific isolated docker network
-- Debugging a containers
-- Able to deploy multiple services using Docker Compose
-- able to create a Dockerfile to comfort to deploy anywhere docker images
-- Able to set up a private Registry on AWS to manage docker private docker repository
-- able to set up docker volumes to persist data.
+- Easly set up a docker over the Mac, Linux, or Windows system, and Cloud platform
+- Familiar with Docker Network to isolate docker containers from the internet
+- Debug containers using logs and get into the docker container
+- Write Docker-compose files to deploy multiple services in a minimum time.
+- Have experience in creating Dockerfile.
+- Sets a private Docker Registry on AWS
+- Can be set up different Docker Volumes 
+
 ## Jenkins
-- Deploy Jenkins as bare-metal on Linux, Mac or Windows server, or Docker Container
-- Able to create and manage Freestyle, Pipeline, and Multibranch Pipelines Jobs
+- Configure Jenkins as bare-metal on Linux, Mac or Windows server, or Docker Container
+- Able to creates and manages Freestyle, Pipeline, and Multibranch Pipelines Jobs
 - Knowing to set up a Different type of credentials in Jenkins
-- Easy setup Script and Declarative Jenkinsfile 
-- Set up master-slave architecture to build efficient Jenkins
+- Easly setup Scripted and Declarative Jenkinsfile 
+- Set up master-slave architecture to build efficient handle a jenkins load
 ## k8s
 - Set Up a New Infrastructure over AWS or GCP using EKS and Kubernetes engine. 
-- Create a Yaml file with ingress, services, pod, Persistent Volume, StatfulSet.
-terraform
+- Creates a YAML files with ingress, services, pod, Persistent Volume, StatfulSet.
+
+## terraform
 - Setup terraform on mac, Linux, or Windows system.
-- Able to create a terraform file to create VPC, Internet Gateway, Route table, subnets, security groups, network interface, elastic IP, apache over Linux ubuntu server on AWS Cloud platforms.
-- Manage secrets in terraforms
-Nagios
-- Monitoring Server, SSL certificates, Memory, CPU logs.
+- Able to creates a terraform file to create VPC, Internet Gateway, Route table, subnets, security groups, network interface, elastic IP, apache over Linux ubuntu server on AWS Cloud platforms.
+- Manages secrets in terraforms
+
+## Nagios
+- Monitoring Server, SSL certificates, Memory, CPU uses in Nagios setup.
+  
 ## AWS
 - Configure IAM policies and managed it
 - Create an S3 and worked implantation lifecycle
