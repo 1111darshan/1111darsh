@@ -20,7 +20,7 @@
 </head>
 <link rel="stylesheet" href="main.css">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-widthwww.w3schools.co, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,12 +38,60 @@
   h6 {
     font-family: "Roboto", sans-serif
   }
+  
 </style>
+<style>
+  
+  #navbar {
+    background-color: #009688;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 30px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  </style>
 <script type="text/javascript" src="script/script.js"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 <body class="w3-light-grey">
+  <div id="navbar">
 
+    <a href="#top">Darshan Mistary</a>
+    <a style="float:right" href="#Resume"><i class="fa far  fa-file-pdf-o w3-hover-opacity"></i> Resume</a>
+  </div>
+  <script>
+     document.getElementById("navbar").style.visibility = "hidden";
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos < currentScrollPos) {
+        document.getElementById("navbar").style.visibility = "visible";
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -65,18 +113,22 @@
               </div>
             </div>
           </a>
-          <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>DevOps Engineer
-            </p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="">Bengalore, Karnataka ,
-                India.</a></p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" class="remove-line"><a
-                  href="mailto:1111darsh@gmail.com"></i>1111darsh@gmail.com</a></p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                href="tel:+91 9727977391">9727977391</a>, <a href="tel:+91 8200955211">8200955211</a></p>
-            <p><i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Blog1.html"
-                class="blink_text">Read My Blogs</a></p>
+          <div class="w3-container fix">
+            <dev class="">
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>DevOps Engineer
+              </p>
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="">Bengalore, Karnataka ,
+                  India.</a></p>
+              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" class="remove-line"><a
+                    href="mailto:1111darsh@gmail.com"></i>1111darsh@gmail.com</a></p>
+              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                  href="tel:+91 9727977391">9727977391</a>, <a href="tel:+91 8200955211">8200955211</a></p>
+              <p><i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Blog1.html"
+                  class="blink_text">Read My Blogs</a></p>
+            </dev>
             <hr>
+          </div>
+          <div class="w3-container">
 
             <p class="w3-large"><b><a href="https://1111darsh.com/documents/"><i
                     class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i></a>Skills</b></p>
@@ -168,26 +220,29 @@
       <div class="w3-twothird">
 
         <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Introduction<p style="float:right; margin: 0%;" id="Good-wish"></p></h2>
-          
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Introduction<p
+              style="float:right; margin: 0%;" id="Good-wish"></p>
+          </h2>
+
           <hr>
           <div class="w3-container">
-            
-              <script>
-                var date = new Date()
-                var hour = date.getHours();
-                if (hour > 16) {
-                  var wish = "Good Evening !!"
-                } else if (hour > 12) {
-                  var wish = "Good Afternoon !!"
-                } else if (hour > 0) {
-                  var wish = "Good Morining !!"
-                }
-                document.getElementById("Good-wish").innerHTML = wish;
-              </script>
-              
+
+            <script>
+              var date = new Date()
+              var hour = date.getHours();
+              if (hour > 16) {
+                var wish = "Good Evening !!"
+              } else if (hour > 12) {
+                var wish = "Good Afternoon !!"
+              } else if (hour > 0) {
+                var wish = "Good Morining !!"
+              }
+              document.getElementById("Good-wish").innerHTML = wish;
+            </script>
+
             <h5 class="w3-opacity" style="text-align: justify; color: black;">
-              
+
               I'm <b>Darshan Mistry.</b> For the last <i>14 months</i>, I have been a <b>DevOps Engineer</b> at
               Borndigital. Managing AWS, GCP, and manages all servers deploy in the company with good network handling.
               I have worked closely with my project manager and other seniors and build some key relationships.
@@ -270,22 +325,25 @@
           </div>
         </div>
         <a style=" text-decoration: none;" href="documents/Darshan Mistry DevOps.pdf">
-        <div id="Resume" class="w3-container w3-card w3-margin-bottom click-me">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-pdf-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MY RESUME</h2>
-          <p>This Resume full with hyperlinks. Take new exprience with clicks</p>
-        </div>
+          <div id="Resume" class="w3-container w3-card w3-margin-bottom click-me">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-file-pdf-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MY RESUME</h2>
+            <p>This Resume full with hyperlinks. Take new exprience with clicks</p>
+          </div>
         </a>
 
 
-        
-          <div id="App"  class="click-me w3-container w3-card  ">
-           
-            <a style=" text-decoration: none;" href="https://github.com/1111darsh/1111darsh/releases/download/v1.0.2/111darsh.apk">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-android fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MY ANDROID APP</h2>
-          </a>
-          </div>
 
-        
+        <div id="App" class="click-me w3-container w3-card  ">
+
+          <a style=" text-decoration: none;"
+            href="https://github.com/1111darsh/1111darsh/releases/download/v1.0.2/111darsh.apk">
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-android fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MY ANDROID APP</h2>
+          </a>
+        </div>
+
+
 
         <!-- End Right Column -->
       </div>
@@ -303,13 +361,14 @@
     <a href="https://www.instagram.com/1111darsh"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <a href="https://github.com/1111darsh"><i class="fa fa-github w3-hover-opacity"></i></a>
 
-    <a href="https://www.upwork.com/o/profiles/users/~011408d1541194b628/?s=1110580753140797440"><i  class="iconify icon:simple-icons:upwork icon-inline:false"></i></a>
+    <a href="https://www.upwork.com/o/profiles/users/~011408d1541194b628/?s=1110580753140797440"><i
+        class="iconify icon:simple-icons:upwork icon-inline:false"></i></a>
 
     <a href="https://twitter.com/1111darshan"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/1111darsh"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
 
   </footer>
 
-</body> 
+</body>
 
 </html>
