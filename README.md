@@ -5,7 +5,7 @@
 
 1. I'm Darshan Mistry. For the last 14 months, I have been a DevOps Engineer at Borndigital. Managing AWS, GCP as a oversee access and manages all Linux servers and load balancing and auto-scaling Network created between them. Deployed CI/CD pipelines using Jenkins and GitHub action. Secure network using create a personal VPN service. I have worked closely with my project manager and other seniors and build some key relationships. I have completed a professional DevOps course from IBM and I get a certificate from IBM. I have done some courses from udamy so it will help me with my works. Altho I love my current experience, I feel I'm now ready for a more challenging assignment and this position excites me.
 
-2.  Skilled DevOps Engineer with 3+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, implementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
+2.  Skilled DevOps Engineer with 1.2+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, mplementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
 
 - Having a Good Professional experience with 1 year 4 Months including 7+ months "Work from Home" Experience.
 - Worked in a GCP and AWS the main cloud Platforms with overseer access

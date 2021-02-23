@@ -49,7 +49,7 @@ Creadintial scopes
 
 Creadintial Types
 
-	Usename & Passwoed 
+	Username & Passwoed 
 	Certificate
 	Secret Files
 	`New types  based on plugin`
@@ -62,7 +62,6 @@ pipeline {
 		stage('build') {
 			steps {
 				echo 'building the appications...'
-
 			}
 		}
 
@@ -75,9 +74,8 @@ pipeline {
 		stage('deploy') {
 			steps {
 				echo 'deploying the appication'
-		
 			}
-		}									
+		}
 	}
 }
 
@@ -91,9 +89,8 @@ pipeline {
 				echo 'building the appications...'
 				
 				script{
-					def test = 2 + 2 > 3 ? 'cool' : 'not cool' 
+					def test = 2 + 2 > 3 ? 'cool' : 'not cool'
 				} 
-
 			}
 		}
 
@@ -106,9 +103,9 @@ pipeline {
 		stage('deploy') {
 			steps {
 				echo 'deploying the appication'
-		
+
 			}
-		}									
+		}
 	}
 }
 ```
@@ -173,7 +170,6 @@ pipeline {
 				}
 			}
 		}
-						
 	}
 }
 ```
@@ -202,7 +198,7 @@ pipeline {
 						sh './gradlew -v'
 					}
 				}
-			}					
+			}
 		}
 	}
 ```
@@ -250,12 +246,11 @@ pipeline {
 			steps {
 				echo 'exicuting yarn...'
 			}
-		}					
+		}
 	}
 
 	post{
 		always{
-
 		}
 	}
 }
@@ -278,7 +273,7 @@ pipeline {
 				}
 				steps {
 				}
-			}					
+			}
 		}
 	}
 ```
@@ -295,7 +290,7 @@ pipeline {
 			steps {
 				echo "building version ${NEW_VERSION}"
 			}
-		}					
+		}
 	}
 }
 ```
@@ -318,7 +313,7 @@ pipeline {
 
 				}
 			}
-		}					
+		}
 	}
 }
 ```
@@ -341,7 +336,7 @@ pipeline {
 			steps {
 				echo ""
 			}
-		}					
+		}
 	}
 }
 ```

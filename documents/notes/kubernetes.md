@@ -36,7 +36,7 @@
 ---
 pod:
 - Smallest unit of K8s
-- Abstraction over Continer
+- Abstraction over Container
 - Usually 1 application per pod
 - Each Pod gets its own IP address
 - New IP address on re-creation
@@ -71,7 +71,7 @@ Deployment:
 StatefulSet
 - for statfuls app
   
-`Deploying StatfulSet not east`
+`Deploying StatfulSet not easy`
      
 
 ## K8s Architecture
