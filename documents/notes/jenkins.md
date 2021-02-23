@@ -1,7 +1,7 @@
 # Jenkins Notes
 ## Jenkins Container Setup
 
-	docker run -p 8080:8080 -p 5000:5000 -d -v jenkins-home:/var/jenkins_home jenkins\jenkins
+	docker run -p 8080:8080 -p 5000:5000 -d -v jenkins-home:/var/jenkins_home jenkins/jenkins
 	
 Check jenkins container runing 
 	
