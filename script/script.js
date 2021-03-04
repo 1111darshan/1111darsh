@@ -32,7 +32,7 @@ function copyToClipboard(elementId) {
 
 }
 
-document.getElementById("Good-wish").innerHTML = "Hi";
+
 
 
 
@@ -61,17 +61,40 @@ document.getElementById("Good-wish").innerHTML = "Hi";
 // document.write(output);
 
 
-let md;
-md = window.markdownit({html: true}).use(window.markdownitFootnote);
-// Load the Markdown file with jQuery.
-$.ajax({
-  url: "https://the-javascripting-english-major.org/v1/examples/markdown/hastings-street.md",
-  success: function(markdown){
-    // Convert the Markdown to HTML.
-    let html;
-    html = md.render(markdown);
-    // Print the HTML to #content using jQuery.
-    $("#content").html(html);
-  }
-});
 
+function darkandwhite() {
+  var checkBox = document.getElementById("myCheck");
+  var background = document.body;
+ 
+  
+
+
+
+
+  if (checkBox.checked){
+    background.className = "w3-blue";
+    
+    
+    
+  } else {
+    background.className = "w3-aqua"
+    
+
+  }
+ 
+}
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var checkbox = document.querySelector('input[type="checkbox"]');
+//   var element = document.body;
+
+//   checkbox.addEventListener('change', function () {
+//     if (checkbox.checked) {
+//       // do this
+//       element.className = "w3-blue"
+//     } else {
+//       // do that
+//       element.className = "w3-aqua"
+//     }
+//   });
+// });
