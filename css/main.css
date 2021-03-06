@@ -1,9 +1,15 @@
 .click-me {
-    background-color: white;
+    background-color: transparent;
 }
 
 .click-me:hover {
-    background-color: #d3a1e9;
+    background-color: #cc98e09a;
+    color: black;
+    
+    
+    
+
+    
 }
 
 .blink_text {

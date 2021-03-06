@@ -72,12 +72,12 @@ function darkandwhite() {
 
 
   if (checkBox.checked){
-    background.className = "w3-blue";
+    background.className = "w3-black";
     
     
     
   } else {
-    background.className = "w3-aqua"
+    background.className = "w3-white"
     
 
   }
