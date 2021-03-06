@@ -2,21 +2,16 @@
     background-color: transparent;
 }
 
-.click-me:hover {
+.click-me:hover{
     background-color: #cc98e09a;
-    color: black;
-    
-    
-    
-
-    
+    color: black;  
 }
 
 .blink_text {
     animation: 1s blinker linear infinite;
     -webkit-animation: 1s blinker linear infinite;
     -moz-animation: 1s blinker linear infinite;
-    color: blue;
+    color: rgb(23, 23, 241);
 }
 
 @-moz-keyframes blinker {
