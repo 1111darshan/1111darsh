@@ -81,11 +81,10 @@ ln -n newfile2.txt newfile3.txt
 ```
 
 ## File Systems
-    
-
-
 
 ## People and Permissions
+
+
 
 
 ## Software Repositories

@@ -16,37 +16,37 @@
 
 @-moz-keyframes blinker {
     0% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
     50% {
-        opacity: 0.0;
+        color: #c6cbcf
     }
     100% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
 }
 
 @-webkit-keyframes blinker {
     0% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
     50% {
-        opacity: 0.0;
+        color: #c6cbcf
     }
     100% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
 }
 
 @keyframes blinker {
     0% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
     50% {
-        opacity: 0.0;
+        color: #c6cbcf
     }
     100% {
-        opacity: 1.0;
+        color: rgb(23, 23, 241);
     }
 }
 
@@ -106,8 +106,8 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 25px;
-    height: 12px;
+    width: 32px;
+    height: 19px;
 }
 
 .switch input {
@@ -131,8 +131,9 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 10px;
-    width: 10px;
+    height: 17px;
+    width: 17px;
+    padding: 1px;
     left: 1px;
     bottom: 1px;
     background-color: white;
@@ -142,6 +143,10 @@
 
 input:checked+.slider {
     background-color: #2196F3;
+}
+input:checked+.slider::before {
+    background-color: #101011;
+    color: rgb(217, 255, 0);
 }
 
 input:focus+.slider {
