@@ -83,7 +83,20 @@ ln -n newfile2.txt newfile3.txt
 ## File Systems
 
 ## People and Permissions
+```
+w
+last
+passwd <username>
+useradd
+userdel
+cat /etc/shadow
+usermod -L joseph  ## lock account
+id joseph
+cat /etc/group
+cat /etc/sudoers.d
+ b 
 
+```
 
 
 
