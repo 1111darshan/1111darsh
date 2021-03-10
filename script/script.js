@@ -32,12 +32,23 @@ function copyToClipboard(elementId) {
 
 }
 
-function load(){
-var checkBox = document.getElementById("myCheck");
-var mood = localStorage.getItem("mood")
-if (mood != null)
-  checkBox.checked = true;
+function load() {
+  var checkBox = document.getElementById("myCheck");
+  var mood = localStorage.getItem("mood")
+  if (mood != null)
+    checkBox.checked = true;
   darkandwhite()
+  var date = new Date();
+  var hour = date.getHours();
+  if (hour > 16) {
+    var wish = "Good Evening !!"
+  } else if (hour > 12) {
+    var wish = "Good Afternoon !!"
+  } else if (hour >= 0) {
+    var wish = "Good Morining !!"
+  }
+  document.getElementById("Good-wish").innerHTML = wish;
+
 }
 function darkandwhite() {
   var checkBox = document.getElementById("myCheck");
