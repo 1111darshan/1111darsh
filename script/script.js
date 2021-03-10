@@ -32,19 +32,22 @@ function copyToClipboard(elementId) {
 
 }
 
-
-
-
-
-
-
+function load(){
+var checkBox = document.getElementById("myCheck");
+var mood = localStorage.getItem("mood")
+if (mood != null)
+  checkBox.checked = true;
+  darkandwhite()
+}
 function darkandwhite() {
   var checkBox = document.getElementById("myCheck");
   var background = document.body;
   if (checkBox.checked) {
     background.className = "w3-black";
+    localStorage.setItem("mood", "Dark");
   } else {
     background.className = "w3-white"
+    localStorage.removeItem('mood');
   }
 }
 
@@ -58,19 +61,3 @@ function myFunction() {
     x.className = "navbar";
   }
 }
-// document.addEventListener('DOMContentLoaded', function () {
-//   var checkbox = document.querySelector('input[type="checkbox"]');
-//   var element = document.body;
-
-//   checkbox.addEventListener('change', function () {
-//     if (checkbox.checked) {
-//       // do this
-//       element.className = "w3-blue"
-//     } else {
-//       // do that
-//       element.className = "w3-aqua"
-//     }
-//   });
-// });
-
-
