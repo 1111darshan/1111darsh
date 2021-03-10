@@ -7,20 +7,26 @@
     display: block;
     transition: top 0.3s;
     overflow: hidden;
+    align-items: center;
 }
 
 .navbar a {
+    align-self: center;
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    margin-right: 20px;
+    margin-right: auto;
+    margin-bottom: auto;
     padding-right: 30px;
     padding: 15px;
     text-decoration: none;
     font-size: 17px;
 }
-
+.with-text {
+    float: right; 
+    margin-left: 0%;
+}
 .navbar a:hover {
     background-color: #ddd;
     color: black;
@@ -41,12 +47,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navbar.responsive {
-        margin-top: 10%;
-        
-    }
+    
     .navbar.responsive .icon {
-        
+        position: absolute;
         right: 0;
         top: 0;
     }
