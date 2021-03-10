@@ -38,52 +38,26 @@ function copyToClipboard(elementId) {
 
 
 
-// // get markdown content  
-// var body_location = './documents/notes/K8s.md';
-        
-// function getText(myUrl){
-//     var result = null;
-//     $.ajax( { url: myUrl, 
-//               type: 'get', 
-//               dataType: 'html',
-//               async: false,
-//               success: function(data) { result = data; } 
-//             }
-//     );
-//     FileReady = true;
-//     return result;
-// }
-
-// var markdown_source = getText(body_location);
-
-// // convert markdown to html
-// var output = markdown.toHTML( markdown_source );
-// document.write(output);
-
-
-
 function darkandwhite() {
   var checkBox = document.getElementById("myCheck");
   var background = document.body;
- 
-  
-
-
-
-
-  if (checkBox.checked){
+  if (checkBox.checked) {
     background.className = "w3-black";
-    
-    
-    
   } else {
     background.className = "w3-white"
-    
-
   }
- 
 }
 
+
+
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 // document.addEventListener('DOMContentLoaded', function () {
 //   var checkbox = document.querySelector('input[type="checkbox"]');
 //   var element = document.body;
