@@ -8,7 +8,7 @@
 
 [Docker](./notes/docker.md) //Todo
 
-[Kubernets](./notes/kubernetes.md)
+[Kubernets](./notes/kubernetes.md) //Todo
 
 [Jenkins](./notes/jenkins.md)
 

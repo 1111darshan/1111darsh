@@ -16,7 +16,7 @@
  - K8s Services explained
 
 ## What is K8s
----
+
 ### Official defination of Kubernetes
 - Open source `container` orchestration tool
 - Developed by Google
@@ -33,7 +33,7 @@
   
 
 ## Main K8s Components
----
+
 pod:
 - Smallest unit of K8s
 - Abstraction over Container
@@ -70,9 +70,7 @@ Deployment:
   
 StatefulSet
 - for statfuls app
-  
-`Deploying StatfulSet not easy`
-     
+       
 
 ## K8s Architecture
 
