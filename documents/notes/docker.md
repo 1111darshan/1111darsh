@@ -123,7 +123,7 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
  
      docker network ls
      
-     docker create network mongo-network
+     docker network create mongo-network
 
      docker run -d \
      -p 27017:27017 \
