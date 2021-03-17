@@ -232,3 +232,29 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
+.chatbot{  
+    position: fixed; 
+    background:  #8E44AD;
+    color: rgb(255, 255, 255);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+}
+
+
+.chatbot:hover{
+    background-color: #8E44AD; 
+}
+
+.background-experience{
+    background-image: url('/images/development.svg');
+    background-repeat: no-repeat;
+    background-position: right top ;
+    background-size: 50% ;
+}

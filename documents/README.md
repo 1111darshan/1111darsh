@@ -6,7 +6,7 @@
 
 ## Notes
 
-[Docker](./notes/docker.md) //Todo
+[Docker](./notes/docker.md) 
 
 [Kubernets](./notes/kubernetes.md) //Todo
 

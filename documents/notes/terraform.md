@@ -27,9 +27,6 @@ Set a system variable in winndows machine
 
 ## [VSCode](https://code.visualstudio.com/)
 
-
-
-
 ## Terraform Overview
 [main.tf](./main.tf)
 

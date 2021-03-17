@@ -1,9 +1,6 @@
-# Docker 
+# [Docker](https://youtu.be/3c-iBn73dDE)
 
 # Docker container
-
-
-
 
 - Intro and Course Overview
 - What is Docker?
@@ -32,17 +29,14 @@
 Container Repository
 Private repositories
 Public repository for Docker
-
-
-
-
+```
      docker run postgras:10.10
      docker run -d radis
      docker ps
      
      docker run -p 
      docker exec 
-
+```
 
 
 
@@ -120,7 +114,7 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
 
 
 ### Doceker Network
- 
+```
      docker network ls
      
      docker network create mongo-network
@@ -142,7 +136,7 @@ database -- [Mongodb](https://hub.docker.com/_/mongo)
     --name mongo-express \
     -e ME_CONFIG_MONGODB_SERVER="mongodb" \
     mongo-expres
-
+```
 ## Docker Compose - Running multiple services
 [mongo-docker-compose.yaml](./mongo-docker-compose.yaml)
 
@@ -207,15 +201,24 @@ Blueprint of docker images
 
 ## Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
 
+AWS Console >> ECR >> Create Repository
 
-// TODO
+```
+docker images
 
+docker login
 
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 476536695493.dkr.ecr.us-east-2.amazonaws.com
+```
 
+### ImgaheNaming
+``` 
+docker pull 476536695493.dkr.ecr.us-east-2.amazonaws.com/image-name:tags
+docker tag my-app:1.0 476536695493.dkr.ecr.us-east-2.amazonaws.com/image-name:tags
+docker push 476536695493.dkr.ecr.us-east-2.amazonaws.com/image-name:tags
+```
 ## Deploy our containerized app
 
-
-//TODO
 
 ## Docker Volumes - Persist data in Docker
 user for data persistance

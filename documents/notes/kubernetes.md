@@ -1,4 +1,4 @@
-# kubernetes
+# [Kubernetes](https://youtu.be/X48VuDVv0do)
 
  - Intro and Course Overview
  - What is K8s
@@ -340,8 +340,11 @@ You need an implemetation for Ingress! Which is Ingress Controller
 - K8s Nginx Ingress Controller 
     
 ## Helm - Package Manager
-// todo
 
+- Bundle of YAML Files
+- Create your own Helm Charts with Helm
+- Push them to Helm Repository
+- Download and use existing ones
 
 ## Persisting Data in K8s with Volumes
 1. Persistent Volume 
