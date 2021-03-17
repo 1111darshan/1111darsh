@@ -264,7 +264,7 @@ input:checked+.slider:before {
 }
 
 #chatbox {
-    visibility: inherit;
+    visibility: hidden;
 }
 
 .chatbox {
