@@ -258,3 +258,11 @@ input:checked+.slider:before {
     background-position: right top ;
     background-size: 50% ;
 }
+
+
+.background-education{
+    background-image: url('/images/education.svg');
+    background-repeat: no-repeat;
+    background-position: right top ;
+    background-size: 50% ;
+}
