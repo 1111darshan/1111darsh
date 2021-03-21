@@ -76,12 +76,11 @@ function myFunction() {
 function  chatbot(){
   var chatbox = document.getElementById("chatbox");
   chatbox.style.visibility = "visible";
-  console.log("chat bot function call")
+
 }
 
 function closechatbox()
 {
   var chatbox = document.getElementById("chatbox");
   chatbox.style.visibility = "hidden";
-  console.log("chat bot function call")
 }
