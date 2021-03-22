@@ -73,14 +73,13 @@ function myFunction() {
   }
 }
 
-function  chatbot(){
+function chatbot() {
   var chatbox = document.getElementById("chatbox");
   chatbox.style.visibility = "visible";
 
 }
 
-function closechatbox()
-{
+function closechatbox() {
   var chatbox = document.getElementById("chatbox");
   chatbox.style.visibility = "hidden";
 }

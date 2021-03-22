@@ -47,7 +47,26 @@
     right: 10px;
 }
 
-.side-bar a:hover {
+.tooltip {
+    visibility: hidden;
+    width: 220px;
+    text-align: center;
+    border-radius:50%;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    
+}
+
+.side-bar a:hover .tooltip{
+    visibility: visible;
+    color: ivory;
+    background-color: #8E44AD;
+}
+
+.side-bar a:hover  {
    background-color: ivory;
    color: #8E44AD;
    padding: 20px;
@@ -58,6 +77,10 @@
         display: none;
     }
    
+
+
+
+
 } 
 
 .navbar {
@@ -323,6 +346,10 @@ input:checked+.slider:before {
     padding: 6px;
 }
 
+.chatbot:hover .tooltiptext {
+    visibility: visible;
+    background-color: #682883;
+}
 .chatbot .tooltiptext {
     visibility: hidden;
     width: 220px;
@@ -405,10 +432,6 @@ input:checked+.slider:before {
     align-items: center;
 }
 
-.chatbot:hover .tooltiptext {
-    visibility: visible;
-    background-color: #682883;
-}
 
 .background-experience {
     background-image: url('/images/development.svg');
