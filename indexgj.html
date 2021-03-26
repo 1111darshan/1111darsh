@@ -86,6 +86,12 @@
                 class="tooltip">Resume</span></a>
         <a href="https://www.youtube.com/channel/UC4sOs3hvMkolOuEOlEVvVlg"><i
                 class="fa fa-youtube-play w3-hover-opacity"></i><span class="tooltip">Youtube</span></a>
+        <a>
+            <label class="switch">
+                <input id="lan" onclick="changelan()" type="checkbox" checked></indput>
+                <span class="slider round"></span>
+            </label>
+        </a>
 
     </div>
     <script>
@@ -156,7 +162,7 @@
                     </a>
                     <div class="w3-container fix">
                         <dev class="">
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>દેવઓપ્સ ઇજનેર
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>ડેવઓપ્સ ઇજનેર
                                 <label class="switch" style="float: right;">
                                     <input id="myCheck" onclick="darkandwhite()" type="checkbox"></input>
                                     <span class="slider round fa fa-moon-o"> </span>
@@ -301,43 +307,42 @@
                 <div class="w3-container w3-card  w3-margin-bottom">
                     <div class="background-experience">
                         <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+                            કાર્ય અનુભવ
                         </h2>
                         <hr />
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b> વેબસાઇટની ડિઝાઇન, હોસ્ટ અને જમાવટ </b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>january 2021 -
-                                February 2021
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                                જાન્યુઆરી 2021 - 2021 ફેબ્રુઆરી
                             </h6>
-                            <p>Design, Code and host website <a
+                            <p>વેબસાઇટની ડિઝાઇન, હોસ્ટ અને જમાવટ<a
                                     href="https://www.jankipanchal.com/">www.jankipanchal.com</a></p>
                             <hr>
                         </div>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>DevOps Engineer</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2019 -
-                                December 2020
+                            <h5 class="w3-opacity"><b>ડેવઓપ્સ ઇજનેર</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>ઓક્ટોબર 2019 -
+                                ડિસેમ્બર 2020
                             </h6>
-                            <p>Working as a DevOps Engineer at Borndigital</p>
+                            <p>Borndigitalમાં ડેવઓપ્સ ઇજનેર તરીકે કાર્યરત</p>
                             <hr>
                         </div>
 
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>DevOps Training</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2019 -
-                                October 2019</h6>
-                            <p>Complated a DevOps Training from intellipaat with IBM certification.</p>
+                            <h5 class="w3-opacity"><b>ડેવઓપ્સ તાલીમ</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>જૂન 2019 -
+                                ઓક્ટોબર 2019</h6>
+                            <p>IBM સર્ટિફિકેટ સાથે Intellipaatમાંથી ડેવઓપ્સ ​​તાલીમ પૂર્ણ.</p>
                             <hr>
                         </div>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>Smart Examination</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Mar
                                 2019</h6>
-                            <p>Android app to take an examination without lab setup and php base server to generate a
-                                question paper
-                                base
-                                on the previous outcome. It is my final year IDP project at <a
-                                    href="http://escrowinfotech.com/"> ESCROW Infotech Surat</a></p>
+                            <p>પાછલા પરિણામ પર પ્રશ્નપત્ર પેદા કરવા માટે એન્ડ્રોઇડ એપ્લિકેશન લેબ સેટઅપ અને પીએચપી બેઝ
+                                સર્વર વિના પરીક્ષા લેશે. તે મારો અંતિમ વર્ષ <a
+                                href="http://escrowinfotech.com/"> ESCROW Infotech Suratમાં</a>IDP પ્રોજેક્ટ છે</p>
                             <hr>
                         </div>
                         <div class="w3-container">
@@ -345,8 +350,9 @@
                                     href="http://visvesmruti18.fetr.ac.in"><span
                                         class="w3-tag w3-teal w3-round">Website</span></a></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2018 </h6>
-                            <p>I created an android application and website with my college squad. Visvesmruti app and
-                                website provide our collage tech-fast information.</p>
+                            <p>
+                                મેં મારી ક college સ્કવોડ સાથે એક Android એપ્લિકેશન અને વેબસાઇટ બનાવી છે. Visvesmruti એપ્લિકેશન અને વેબસાઇટ અમારી કોલાજ ટેક ફેસ્ટ માહિતી પ્રદાન કરે છે.
+                            </p>
                             <hr>
                         </div>
                         <div class="w3-container">
@@ -354,8 +360,7 @@
                                     href="https://play.google.com/store/apps/details?id=fetr.ac.in.visvesmruti2018"><span
                                         class="w3-tag w3-teal w3-round">APP</span></a></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2018</h6>
-                            <p>I created an android application and website with my college squad. Visvesmruti app and
-                                website provide our collage tech-fast information.</p>
+                            <p>મેં મારી ક college સ્કવોડ સાથે એક Android એપ્લિકેશન અને વેબસાઇટ બનાવી છે. Visvesmruti એપ્લિકેશન અને વેબસાઇટ અમારી કોલાજ ટેક ફેસ્ટ માહિતી પ્રદાન કરે છે.</p>
                         </div>
                     </div>
                 </div>
@@ -363,25 +368,27 @@
                 <div class="w3-container w3-card  w3-margin-bottom">
                     <div class="background-education">
                         <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+                                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>શિક્ષણ
                         </h2>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Bachelor of Engineering(CSE)</b></h5>
+                            <h5 class="w3-opacity"><b>
+                                બેચલર ઓફ એન્જિનિયરિંગ(CSE)</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019
                             </h6>
-                            <p>Bachelor of Engineering(CSE) in Gujarat Technological University</p>
+                            <p>
+                                ગુજરાત ટેકનોલોજીકલ યુનિવર્સિટીમાં બેચલર ઓફ એન્જિનિયરિંગ(CSE)</p>
                             <hr>
                         </div>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>H.S.C(Science)</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
-                            <p>L.M.P. Reva experimental High School & Sheth Shri M.C.Z. Shah Higher Secondary School</p>
+                            <p>એલ.એમ.પી. રેવા પ્રાયોગિક હાઇ સ્કૂલ અને શેઠ શ્રી એમ.સી.ઝેડ. શાહ ઉચ્ચતર માધ્યમિક શાળા</p>
                             <hr>
                         </div>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>S.S.C</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
-                            <p>L.M.P. Reva experimental High School & Sheth Shri M.C.Z. Shah Higher Secondary School</p>
+                            <p>એલ.એમ.પી. રેવા પ્રાયોગિક હાઇ સ્કૂલ અને શેઠ શ્રી એમ.સી.ઝેડ. શાહ ઉચ્ચતર માધ્યમિક શાળા</p>
                             <br>
                         </div>
                     </div>
@@ -423,9 +430,9 @@
                 <a style=" text-decoration: none;" href="documents/Darshan Mistry DevOps.pdf">
                     <div id="Resume" class="w3-container  w3-card w3-margin-bottom click-me">
                         <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-file-pdf-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MY RESUME
+                                class="fa fa-file-pdf-o fa-fw w3-margin-right w3-xxlarge w3-text-teal">મારુ સંક્ષિપ્ત વિવરણ</i>
                         </h2>
-                        <p>This Resume full with hyperlinks. Take new exprience with clicks</p>
+                        <p>આ સીવી હાયપરલિંક્સથી ભરેલો છે. ક્લિક્સ સાથે નવો અનુભવ લો</p>
                     </div>
                 </a>
 

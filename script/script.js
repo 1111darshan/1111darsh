@@ -3,7 +3,6 @@ function copyToClipboard(elementId) {
   // Create an auxiliary hidden input
   var aux = document.createElement("input");
 
-
   //To remove html string management
   var encodestr = document.getElementById(elementId).innerHTML;
 
@@ -45,7 +44,7 @@ function load() {
   } else if (hour > 12) {
     var wish = "Good Afternoon !!"
   } else if (hour >= 0) {
-    var wish = "Good Morining !!"
+    var wish = "Good Morning !!"
   }
   document.getElementById("Good-wish").innerHTML = wish;
 
@@ -82,4 +81,18 @@ function chatbot() {
 function closechatbox() {
   var chatbox = document.getElementById("chatbox");
   chatbox.style.visibility = "hidden";
+}
+
+
+function changelan() {
+  var checkBox = document.getElementById("lan");
+
+  if (checkBox.checked) {
+    location.replace("./indexgj.html")
+    localStorage.setItem("lan", "GUJ");
+  } else {
+    location.replace("./index.html")
+    localStorage.removeItem('lan');
+  }
+  
 }
