@@ -33,7 +33,9 @@ function copyToClipboard(elementId) {
 
 function load() {
   var checkBox = document.getElementById("myCheck");
+  var checkBox2 = document.getElementById("lan");
   var mood = localStorage.getItem("mood")
+  var lan = localStorage.getItem("lan")
   if (mood != null)
     checkBox.checked = true;
   darkandwhite()
@@ -41,10 +43,17 @@ function load() {
   var hour = date.getHours();
   if (hour > 16) {
     var wish = "Good Evening !!"
+    var wish_g = "શુભ સાંજ"
   } else if (hour > 12) {
     var wish = "Good Afternoon !!"
+    var wish_g = "શુભ બપોર"
   } else if (hour >= 0) {
     var wish = "Good Morning !!"
+    var wish_g = "સુપ્રભાત"
+  }
+  if (lan != null){
+    checkBox2.checked = true;
+    wish=wish_g
   }
   document.getElementById("Good-wish").innerHTML = wish;
 
