@@ -12,9 +12,8 @@
     top: 3%;
     font-size: 150%;
     transition: linear 0.2s;
-    box-shadow: 3px 5px 3px  rgb(225, 169, 233) ;
+    box-shadow: 3px 5px 3px rgb(225, 169, 233);
 }
-
 
 .side-bar {
     top: 0%;
@@ -27,10 +26,8 @@
     width: inherit;
     display: block;
     align-items: center;
-    box-shadow: 3px 5px 5px  rgb(225, 169, 233) ;
-
+    box-shadow: 3px 5px 5px rgb(225, 169, 233);
 }
-
 
 .side-bar a {
     align-self: center;
@@ -51,7 +48,7 @@
     visibility: hidden;
     width: 150px;
     text-align: center;
-    border-radius: 50% 50%  ;
+    border-radius: 50% 50%;
     padding-left: 10px;
     padding: 5px 0;
     /* Position the tooltip */
@@ -60,29 +57,19 @@
     left: 100%;
 }
 
-.side-bar a:hover .tooltip{
+.side-bar a:hover .tooltip {
     visibility: visible;
     color: ivory;
     background-image: linear-gradient(to right, #8E44AD, #8d44ad00);
 }
 
-
-
-
 @media screen and (max-width: 600px) {
     .side-bar {
         display: none;
     }
-   
-
-
-
-
-} 
+}
 
 .navbar {
-
-
     padding-left: 10%;
     background-color: #8E44AD;
     z-index: 5;
@@ -112,7 +99,6 @@
 
 .nav-text {
     display: none;
-
 }
 
 .navbar a:hover {
@@ -125,9 +111,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navbar{
+    .navbar {
         display: block;
-    } 
+    }
     .navbar a:not(:first-child) {
         display: none;
     }
@@ -135,7 +121,7 @@
         float: right;
         display: block;
     }
-} 
+}
 
 @media screen and (max-width: 600px) {
     .navbar.responsive .icon {
@@ -148,7 +134,7 @@
         display: block;
         text-align: left;
     }
-    .navbar.responsive .nav-text{
+    .navbar.responsive .nav-text {
         display: block;
         float: left;
         padding-right: 6px;
@@ -347,6 +333,7 @@ input:checked+.slider:before {
     visibility: visible;
     background-color: #682883;
 }
+
 .chatbot .tooltiptext {
     visibility: hidden;
     width: 220px;
@@ -381,13 +368,13 @@ input:checked+.slider:before {
     z-index: 1;
     border-radius: 20px;
 }
-.message{
+
+.message {
     position: relative;
     background-color: khaki;
-    width: 100%;   
+    width: 100%;
     top: 5px;
 }
-
 
 .dot-message {
     float: left;
@@ -403,7 +390,7 @@ input:checked+.slider:before {
 }
 
 .client-message {
-    float:right;
+    float: right;
     background-color: rgb(161, 191, 238);
     text-align: right;
     width: initial;
@@ -429,7 +416,6 @@ input:checked+.slider:before {
     align-items: center;
 }
 
-
 .background-experience {
     background-image: url('/images/development.svg');
     background-repeat: no-repeat;
@@ -443,3 +429,11 @@ input:checked+.slider:before {
     background-position: right top;
     background-size: 50%;
 }
+
+.projectele {
+    float: left;
+    width: 32%;
+    margin-left:1%;
+    text-align: center;
+}
+
