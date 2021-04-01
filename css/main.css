@@ -435,5 +435,6 @@ input:checked+.slider:before {
     width: 32%;
     margin-left:1%;
     text-align: center;
+    overflow: hidden;
 }
 
