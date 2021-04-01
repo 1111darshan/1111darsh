@@ -51,11 +51,21 @@ function load() {
     var wish = "Good Morning !!"
     var wish_g = "સુપ્રભાત"
   }
-  if (lan != null){
+  if (lan != null) {
     checkBox2.checked = true;
-    wish=wish_g
+    wish = wish_g
   }
   document.getElementById("Good-wish").innerHTML = wish;
+
+
+  const Http = new XMLHttpRequest();
+  const url = 'https://hc-ping.com/fcfbcbc7-f8be-406a-89a9-04c343c559b9';
+  Http.open("GET", url);
+  Http.send();
+
+  Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+  }
 
 }
 function darkandwhite() {
@@ -103,5 +113,5 @@ function changelan() {
     location.replace("./index.html")
     localStorage.removeItem('lan');
   }
-  
+
 }
