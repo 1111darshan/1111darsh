@@ -18,6 +18,7 @@
 .side-bar {
     top: 0%;
     padding-top: 1%;
+   
     background-color: #8E44AD;
     z-index: 9;
     position: fixed;
@@ -327,6 +328,7 @@ input:checked+.slider:before {
     right: 15px;
     bottom: 15px;
     padding: 6px;
+    overflow: hidden;
 }
 
 .chatbot:hover .tooltiptext {
@@ -433,8 +435,41 @@ input:checked+.slider:before {
 .projectele {
     float: left;
     width: 32%;
-    margin-left:1%;
+    margin-left: 1%;
     text-align: center;
     overflow: hidden;
 }
 
+
+
+.chatbot::after {
+    animation: shine 5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(20deg);
+    background:rgb(255, 255, 255,0.13);
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+@keyframes shine {
+    10% {
+        opacity: 1;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+        transition-duration: .2s, .2s, 0.1s;
+        transition-timing-function: ease;
+    }
+    100% {
+        opacity: 0;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+    }
+}
