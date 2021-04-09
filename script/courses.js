@@ -7,8 +7,18 @@ var COURSES = `{
         {"link" : "https://www.udemy.com/course/network-protocol-analysis-using-wireshark-part-1/?couponCode=VINOAPR3",
          "Name" : "Network Protocol Analysis Using Wireshark Part-1"},
         {"link" : "https://www.udemy.com/course/learn-website-design/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-Eu8Xq38ZsL1vua5lN.g7bQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=3DAYSFREE", 
-        "Name" : "Professional Website Design + WordPress Website Development"}
-        
+        "Name" : "Professional Website Design + WordPress Website Development"},
+
+{"link" : "https://www.udemy.com/course/html-css-certification-course-for-beginners/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-DTCZngTgSWeEcP.ZBaxnxw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=YOUACCEL39550", 
+"Name" : "HTML & CSS - Certification Course for Beginners"},
+
+{"link" : "https://www.udemy.com/course/fullstack-go-golang-nodejs-python-php-sci-fi-dev-framework/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-s4DejEHkTvlZF4c6tRsirw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=A34D13EA49D5CB143FE1", 
+"Name" : "Fullstack Go Golang Node.Js Python PHP Sci Fi Dev Framework"},
+
+{"link" : "https://www.udemy.com/course/english-speaking-course-english-at-pre-intermediate-level/?couponCode=D5345811A11E7EB9B816", 
+"Name" : "English Speaking Course: English at pre-intermediate level"}
+
+
     ]
 }`
 /*
@@ -20,12 +30,12 @@ var COURSES = `{
 var courses = document.getElementById("courses");
 var json = JSON.parse(COURSES)
 for (i in json.courses) {
-    create_course(json.courses[i].link,json.courses[i].Name); 
-  }
+    create_course(json.courses[i].link, json.courses[i].Name);
+}
 
 
 function create_course(course_link, Course_Name) {
-    
+
     var card = document.createElement("div");
     var att = document.createAttribute("class");
     att.value = "w3-container w3-card  w3-margin-bottom click-me";
