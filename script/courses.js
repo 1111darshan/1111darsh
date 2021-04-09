@@ -16,20 +16,18 @@ var COURSES = `{
 {"link" : "https://www.udemy.com/course/fullstack-go-golang-nodejs-python-php-sci-fi-dev-framework/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-s4DejEHkTvlZF4c6tRsirw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=A34D13EA49D5CB143FE1", 
 "Name" : "Fullstack Go Golang Node.Js Python PHP Sci Fi Dev Framework"},
 
-{"link" : "https://www.udemy.com/course/english-speaking-course-english-at-pre-intermediate-level/?couponCode=D5345811A11E7EB9B816", 
-"Name" : "English Speaking Course: English at pre-intermediate level"},
     {
-        "link ": "https://www.udemy.com/course/remote-teaching-how-to-record-lectures-at-home/?couponCode=91A17BDDB8BE0594D583",
+        "link": "https://www.udemy.com/course/remote-teaching-how-to-record-lectures-at-home/?couponCode=91A17BDDB8BE0594D583",
         "Name": "Remote Teaching Online // How To Record Lectures at Home",
         "rating": "4.4"
     },
     {
-        "link ": "https://www.udemy.com/course/ibm-security-qradar-fundamental-administration-deployment/?couponCode=694BAAE802907FDC85DD",
+        "link": "https://www.udemy.com/course/ibm-security-qradar-fundamental-administration-deployment/?couponCode=694BAAE802907FDC85DD",
         "Name": "IBM Security QRadar Fundamental Administration & Deployment",
         "rating": "0.0"
     },
     {
-        "link ": "https://www.udemy.com/course/gcp-professional-cloud-architect-practice-exams-mar-21/?couponCode=9FAB74158E507CD3E123",
+        "link": "https://www.udemy.com/course/gcp-professional-cloud-architect-practice-exams-mar-21/?couponCode=9FAB74158E507CD3E123",
         "Name": "GCP | Professional Cloud Architect | Practice Exams | MAR 21",
         "rating": "4.6"
     }

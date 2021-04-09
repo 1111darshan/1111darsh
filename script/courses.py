@@ -18,7 +18,7 @@ def linkdata(url):
     """
     rating = soup.find('span', class_="udlite-heading-sm star-rating--rating-number--3lVe8").get_text()
 
-    return { "link " : url, "Name" : title, "rating" : rating }
+    return { "link" : url, "Name" : title, "rating" : rating }
  
 single_data = linkdata(url)
 
