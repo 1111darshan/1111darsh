@@ -15,7 +15,6 @@ var COURSES = `{
 
 {"link" : "https://www.udemy.com/course/fullstack-go-golang-nodejs-python-php-sci-fi-dev-framework/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-s4DejEHkTvlZF4c6tRsirw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=A34D13EA49D5CB143FE1", 
 "Name" : "Fullstack Go Golang Node.Js Python PHP Sci Fi Dev Framework"},
-
     {
         "link": "https://www.udemy.com/course/remote-teaching-how-to-record-lectures-at-home/?couponCode=91A17BDDB8BE0594D583",
         "Name": "Remote Teaching Online // How To Record Lectures at Home",
