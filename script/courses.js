@@ -1,13 +1,14 @@
 var COURSES = `{
-    "courses":
-    [
-        {"link" : "https://www.udemy.com/course/successful-cross-cultural-management/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-MX1VkOpVD0qEXpkfL5QvYg&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=APR2021",
-         "Name" : "Successful cross-cultural management"},
-  
-        {"link" : "https://www.udemy.com/course/network-protocol-analysis-using-wireshark-part-1/?couponCode=VINOAPR3",
-         "Name" : "Network Protocol Analysis Using Wireshark Part-1"},
-        {"link" : "https://www.udemy.com/course/learn-website-design/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-Eu8Xq38ZsL1vua5lN.g7bQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=3DAYSFREE", 
-        "Name" : "Professional Website Design + WordPress Website Development"},
+"courses":
+[
+{"link" : "https://www.udemy.com/course/successful-cross-cultural-management/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-MX1VkOpVD0qEXpkfL5QvYg&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=APR2021",
+"Name" : "Successful cross-cultural management"},
+
+{"link" : "https://www.udemy.com/course/network-protocol-analysis-using-wireshark-part-1/?couponCode=VINOAPR3",
+"Name" : "Network Protocol Analysis Using Wireshark Part-1"},
+
+{"link" : "https://www.udemy.com/course/learn-website-design/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-Eu8Xq38ZsL1vua5lN.g7bQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=3DAYSFREE", 
+"Name" : "Professional Website Design + WordPress Website Development"},
 
 {"link" : "https://www.udemy.com/course/html-css-certification-course-for-beginners/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-DTCZngTgSWeEcP.ZBaxnxw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=YOUACCEL39550", 
 "Name" : "HTML & CSS - Certification Course for Beginners"},
@@ -16,17 +17,38 @@ var COURSES = `{
 "Name" : "Fullstack Go Golang Node.Js Python PHP Sci Fi Dev Framework"},
 
 {"link" : "https://www.udemy.com/course/english-speaking-course-english-at-pre-intermediate-level/?couponCode=D5345811A11E7EB9B816", 
-"Name" : "English Speaking Course: English at pre-intermediate level"}
+"Name" : "English Speaking Course: English at pre-intermediate level"},
+    {
+        "link ": "https://www.udemy.com/course/remote-teaching-how-to-record-lectures-at-home/?couponCode=91A17BDDB8BE0594D583",
+        "Name": "Remote Teaching Online // How To Record Lectures at Home",
+        "rating": "4.4"
+    },
+    {
+        "link ": "https://www.udemy.com/course/ibm-security-qradar-fundamental-administration-deployment/?couponCode=694BAAE802907FDC85DD",
+        "Name": "IBM Security QRadar Fundamental Administration & Deployment",
+        "rating": "0.0"
+    },
+    {
+        "link ": "https://www.udemy.com/course/gcp-professional-cloud-architect-practice-exams-mar-21/?couponCode=9FAB74158E507CD3E123",
+        "Name": "GCP | Professional Cloud Architect | Practice Exams | MAR 21",
+        "rating": "4.6"
+    }
 
 
-    ]
+]
 }`
 /*
+
 
 {"link" : "", 
 "Name" : ""}
 
 */
+let reader = new FileReader();
+var file = fetch('courses.json');
+
+
+
 var courses = document.getElementById("courses");
 var json = JSON.parse(COURSES)
 for (i in json.courses) {
