@@ -80,11 +80,11 @@ var file = fetch('courses.json');
 var courses = document.getElementById("courses");
 var json = JSON.parse(COURSES)
 for (i in json.courses) {
-    create_course(json.courses[i].link, json.courses[i].Name);
+    create_course(json.courses[i].link, json.courses[i].Name, json.courses[i].rating);
 }
 
 
-function create_course(course_link, Course_Name) {
+function create_course(course_link, Course_Name, rating) {
 
     var card = document.createElement("div");
     var att = document.createAttribute("class");
@@ -109,5 +109,30 @@ function create_course(course_link, Course_Name) {
     h2.appendChild(coursename)
     h2.setAttributeNode(att1)
     as.appendChild(h2);
+
+    var starrating = document.createElement("div")
+    var attrating = document.createAttribute("class")
+    attrating.value = "rating"
+    starrating.setAttributeNode(attrating)
+    var ratingtaxt = document.createTextNode("  "+rating)
     
+    for (var i = 0, j = 0; i < 5; i++, j++) {
+
+        var star = document.createElement("span")
+        var att2 = document.createAttribute("class");
+
+        if (j < parseInt(rating)) {
+            att2.value = "fa fa-star checked"
+        }
+        else {
+            att2.value = "fa fa-star"
+        }
+       
+        star.setAttributeNode(att2)
+        starrating.appendChild(star)
+    }
+    h2.appendChild(starrating)
+    starrating.appendChild(ratingtaxt)
+    
+
 }

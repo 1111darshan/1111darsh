@@ -473,3 +473,9 @@ input:checked+.slider:before {
         transition-property: left, top, opacity;
     }
 }
+
+
+.rating{
+    font-size: 15px;
+    color: #0d7dd9;
+}
