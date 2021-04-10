@@ -72,11 +72,6 @@ var COURSES = `
 }
 `
 
-let reader = new FileReader();
-var file = fetch('courses.json');
-
-
-
 var courses = document.getElementById("courses");
 var json = JSON.parse(COURSES)
 for (i in json.courses) {
