@@ -1,8 +1,6 @@
 import requests, json
 from bs4 import BeautifulSoup
-url = "https://www.udemy.com/course/ibm-security-qradar-fundamental-administration-deployment/?couponCode=694BAAE802907FDC85DD"
-def linkdata(url):
-
+def linkdata(url, i ):
     courseslink = requests.get(url)
     soup = BeautifulSoup(courseslink.content, 'html.parser')
     #print(soup.prettify())
@@ -18,22 +16,24 @@ def linkdata(url):
     """
     rating = soup.find('span', class_="udlite-heading-sm star-rating--rating-number--3lVe8").get_text()
 
-    return { "link" : url, "Name" : title, "rating" : rating }
- 
-single_data = linkdata(url)
+    return { "index": i,"link" : url, "Name" : title, "rating" : rating, }
+
 
 courses_list=[]
 
 f = open('links', 'r')
 line_list = f.readlines()
+i = 0
 for line in line_list:
+    i += 1
     url = line.strip('\n')
-    courses_list.append(linkdata(url))
-
+    courses_list.append(linkdata(url, i))
+   
 courses_list
 
 output = {
-    "courses": courses_list
+    "courses": courses_list,
+    "Total_course": i
 } 
 
 print(json.dumps(output))
