@@ -1,5 +1,93 @@
 var COURSES = `
-
+{
+    "courses": [
+        {
+            "index": 1,
+            "link": "https://www.udemy.com/course/business-plan-success/?couponCode=0DA3221A3017FCB80CE8",
+            "Name": "Business Plan Success ( Including Template )",
+            "rating": "4.6"
+        },
+        {
+            "index": 2,
+            "link": "https://www.udemy.com/course/swagger-api-documentation-with-node-js/?couponCode=76E7F2DEE8440D7A0868",
+            "Name": "Swagger API Documentation with Node JS",
+            "rating": "0.0"
+        },
+        {
+            "index": 3,
+            "link": "https://www.udemy.com/course/complete-course-in-autocad-electrical-2021/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-VKUK9.tksmdEhM.D28_cow&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=ELECTRICALNETWORK",
+            "Name": "Complete Course in AutoCAD Electrical 2021",
+            "rating": "4.3"
+        },
+        {
+            "index": 4,
+            "link": "https://www.udemy.com/course/javascript-creating-quiz-hands-on-complete-course/?couponCode=FREE2021",
+            "Name": "JavaScript - Creating Quiz Hands on Complete Course",
+            "rating": "0.0"
+        },
+        {
+            "index": 5,
+            "link": "https://www.udemy.com/course/python-complete-bootcamp-2019-learn-by-applying-knowledge/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-EEBSUrKiMKUsCCl1a.GtMg&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=APRI02",
+            "Name": "Python Bootcamp 2021 Build 15 working Applications and Games",
+            "rating": "4.2"
+        },
+        {
+            "index": 6,
+            "link": "https://www.udemy.com/course/sixsigma-yellow-belt/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-2YNUyw89ah1tBLEDLfFMNQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=APR2021YB",
+            "Name": "Lean Six Sigma Yellow Belt Certification Training",
+            "rating": "4.5"
+        },
+        {
+            "index": 7,
+            "link": "https://www.udemy.com/course/leansix-sigma-green-belt/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-6NrnDgxJz0ipdyuKK1OfNg&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=APR2021GB",
+            "Name": "Six Sigma Green Belt Certification (with analysis in excel)",
+            "rating": "4.6"
+        },
+        {
+            "index": 8,
+            "link": "https://www.udemy.com/course/learn-all-about-bitcoin-and-blockchain/?couponCode=AE1B1A75818CAC90CD60",
+            "Name": "Learn All About Bitcoin and Blockchain: In Hindi Language",
+            "rating": "3.7"
+        },
+        {
+            "index": 9,
+            "link": "https://www.udemy.com/course/introduction-to-microservices-edyoda/?couponCode=FREEAPR2",
+            "Name": "Introduction to Microservices",
+            "rating": "3.9"
+        },
+        {
+            "index": 10,
+            "link": "https://www.udemy.com/course/javascript-creating-loan-emi-calculator/?couponCode=FREE2021",
+            "Name": "JavaScript - Creating Loan EMI Calculator",
+            "rating": "0.0"
+        },
+        {
+            "index": 11,
+            "link": "https://www.udemy.com/course/python-scripting-complete-course/?couponCode=FREE2021",
+            "Name": "Python Scripting Complete Course",
+            "rating": "0.0"
+        },
+        {
+            "index": 12,
+            "link": "https://www.udemy.com/course/creacion-de-webservice-api-rest-con-laravel/?couponCode=3KANDERCODE",
+            "Name": "Creaci\u00f3n de WebService API REST con Laravel",
+            "rating": "4,2"
+        },
+        {
+            "index": 13,
+            "link": "https://www.udemy.com/course/learning-solidworks-for-students-engineers-and-designers/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-fndmm4VNYGF5tjFi0GesUw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=GETINTOCAD",
+            "Name": "Learning SOLIDWORKS : For Students, Engineers, and Designers",
+            "rating": "4.4"
+        },
+        {
+            "index": 14,
+            "link": "https://www.udemy.com/course/complete-react-course-w-hooks-react-router-redux-usecontext/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-3_IaQ5bVzdH.3jR7ncA_Aw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=4AA270ED3B01CBBA6781",
+            "Name": "React - The Complete Guide with React Hook Redux 2021 in 4hr",
+            "rating": "4.1"
+        }
+    ],
+    "Total_course": 14
+}
 `
 
 var courses = document.getElementById("courses");
