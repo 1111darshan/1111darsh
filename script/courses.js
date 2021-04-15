@@ -47,7 +47,7 @@ var COURSES = `
             "index": 8,
             "link": "https://www.udemy.com/course/javascript-creating-loan-emi-calculator/?couponCode=FREE2021",
             "Name": "JavaScript - Creating Loan EMI Calculator",
-            "rating": "0.0"
+            "rating": "5.0"
         },
         {
             "index": 9,
@@ -59,7 +59,7 @@ var COURSES = `
             "index": 10,
             "link": "https://www.udemy.com/course/learning-solidworks-for-students-engineers-and-designers/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-fndmm4VNYGF5tjFi0GesUw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=GETINTOCAD",
             "Name": "Learning SOLIDWORKS : For Students, Engineers, and Designers",
-            "rating": "4.4"
+            "rating": "4.3"
         },
         {
             "index": 11,
@@ -119,7 +119,7 @@ var COURSES = `
             "index": 20,
             "link": "https://www.udemy.com/course/learn-advanced-svg/?couponCode=TRY10FREE42105",
             "Name": "Learn Advanced SVG",
-            "rating": "3.3"
+            "rating": "3.6"
         },
         {
             "index": 21,
@@ -137,13 +137,13 @@ var COURSES = `
             "index": 23,
             "link": "https://www.udemy.com/course/server-infrastructure/?couponCode=TRY10FREE42105",
             "Name": "Server Infrastructure",
-            "rating": "3.5"
+            "rating": "3.7"
         },
         {
             "index": 24,
             "link": "https://www.udemy.com/course/java-web-services-course/?couponCode=TRY10FREE42105",
             "Name": "Java Web Services",
-            "rating": "3.2"
+            "rating": "3.8"
         },
         {
             "index": 25,
@@ -159,18 +159,12 @@ var COURSES = `
         },
         {
             "index": 27,
-            "link": "https://www.udemy.com/course/sistema-para-restaurante-en-c-y-sqlserver-2020/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-w3Ke0KhY_gGwd4_m7iLP4w&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=AF6F27449A018D29946D",
-            "Name": "App android + sistema para Restaurante en C#",
-            "rating": "4,2"
-        },
-        {
-            "index": 28,
             "link": "https://www.udemy.com/course/setsa-selfempowerment/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-_XCFAPeXm99s8MUp7qTwHw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=RAMGIFT2021",
             "Name": "Raise Self Awareness. Build Self-Esteem. Feel Freer, Happier",
             "rating": "4.7"
         }
     ],
-    "Total_course": 28
+    "Total_course": 27
 }
 `
 
