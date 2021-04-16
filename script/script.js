@@ -35,7 +35,7 @@ function load() {
   var checkBox = document.getElementById("myCheck");
   var checkBox2 = document.getElementById("lan");
   var mood = localStorage.getItem("mood")
-  var lan = localStorage.getItem("lan")
+  // var lan = localStorage.getItem("lan")
   if (mood != null)
     checkBox.checked = true;
   darkandwhite()
@@ -43,18 +43,18 @@ function load() {
   var hour = date.getHours();
   if (hour > 16) {
     var wish = "Good Evening !!"
-    var wish_g = "શુભ સાંજ"
+    // var wish_g = "શુભ સાંજ"
   } else if (hour > 12) {
     var wish = "Good Afternoon !!"
-    var wish_g = "શુભ બપોર"
+    // var wish_g = "શુભ બપોર"
   } else if (hour >= 0) {
     var wish = "Good Morning !!"
-    var wish_g = "સુપ્રભાત"
+    // var wish_g = "સુપ્રભાત"
   }
-  if (lan != null) {
-    checkBox2.checked = true;
-    wish = wish_g
-  }
+  // if (lan != null) {
+  //   checkBox2.checked = true;
+  //   wish = wish_g
+  // }
   document.getElementById("Good-wish").innerHTML = wish;
 
 
@@ -62,15 +62,14 @@ function load() {
   const url = 'https://hc-ping.com/fcfbcbc7-f8be-406a-89a9-04c343c559b9';
   Http.open("GET", url);
   Http.send();
-
   Http.onreadystatechange = (e) => {
-    console.log(Http.responseText)
+
   }
 
 }
 function darkandwhite() {
   var checkBox = document.getElementById("myCheck");
-  var background = document.body;
+  var background = document.body; 
   if (checkBox.checked) {
     background.className = "w3-black";
     localStorage.setItem("mood", "Dark");
@@ -103,15 +102,15 @@ function closechatbox() {
 }
 
 
-function changelan() {
-  var checkBox = document.getElementById("lan");
+// function changelan() {
+//   var checkBox = document.getElementById("lan");
 
-  if (checkBox.checked) {
-    location.replace("./indexgj.html")
-    localStorage.setItem("lan", "GUJ");
-  } else {
-    location.replace("./index.html")
-    localStorage.removeItem('lan');
-  }
+//   if (checkBox.checked) {
+//     location.replace("./indexgj.html")
+//     localStorage.setItem("lan", "GUJ");
+//   } else {
+//     location.replace("./index.html")
+//     localStorage.removeItem('lan');
+//   }
 
-}
+// }
