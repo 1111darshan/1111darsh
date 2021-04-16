@@ -20,14 +20,12 @@
     <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/logo.png">
     <link rel="manifest" href="manifest.json">
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV2TNF6RN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-1GV2TNF6RN');
     </script>
 </head>
@@ -37,7 +35,6 @@
 <meta name="viewport" content="width=device-widthwww.w3schools.co, initial-scale=1">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
 <style>
@@ -56,6 +53,15 @@
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 <body class="w3-white">
+    <div id="google_translate_element" style="float: right;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <div id="navbar" class="navbar">
 
         <a href="#top">
@@ -110,13 +116,13 @@
                 class="tooltip">Resume</span></a>
         <a href="https://www.youtube.com/channel/UC4sOs3hvMkolOuEOlEVvVlg"><i
                 class="fa fa-youtube-play w3-hover-opacity"></i><span class="tooltip">Youtube</span></a>
-        <a>
+        <!-- <a>
             <label class="switch">
                 <input id="lan" onclick="changelan()" type="checkbox"></input>
                 <span class="slider round"></span>
                 <span class="tooltip">Gujarati</span>
             </label>
-        </a>
+        </a> -->
 
         <a href="#FREECOURSE"><i class="fa fa-trophy w3-hover-opacity"></i><span class="tooltip">Free courses</span></a>
 
@@ -292,7 +298,7 @@
 
                     </div>
                 </div><br>
-
+                
                 <!-- End Left Column -->
             </div>
 

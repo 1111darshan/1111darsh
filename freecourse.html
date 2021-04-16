@@ -20,14 +20,12 @@
     <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/logo.png">
     <link rel="manifest" href="manifest.json">
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV2TNF6RN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-1GV2TNF6RN');
     </script>
 </head>
@@ -37,7 +35,6 @@
 <meta name="viewport" content="width=device-widthwww.w3schools.co, initial-scale=1">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
 <style>
@@ -52,22 +49,24 @@
         font-family: "Roboto", sans-serif
     }
 </style>
-<style>
-    .checked {
-        color: orange;
-    }
-</style>
 <script type="text/javascript" src="script/script.js"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 <body class="w3-white">
+    <div id="google_translate_element" style="float: right;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <div id="navbar" class="navbar">
 
         <a href="#top">
             <image style="height:23px; padding-right: 4px ;" src="images/logo.png"></image> Darshan Mistry
         </a>
-
-
         <a href="https://www.facebook.com/1111darshan"><i class="fa fa-facebook-official w3-hover-opacity"></i><span
                 class="nav-text">Facebook</span></a>
         <a href="https://www.instagram.com/1111darsh"><i class="fa fa-instagram w3-hover-opacity"></i><span
@@ -86,7 +85,6 @@
         <a href="#FREECOURSE" onclick="myFunction()"><i class="fa fa-trophy w3-hover-opacity"></i><span
                 class="nav-text">Free
                 courses</span></a>
-
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -116,18 +114,17 @@
                 class="tooltip">Github</span></a>
         <a href="documents/Darshan Mistry DevOps.pdf"><i class="fa far  fa-file-pdf-o w3-hover-opacity"></i><span
                 class="tooltip">Resume</span></a>
-
-
         <a href="https://www.youtube.com/channel/UC4sOs3hvMkolOuEOlEVvVlg"><i
                 class="fa fa-youtube-play w3-hover-opacity"></i><span class="tooltip">Youtube</span></a>
-        <a>
+        <!-- <a>
             <label class="switch">
                 <input id="lan" onclick="changelan()" type="checkbox"></input>
                 <span class="slider round"></span>
                 <span class="tooltip">Gujarati</span>
             </label>
-        </a>
+        </a> -->
 
+        <a href="#FREECOURSE"><i class="fa fa-trophy w3-hover-opacity"></i><span class="tooltip">Free courses</span></a>
 
     </div>
     <script>
@@ -160,7 +157,7 @@
                 <p class="dot-message">I am <span style="font-style: italic;">D</span>arsh's b<span
                         style="font-style: italic;">OT</span> <span style="font-style: italic;">(DOT) </span>
                     <br />I am developing My self.
-                    <br /> I will here in sometime
+                    <br />I will here in sometime
                 </p>
             </div>
             <div class="message">
@@ -182,7 +179,6 @@
                     <a href="index.html">
                         <div class="w3-display-container">
                             <img src="images/DarshRE.jpg" style="width:100%" alt="Avatar">
-
                             <div class="w3-display-bottomleft w3-container w3-text-black">
                                 <h2 style="color: white;">
                                     <image src="images/logo.png"></image> Darshan Mistry
@@ -190,6 +186,7 @@
                             </div>
                         </div>
                     </a>
+
                     <div class="w3-container fix">
                         <dev class="">
                             <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>DevOps
@@ -198,32 +195,25 @@
                                     <input id="myCheck" onclick="darkandwhite()" type="checkbox"></input>
                                     <span class="slider round fa fa-moon-o"> </span>
                                 </label>
-
                             </p>
-                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                                    href="">Bengalore, Karnataka ,
-                                    India.</a></p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                <a href="">Bengalore, Karnataka, India.</a>
+                            </p>
                             <div id="result"></div>
                             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
-                                    class="remove-line"><a href="mailto:1111darsh@gmail.com"></i>1111darsh@gmail.com</a>
+                                    class="remove-line">
+                                    <a href="mailto:1111darsh@gmail.com"></i>1111darsh@gmail.com</a>
                             </p>
                             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a
                                     href="tel:+91 9727977391">9727977391</a>, <a
                                     href="tel:+91 8200955211">8200955211</a></p>
                             <p><i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-teal"></i><a
                                     href="Blog1.html" class="blink_text">Read My Blogs</a></p>
-                             <p style="float:right; margin: 0%;" id="Good-wish"></p>
                             <img src="./images/blogging.svg" />
-
-
                         </dev>
-                   
+
                     </div>
-
-                </div><br>
-
-
-
+                </div>
                 <!-- End Left Column -->
             </div>
 
@@ -236,7 +226,7 @@
 
                 <div id="courses"> </div>
 
-               
+
 
                 <!-- End Right Column -->
             </div>
