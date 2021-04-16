@@ -4,92 +4,114 @@
             "index": 1,
             "link": "https://www.udemy.com/course/introduction-to-microservices-edyoda/?couponCode=FREEAPR2",
             "Name": "Introduction to Microservices",
-            "rating": "3.9"
+            "rating": "3.9",
+            "language": "English"
         },
         {
             "index": 2,
             "link": "https://www.udemy.com/course/the-ultimate-mysql-crash-course-2021/?couponCode=MYSQLCOURSE21",
             "Name": "The Ultimate MySQL Crash Course 2021",
-            "rating": "0.0"
+            "rating": "0.0",
+            "language": "English"
         },
         {
             "index": 3,
             "link": "https://www.udemy.com/course/foundation-course-for-building-an-investment-portfolio/?couponCode=PORTFOLIO-FOUNDATION",
             "Name": "Finance Fundamentals for Building an Investment Portfolio",
-            "rating": "3.6"
+            "rating": "3.6",
+            "language": "English"
         },
         {
             "index": 4,
             "link": "https://www.udemy.com/course/learn-visual-studio-code-v/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-_OUXFXPJBCs_rqZST037sw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=TRY10FREE42105",
             "Name": "Visual Studio Code",
-            "rating": "4.0"
+            "rating": "4.0",
+            "language": "English"
         },
         {
             "index": 5,
             "link": "https://www.udemy.com/course/the-learn-jquery-course/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-jw4if27R4DBrnphXKehbMA&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=TRY10FREE42105",
             "Name": "jQuery Ultimate Course",
-            "rating": "4.3"
+            "rating": "4.3",
+            "language": "English"
         },
         {
             "index": 6,
             "link": "https://www.udemy.com/course/learn-microsoft-teams/?couponCode=TRY10FREE42105",
             "Name": "Learn Microsoft Teams",
-            "rating": "3.6"
+            "rating": "3.6",
+            "language": "English"
         },
         {
             "index": 7,
             "link": "https://www.udemy.com/course/adobe-xd-cc-2020-master-course/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-_CKZTvu5sXXp4rOSrweaHw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=TRY10FREE42105",
             "Name": "Adobe XD CC 2020",
-            "rating": "4.2"
+            "rating": "4.2",
+            "language": "English"
         },
         {
             "index": 8,
             "link": "https://www.udemy.com/course/learn-photo-editing-with-photoshop-2020/?couponCode=TRY10FREE42105",
             "Name": "Learn Photo Editing with Photoshop 2020",
-            "rating": "4.3"
+            "rating": "4.3",
+            "language": "English"
         },
         {
             "index": 9,
             "link": "https://www.udemy.com/course/learn-advanced-svg/?couponCode=TRY10FREE42105",
             "Name": "Learn Advanced SVG",
-            "rating": "3.6"
+            "rating": "3.6",
+            "language": "English"
         },
         {
             "index": 10,
             "link": "https://www.udemy.com/course/learn-advanced-bootstrap-4/?couponCode=TRY10FREE42105",
             "Name": "Learn Advanced Bootstrap 4",
-            "rating": "4.2"
+            "rating": "4.2",
+            "language": "English"
         },
         {
             "index": 11,
             "link": "https://www.udemy.com/course/cpanel-course/?couponCode=TRY10FREE42105",
             "Name": "cPanel",
-            "rating": "4.1"
+            "rating": "4.1",
+            "language": "English"
         },
         {
             "index": 12,
             "link": "https://www.udemy.com/course/server-infrastructure/?couponCode=TRY10FREE42105",
             "Name": "Server Infrastructure",
-            "rating": "3.7"
+            "rating": "3.7",
+            "language": "English"
         },
         {
             "index": 13,
             "link": "https://www.udemy.com/course/java-web-services-course/?couponCode=TRY10FREE42105",
             "Name": "Java Web Services",
-            "rating": "3.8"
+            "rating": "3.8",
+            "language": "English"
         },
         {
             "index": 14,
             "link": "https://www.udemy.com/course/learn-economics-from-scratch-eco01/?couponCode=7D9F982EF1CCF4362024",
             "Name": "Learn Economics from scratch, ECO01",
-            "rating": "3.9"
+            "rating": "3.9",
+            "language": "English"
         },
         {
             "index": 15,
             "link": "https://www.udemy.com/course/setsa-selfempowerment/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-_XCFAPeXm99s8MUp7qTwHw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=RAMGIFT2021",
             "Name": "Raise Self Awareness. Build Self-Esteem. Feel Freer, Happier",
-            "rating": "4.7"
+            "rating": "4.7",
+            "language": "English"
+        },
+        {
+            "index": 16,
+            "link": "https://www.udemy.com/course/liberez-votre-confiance-en-soi-et-votre-estime-de-soi/?couponCode=6C324115518AF05A4EFC",
+            "Name": "CONFIANCE: Booster Votre Confiance Et Estime De Vous M\u00eame",
+            "rating": "4,0",
+            "language": "Fran\u00e7ais"
         }
     ],
-    "Total_course": 15
+    "Total_course": 16
 }
