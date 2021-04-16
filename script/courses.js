@@ -156,7 +156,7 @@ function create_course(course_link, Course_Name, rating, language) {
     attrating.value = "rating"
     starrating.setAttributeNode(attrating)
     var ratingtaxt = document.createTextNode("  "+rating)
-    var language = document.createTextNode(" \t"+language)
+    var language = document.createTextNode(" \t "+language)
     
     for (var i = 0, j = 0; i < 5; i++, j++) {
         var star = document.createElement("span")
