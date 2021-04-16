@@ -12,8 +12,7 @@ def linkdata(url, i):
     Remote Teaching Online // How To Record Lectures at Home
     </h1>
     """
-    title = soup.find(
-        'h1', class_="udlite-heading-xl clp-lead__title clp-lead__title--small").get_text()
+    title = soup.find('h1', class_="udlite-heading-xl clp-lead__title clp-lead__title--small").get_text()
     title = title.strip("\n")
     """
     <span class="udlite-heading-sm star-rating--rating-number--3lVe8" aria-hidden="true" data-purpose="rating-number">4.4</span>
@@ -32,7 +31,8 @@ def linkdata(url, i):
     """
     language = soup.find('div', class_="clp-lead__element-item clp-lead__locale").get_text()
     language = language.strip("\n")
-    print(language)
+    courseslink.close()
+    print(i)
     return {"index": i, "link": url, "Name": title, "rating": rating, "language" : language }
 
 
