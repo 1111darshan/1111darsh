@@ -282,76 +282,6 @@ var COURSES = `
             "language": "English"
         },
         {
-            "index": 41,
-            "link": "https://www.udemy.com/course/angular-10-fundamentos-8-app/?couponCode=ANGULAR-FREE",
-            "Name": "Angular 11 - La Guia Completa + 15 Proyectos",
-            "rating": "4.6",
-            "language": "Spanish"
-        },
-        {
-            "index": 42,
-            "link": "https://www.udemy.com/course/seo-guide-2017-how-i-get-5000-visitors-a-day-to-my-website/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-B7egjIoB1QFXe1XuE74m6A&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=FREE2021",
-            "Name": "SEO Guide 2021: How I Get 5,000 Visitors a Day to My Website",
-            "rating": "4.4",
-            "language": "English"
-        },
-        {
-            "index": 43,
-            "link": "https://www.udemy.com/course/online-business-selling-simple-products-amazon/?couponCode=WFHTAFMAPR21FREE",
-            "Name": "Work From Home: The Amazon FBA MasterPlan",
-            "rating": "4.5",
-            "language": "English"
-        },
-        {
-            "index": 44,
-            "link": "https://www.udemy.com/course/facebook-page-with-shop-for-facebook-ads/?couponCode=584D0CF37A0D5DE203CE",
-            "Name": "Facebook Page Monetization With A Shop For Facebook Ads",
-            "rating": "4.7",
-            "language": "English"
-        },
-        {
-            "index": 45,
-            "link": "https://www.udemy.com/course/google-data-studio-by-starttech/?couponCode=APRGDSFR",
-            "Name": "Google Data Studio A-Z for Data Visualization and Dashboards",
-            "rating": "4.3",
-            "language": "English"
-        },
-        {
-            "index": 46,
-            "link": "https://www.udemy.com/course/it-security-101-protecting-and-securing-computer-networks/?couponCode=APR2021",
-            "Name": "IT Security 101 - Cyber Security for Beginners",
-            "rating": "3.1",
-            "language": "English"
-        },
-        {
-            "index": 47,
-            "link": "https://www.udemy.com/course/network-ethical-hacking/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-eZyfAtJeTgaL8sSGrRrj1A&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads",
-            "Name": "Network Ethical Hacking for beginners (Kali 2020 - Hands-on)",
-            "rating": "4.3",
-            "language": "English"
-        },
-        {
-            "index": 48,
-            "link": "https://www.udemy.com/course/advanced-microsoft-excel-formulas-functions/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-NwBWegKnc42sK1mMimYBDQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads",
-            "Name": "Advanced Microsoft Excel Formulas & Functions Course 2021\n ",
-            "rating": "4.2",
-            "language": "English"
-        },
-        {
-            "index": 49,
-            "link": "https://www.udemy.com/course/most-essential-popular-excel-formulas-and-functions/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-iwNje_lBrB45R1yeUKjOZQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads",
-            "Name": "Most Essential & Popular Excel Formulas And Functions - 2021",
-            "rating": "4.2",
-            "language": "English"
-        },
-        {
-            "index": 50,
-            "link": "https://www.udemy.com/course/scrum-genman/?couponCode=SCRUMAPRILXVII",
-            "Name": "Scrum Fundamentals for Scrum Master and Agile Projects- 2021",
-            "rating": "4.4",
-            "language": "English"
-        },
-        {
             "index": 51,
             "link": "https://www.udemy.com/course/aqmxcmjw/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-J6OTSzDidje83YrEgayC9g&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=33F2ECA3997534878258",
             "Name": "Professional financial accountant diploma (in Arabic)",
@@ -370,7 +300,7 @@ var COURSES = `
             "link": "https://www.udemy.com/course/advanced-microsoft-powerpoint/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-saxyVPI2TlVp8oLgmUQBKw&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=POWERPOINT2-4",
             "Name": "\u0643\u0648\u0631\u0633 \u0627\u0644\u0628\u0627\u0648\u0631\u0628\u0648\u064a\u0646\u062a \u0627\u0644\u0625\u062d\u062a\u0631\u0627\u0641\u0649 - Advanced Microsoft PowerPoint",
             "rating": "4.4",
-            "language": "Arabic"
+            "language": " Arabic"
         },
         {
             "index": 54,
@@ -384,7 +314,7 @@ var COURSES = `
             "link": "https://www.udemy.com/course/16-days-16-hours-16-screenplays/?ranMID=39197&ranEAID=bnwWbXPyqPU&ranSiteID=bnwWbXPyqPU-FnXqWIYQa7ZYgh_FtVIPhQ&LSNPUBID=bnwWbXPyqPU&utm_source=aff-campaign&utm_medium=udemyads&couponCode=SPRINGSCREEN",
             "Name": "Scriptwriting for short films: 16 hours; 16 screenplays!",
             "rating": "4.7",
-            "language": "English"
+            "language": " English"
         },
         {
             "index": 56,
@@ -426,7 +356,7 @@ var COURSES = `
             "link": "https://www.udemy.com/course/data-analytics-with-excel-pivottables-2016/?couponCode=9EE5902D8295E493E287",
             "Name": "Data Analytics with Excel PivotTables",
             "rating": "4.4",
-            "language": "English\n "
+            "language": "English"
         },
         {
             "index": 62,
@@ -531,7 +461,7 @@ var COURSES = `
             "link": "https://www.udemy.com/course/cpanel-course/?couponCode=TRY10FREE42106",
             "Name": "cPanel",
             "rating": "4.2",
-            "language": "English\n "
+            "language": "English"
         },
         {
             "index": 77,
@@ -660,12 +590,23 @@ var COURSES = `
             "language": "English"
         }
     ],
-    "Total_course": 94
+    "Total_course": 40
 }
 `
 
+var COURSES1 = `
+{
+    "courses": [
+        
+    ],
+    "Total_course": 94
+}        
+
+`
+
 var courses = document.getElementById("courses");
-var json = JSON.parse(COURSES)
+var json = JSON.parse(COURSES);
+var json2 = JSON.parse(COURSES1);
 for (i in json.courses) {
     create_course(json.courses[i].index ,json.courses[i].link, json.courses[i].Name, json.courses[i].rating, json.courses[i].language );
 }
@@ -722,7 +663,5 @@ function create_course(index,course_link, Course_Name, rating, language) {
     }
     h2.appendChild(starrating)
     starrating.appendChild(ratingtaxt)
-    starrating.appendChild(language)
-    
-
+    starrating.appendChild(language)  
 }
