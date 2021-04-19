@@ -651,7 +651,7 @@
             "rating": "5.0",
             "language": "English"
         },
-        {
+        { 
             "index": 94,
             "link": "https://www.udemy.com/course/build-a-chatapp-with-nodejssocketio-expressjs-mongodb/?couponCode=549948405A583EBB7385",
             "Name": "Build a ChatApp with: (Nodejs,Socketio, Expressjs ,MongoDB)",
