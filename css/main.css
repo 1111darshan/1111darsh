@@ -29,7 +29,6 @@
     box-shadow: 3px 5px 5px rgb(225, 169, 233);
 }
 
-
 .side-bar a {
     align-self: center;
     float: none;
@@ -57,22 +56,21 @@
     z-index: 1;
     left: 110%;
 }
+
 .side-bar a:hover {
     transform: scale(1.5);
     visibility: visible;
-    border-radius:50%;
+    border-radius: 50%;
     color: #8E44AD;
     background-color: ivory;
-    
 }
-
 
 .side-bar a:hover .tooltip {
     visibility: visible;
     color: #8E44AD;
     color: ivory;
     z-index: -1px;
-    background-image: linear-gradient(to right, #8E44AD, #e7dbecf1); 
+    background-image: linear-gradient(to right, #8E44AD, #e7dbecf1);
 }
 
 @media screen and (max-width: 600px) {
@@ -451,8 +449,6 @@ input:checked+.slider:before {
     overflow: hidden;
 }
 
-
-
 .chatbot::after {
     animation: shine 5s ease-in-out infinite;
     animation-fill-mode: forwards;
@@ -464,7 +460,7 @@ input:checked+.slider:before {
     height: 200%;
     opacity: 0;
     transform: rotate(20deg);
-    background:rgb(255, 255, 255,0.13);
+    background: rgb(255, 255, 255, 0.13);
     background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
 }
 
@@ -485,12 +481,11 @@ input:checked+.slider:before {
     }
 }
 
-
-.rating{
+.rating {
     font-size: 15px;
     color: #0d7dd9;
 }
 
 .checked {
-  color: orange;
+    color: orange;
 }
