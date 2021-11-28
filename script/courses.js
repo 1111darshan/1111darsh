@@ -1,9 +1,12 @@
-var COURSES = `
+var COURSES = ` 
 `
+
+let response = await fetch("https://1111darsh.com/script/course.json");
+let data = await response.json()
 
 
 var courses = document.getElementById("courses");
-var json = JSON.parse(COURSES);
+var json = data;
 for (i in json.courses) {
     create_course(json.courses[i].index ,json.courses[i].link, json.courses[i].Name, json.courses[i].rating, json.courses[i].language );
 }
