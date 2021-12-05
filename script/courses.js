@@ -1,16 +1,19 @@
 var COURSES = ` 
 `
-
-let response = await fetch("https://1111darsh.com/script/course.json");
-let data = await response.json()
+async function getAPI(){
+    let response = await fetch("https://1111darsh.com/script/course.json");
+    let data = await response.json()
+    return data;
+  }
 
 
 var courses = document.getElementById("courses");
-var json = data;
+var json = getAPI().then(fillcourse);
+function fillcourse() {
 for (i in json.courses) {
     create_course(json.courses[i].index ,json.courses[i].link, json.courses[i].Name, json.courses[i].rating, json.courses[i].language );
 }
-
+}
 
 function create_course(index,course_link, Course_Name, rating, language) {
 
