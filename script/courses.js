@@ -1,5 +1,4 @@
-var COURSES = ` 
-`
+
 async function getAPI(){
     let response = await fetch("https://1111darsh.com/script/course.json");
     let data = await response.json()
@@ -7,9 +6,9 @@ async function getAPI(){
   }
 
 
+getAPI().then(data => fillcourse(data) );
 var courses = document.getElementById("courses");
-var json = getAPI().then(fillcourse);
-function fillcourse() {
+function fillcourse(json) {
 for (i in json.courses) {
     create_course(json.courses[i].index ,json.courses[i].link, json.courses[i].Name, json.courses[i].rating, json.courses[i].language );
 }

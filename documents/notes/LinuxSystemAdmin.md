@@ -146,3 +146,32 @@ cat /etc/sudoers.d
 
 
 ## Simple Network Management Protocol (SNMP) Overview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######
+awk
+sed
+grep
+sort
+uniq
+cat 
+cut
+echo
+fmt
+tr
+nl
+egrap
+fgrep
+wc
