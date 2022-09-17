@@ -1,5 +1,6 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 body{
@@ -73,6 +74,7 @@ body{
     position: relative;
     margin-left: 4%;
     margin-right: 4%;
+   
 }
 
 .Containt{
@@ -121,7 +123,7 @@ body{
     height: 70%;
     width: 100%;
     display: inline;
-    align-items: ;
+    align-items: center ;
    
 }
 
@@ -179,4 +181,32 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     background-size: 20%;
+}
+.Containt{
+  font-size: 2;
+}
+
+.iconlist {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.iconlist a{
+    align-self: center;
+    padding: auto;
+}
+.skills{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skills p{
+    float: right;
+    text-align: justify;
+    width: 50%;
 }
