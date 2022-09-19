@@ -1,491 +1,213 @@
-.side-bar .side-bar-name {
-    visibility: hidden;
-    width: 255px;
-    background-color: #8E44AD;
-    color: #fff;
-    text-align: center;
-    border-radius: 0px 30px 30px 0px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    left: 100%;
-    top: 3%;
-    font-size: 150%;
-    transition: linear 0.2s;
-    box-shadow: 3px 5px 3px rgb(225, 169, 233);
+* {
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
-.side-bar {
-    top: 0%;
-    padding-top: 1%;
-    background-color: #8E44AD;
-    z-index: 9;
+body{
+    margin-top: 4%;
+}
+
+.panel {
+    background-color: lightblue;
     position: fixed;
-    left: 1;
-    height: 100%;
-    width: inherit;
-    display: block;
-    align-items: center;
-    box-shadow: 3px 5px 5px rgb(225, 169, 233);
-}
-
-.side-bar a {
-    align-self: center;
-    float: none;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    margin-right: auto;
-    margin-bottom: auto;
-    padding-right: 30px;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-    right: 10px;
-}
-
-.tooltip {
-    visibility: hidden;
-    width: 150px;
-    text-align: center;
-    border-radius: 0 20px 20px 0;
-    padding-left: 10px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
     z-index: 1;
-    left: 110%;
+    opacity: 0.7;
+    
 }
 
-.side-bar a:hover {
-    transform: scale(1.5);
-    visibility: visible;
-    border-radius: 50%;
-    color: #8E44AD;
-    background-color: ivory;
+.panel:hover {
+    opacity: 10;
 }
 
-.side-bar a:hover .tooltip {
-    visibility: visible;
-    color: #8E44AD;
-    color: ivory;
-    z-index: -1px;
-    background-image: linear-gradient(to right, #8E44AD, #e7dbecf1);
+.nevi {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    width: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    .side-bar {
-        display: none;
-    }
+.nevi:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 4rem;
+    width: 4rem;
 }
 
-.navbar {
-    padding-left: 10%;
-    background-color: #8E44AD;
-    z-index: 5;
-    position: fixed;
-    top: 1;
-    width: 100%;
-    display: none;
-    transition: top 0.3s;
-    overflow: hidden;
-    align-items: center;
-}
-
-.navbar a {
-    align-self: center;
-    float: left;
+.home {
     display: block;
-    color: #f2f2f2;
-    text-align: center;
+    margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
-    padding-right: 30px;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-    right: 10px;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient( #FF9933 , #FF9933,#FFFFFF,#138808,	#138808);
+}
+.home img {
+    display: block;
+    width: 30%;
+    height: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.home .name {
+    font-size: 3rem;
+}
+.home .deg {
+    font-size: 2rem;
 }
 
-.nav-text {
-    display: none;
+.title {
+    text-align: center;
 }
 
-.navbar a:hover {
-    background-color: ivory;
-    color: #8E44AD;
+.card {
+    border: solid lightblue 0.2px;
+    box-shadow: 1px 1px 12px lightblue;
+    position: relative;
+    margin-left: 4%;
+    margin-right: 4%;
+   
 }
 
-.navbar .icon {
-    display: none;
+.Containt{
+    padding: 10%;
+    padding-top: 0%;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar {
-        display: block;
-    }
-    .navbar a:not(:first-child) {
-        display: none;
-    }
-    .navbar a.icon {
-        float: right;
-        display: block;
-    }
+.job {
+    text-align: left;
+    padding-left: 10%;
+    
+}
+.school {
+    text-align: left;
+    padding-left: 10%;
+    
 }
 
-@media screen and (max-width: 600px) {
-    .navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .navbar.responsive .nav-text {
-        display: block;
-        float: left;
-        padding-right: 6px;
-        text-align: left;
-        left: 0;
-    }
-}
 
-.click-me {
+.click-me  {
     background-color: transparent;
+    height: 200px; 
+    width: 30%;
+    border: solid lightblue;
+    margin-left: 10%;
+    color: #000;
 }
 
+.click-me a {
+
+    color: #000;
+}
 .click-me:hover {
     background-color: #cc98e09a;
     color: black;
+    background-color: transparent;
+    height: 220px;
+    text-align: justify;
+    width: 32%;
+    border: solid lightblue;
+    margin-left: 10%;
 }
 
-.blink_text {
-    animation: 1s blinker linear infinite;
-    -webkit-animation: 1s blinker linear infinite;
-    -moz-animation: 1s blinker linear infinite;
-    color: rgb(23, 23, 241);
-}
-
-@-moz-keyframes blinker {
-    0% {
-        color: rgb(23, 23, 241);
-    }
-    50% {
-        color: #c6cbcf
-    }
-    100% {
-        color: rgb(23, 23, 241);
-    }
-}
-
-@-webkit-keyframes blinker {
-    0% {
-        color: rgb(23, 23, 241);
-    }
-    50% {
-        color: #c6cbcf
-    }
-    100% {
-        color: rgb(23, 23, 241);
-    }
-}
-
-@keyframes blinker {
-    0% {
-        color: rgb(23, 23, 241);
-    }
-    50% {
-        color: #c6cbcf
-    }
-    100% {
-        color: rgb(23, 23, 241);
-    }
-}
-
-.remove-line {
-    text-decoration: none;
-}
-
-.stop {
-    color: blue;
-}
-
-.copy-to-clipboard {
+.skillsball{
+    background-color: rgb(255, 255, 255);
+    height: 70%;
     width: 100%;
+    display: inline;
+    align-items: center ;
+   
+}
+
+
+.skillsball ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
     align-items: center;
+
 }
+ .skillsball .mainskill{
 
-.copy-to-clipboard-button {
-    display: inline-block;
-    background-color: #2996f0;
-    border: none;
-    box-shadow: 2px 2px 2px #666;
-}
-
-.copy-to-clipboard-button:hover {
-    background-color: #000000;
-    border: none;
-    box-shadow: 2px 2px 2px #666;
-}
-
-.copy-to-clipboard-button .tooltiptext {
-    visibility: hidden;
-    background-color: #c6cbcf;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 2px 10px;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.copy-to-clipboard-button:hover .tooltiptext {
-    visibility: visible;
-}
-
-.copy-to-clipboard-text {
-    padding-left: 3%;
-    color: white;
-    background-color: #0d7dd9;
-    box-shadow: 2px 2px 2px #666;
-}
-
-.copy-to-clipboard-head {
-    padding-left: 3%;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 32px;
-    height: 19px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 17px;
-    width: 16px;
-    padding: 1px;
-    left: 1px;
-    bottom: 1px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #b883cf;
-}
-
-input:checked+.slider::before {
-    background-color: #101011;
-    color: rgb(217, 255, 0);
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-}
-
-/* Rounded sliders */
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
+    display: inline-flex;
     border-radius: 50%;
-}
-
-.chatbot {
-    position: fixed;
-    background: #8E44AD;
-    color: rgb(255, 255, 255);
-    width: 50px;
-    height: 50px;
+    background-image: radial-gradient(#7CB9E8, #002D62);
+    width: 200px;
+    height: 200px;
+    font-size: 2rem;
     text-align: center;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    padding: 6px;
-    overflow: hidden;
-}
-
-.chatbot:hover .tooltiptext {
-    visibility: visible;
-    background-color: #682883;
-}
-
-.chatbot .tooltiptext {
-    visibility: hidden;
-    width: 220px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: 100%;
-    top: -5%;
-}
-
-#chatbox {
-    visibility: hidden;
-}
-
-.chatbox {
-    padding: auto;
-    position: fixed;
-    background: #ffffff;
-    color: rgb(10, 10, 10);
-    width: 300px;
-    border: solid 1px black;
-    height: 450px;
-    text-align: center;
-    font-size: 16px;
-    right: 60px;
-    bottom: 25px;
-    z-index: 1;
-    border-radius: 20px;
-}
-
-.message {
-    position: relative;
-    background-color: khaki;
-    width: 100%;
-    top: 5px;
-}
-
-.dot-message {
-    float: left;
-    background-color: rgb(156, 36, 177);
-    text-align: left;
-    width: initial;
-    margin-left: 5px;
-    border-radius: 20px;
-    color: cornsilk;
-    padding: 2%;
-    margin-top: 4px;
-    margin-bottom: 3px;
-}
-
-.client-message {
-    float: right;
-    background-color: rgb(161, 191, 238);
-    text-align: right;
-    width: initial;
-    margin-right: 5px;
-    border-radius: 20px;
-    padding: 2%;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
-.chatbox-hadder {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: ivory;
-    border-top-left-radius: 20px;
-    height: 10%;
-    padding: 10px;
-    text-align: center;
-    background-color: in;
-    background-image: linear-gradient(to right, rgb(58, 20, 54), rgb(183, 21, 204), rgb(183, 21, 204));
-    z-index: 50;
-    width: 100%;
     align-items: center;
+    color: aliceblue;
+    justify-content: center;
+
 }
+.mainskill:hover + ul .hide {
+    border-radius: 50%;
+    display: inline-flex;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #007e94;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+ .hide{
+    display: none;
+}
+
+
 
 .background-experience {
-    background-image: url('/images/development.svg');
+    background-image: url('/images/b01development.svg');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 50%;
+    background-size: 35%;
 }
 
 .background-education {
-    background-image: url('/images/education.svg');
+    background-image: url('/images/b02education.svg');
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 50%;
+    background-position: top;
+    background-size: 20%;
+}
+.Containt{
+  font-size: 2;
 }
 
-.projectele {
-    float: left;
-    width: 32%;
-    margin-left: 1%;
-    text-align: center;
-    overflow: hidden;
+.iconlist {
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.chatbot::after {
-    animation: shine 5s ease-in-out infinite;
-    animation-fill-mode: forwards;
-    content: "";
-    position: absolute;
-    top: -110%;
-    left: -210%;
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-    transform: rotate(20deg);
-    background: rgb(255, 255, 255, 0.13);
-    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+.iconlist a{
+    align-self: center;
+    padding: auto;
+    margin-bottom: 500px;
 }
-
-@keyframes shine {
-    10% {
-        opacity: 1;
-        top: -30%;
-        left: -30%;
-        transition-property: left, top, opacity;
-        transition-duration: .2s, .2s, 0.1s;
-        transition-timing-function: ease;
-    }
-    100% {
-        opacity: 0;
-        top: -30%;
-        left: -30%;
-        transition-property: left, top, opacity;
-    }
+.skills{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-.rating {
-    font-size: 15px;
-    color: #0d7dd9;
-}
-
-.checked {
-    color: orange;
+.skills p{
+    float: right;
+    text-align: justify;
+    width: 50%;
 }

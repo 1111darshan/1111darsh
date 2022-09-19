@@ -1,6 +1,7 @@
 
 async function getAPI(){
-    let response = await fetch("https://1111darsh.com/script/course.json");
+    let host = "http://127.0.0.1:5500"
+    let response = await fetch(host + "/New/json/course.json");
     let data = await response.json()
     return data;
   }
@@ -9,7 +10,9 @@ async function getAPI(){
 getAPI().then(data => fillcourse(data) );
 var courses = document.getElementById("courses");
 function fillcourse(json) {
+
 for (i in json.courses) {
+    
     create_course(json.courses[i].index ,json.courses[i].link, json.courses[i].Name, json.courses[i].rating, json.courses[i].language );
 }
 }
@@ -18,7 +21,7 @@ function create_course(index,course_link, Course_Name, rating, language) {
 
     var card = document.createElement("div");
     var att = document.createAttribute("class");
-    att.value = "w3-container w3-card  w3-margin-bottom click-me";
+    att.value = "click-me";
     card.setAttributeNode(att)
     courses.appendChild(card);
 

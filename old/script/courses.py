@@ -6,19 +6,19 @@ from bs4 import BeautifulSoup
 def linkdata(url, i):
     courseslink = requests.get(url)
     soup = BeautifulSoup(courseslink.content, 'html.parser')
-    # print(soup.prettify())
+    #print(soup.prettify())
     """
     <h1 class="udlite-heading-xl clp-lead__title clp-lead__title--small" data-purpose="lead-title">
     Remote Teaching Online // How To Record Lectures at Home
     </h1>
     """
     title = soup.find('h1', class_="udlite-heading-xl clp-lead__title clp-lead__title--small").get_text()
+    
     title = title.strip("\n")
     """
     <span class="udlite-heading-sm star-rating--rating-number--3lVe8" aria-hidden="true" data-purpose="rating-number">4.4</span>
     """
-    rating = soup.find(
-        'span', class_="udlite-heading-sm star-rating--rating-number--3lVe8").get_text()
+    rating = soup.find('span', class_="udlite-heading-sm star-rating--rating-number--2o8YM").get_text()
 
     """<div class="clp-lead__element-item clp-lead__locale" data-purpose="lead-course-locale">
         <span class="icon">
@@ -57,4 +57,3 @@ print(json.dumps(output))
 
 f2 = open('course.json', 'w')
 f2.write(json.dumps(output))
-# print(linkdata("https://www.udemy.com/course/introduction-to-microservices-edyoda/?couponCode=FREEAPR2", 1))
