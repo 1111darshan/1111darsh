@@ -1,12 +1,26 @@
 * {
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
-body{
+body {
     margin-top: 4%;
+    font-size: medium;
 }
 
+.card {
+    border: solid lightblue 0.2px;
+    box-shadow: 1px 1px 12px lightblue;
+    position: relative;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+/* Panel */
 .panel {
     background-color: lightblue;
     position: fixed;
@@ -16,95 +30,152 @@ body{
     border-radius: 50px;
     z-index: 1;
     opacity: 0.7;
-    
 }
-
 .panel:hover {
     opacity: 10;
 }
-
-.nevi {
+.navigator {
     padding-left: 1rem;
     padding-right: 1rem;
     height: 2rem;
     width: 2rem;
 }
-
-.nevi:hover {
+.navigator:hover {
     padding-left: 1rem;
     padding-right: 1rem;
     height: 4rem;
     width: 4rem;
 }
 
+/* Home */
 .home {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
     align-items: center;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient( #FF9933 , #FF9933,#FFFFFF,#138808,	#138808);
+    background-image: linear-gradient(#FF9933, #FF9933, #FFFFFF, #138808, #138808);
 }
 .home img {
     display: block;
     width: 30%;
     height: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 6%;
+    margin-bottom: 6%;
     margin-left: auto;
     margin-right: auto;
 
 }
 .home .name {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 .home .deg {
+    font-size: 4rem;
+}
+.home .headline {
     font-size: 2rem;
 }
 
-.title {
-    text-align: center;
-}
-
-.card {
-    border: solid lightblue 0.2px;
-    box-shadow: 1px 1px 12px lightblue;
-    position: relative;
-    margin-left: 4%;
-    margin-right: 4%;
-   
-}
-
-.Containt{
+/* Aboutme */
+.containt {
     padding: 10%;
-    padding-top: 0%;
+    padding-top: 1%;
+    text-align: justify;
+    font-size: 2rem;
+    font-style: italic;
 }
+
+/* Skill */
+.skills {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills p {
+    float: right;
+    text-align: justify;
+    width: 50%;
+}
+
+.skillsball  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+/* .skillsball .mainskill {
+    display: inline-flex;
+    border-radius: 50%;
+    background-image: radial-gradient(#7CB9E8, #002D62);
+    width: 200px;
+    height: 200px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+}
+.mainskill:hover+ul .hide {
+    border-radius: 50%;
+    display: inline-flex;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #007e94;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+} */
+
+/* .hide {
+    display: none;
+} */
+
+/* Work*/
 
 .job {
     text-align: left;
     padding-left: 10%;
-    
+
 }
+.background-experience {
+    background-image: url('/images/b01development.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 35%;
+}
+
+
+/* Education */
 .school {
     text-align: left;
     padding-left: 10%;
-    
+
+}
+.background-education {
+    background-image: url('/images/b02education.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 20%;
 }
 
+/*Project*/
 
-.click-me  {
+
+/*Udamy*/
+.click-me {
     background-color: transparent;
-    height: 200px; 
+    height: 200px;
     width: 30%;
     border: solid lightblue;
     margin-left: 10%;
     color: #000;
 }
-
 .click-me a {
-
     color: #000;
 }
 .click-me:hover {
@@ -118,74 +189,7 @@ body{
     margin-left: 10%;
 }
 
-.skillsball{
-    background-color: rgb(255, 255, 255);
-    height: 70%;
-    width: 100%;
-    display: inline;
-    align-items: center ;
-   
-}
-
-
-.skillsball ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
-    align-items: center;
-
-}
- .skillsball .mainskill{
-
-    display: inline-flex;
-    border-radius: 50%;
-    background-image: radial-gradient(#7CB9E8, #002D62);
-    width: 200px;
-    height: 200px;
-    font-size: 2rem;
-    text-align: center;
-    align-items: center;
-    color: aliceblue;
-    justify-content: center;
-
-}
-.mainskill:hover + ul .hide {
-    border-radius: 50%;
-    display: inline-flex;
-    color: aliceblue;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background: #007e94;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
- .hide{
-    display: none;
-}
-
-
-
-.background-experience {
-    background-image: url('/images/b01development.svg');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 35%;
-}
-
-.background-education {
-    background-image: url('/images/b02education.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 20%;
-}
-.Containt{
-  font-size: 2;
-}
-
+/*Conectme */
 .iconlist {
     text-decoration: none;
     list-style: none;
@@ -194,20 +198,8 @@ body{
     width: 100%;
     justify-content: space-evenly;
 }
-
-.iconlist a{
+.iconlist a {
     align-self: center;
     padding: auto;
     margin-bottom: 500px;
-}
-.skills{
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.skills p{
-    float: right;
-    text-align: justify;
-    width: 50%;
 }
