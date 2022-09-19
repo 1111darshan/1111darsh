@@ -200,6 +200,15 @@ body {
 }
 .iconlist a {
     align-self: center;
-    padding: auto;
+    padding: 2%;
     margin-bottom: 500px;
+    background-color: lightblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.iconlist a:hover{
+    background-color: blue;
+    
+
 }
