@@ -17,7 +17,7 @@ body {
 
 .title {
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2rem;
 }
 
 /* Panel */
@@ -53,8 +53,8 @@ body {
     height: 100%;
     align-items: center;
     text-align: center;
-    color: #fff;
-    background-image: linear-gradient(#FF9933, #FF9933, #FFFFFF, #138808, #138808);
+    
+  
 }
 .home img {
     display: block;
