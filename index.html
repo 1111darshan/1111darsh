@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TSH7STT');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TSH7STT');</script>
+    <!-- End Google Tag Manager -->
     <title>Darshan Mistry</title>
     <link href="images/logo.svg" rel="icon">
     <meta charset="UTF-8">
@@ -45,10 +48,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSH7STT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSH7STT" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <div id="panel" class="panel">
 
@@ -64,26 +67,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <!-- Panel Script -->
     <script>
-        document.getElementById("panel").style.visibility = "hidden";
+
+        var panel = document.getElementById("panel")
+        panel.classList.add("panelhide")
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos < currentScrollPos) {
-                document.getElementById("panel").style.visibility = "visible";
-
+                panel.classList.add("panelshow")
+                // document.getElementById("panel").style.visibility = "visible";
             }
             if (currentScrollPos != 0) {
-                document.getElementById("panel").style.visibility = "visible"
+                panel.classList.add("panelshow")
+                panel.classList.remove("panelhide")
+                // document.getElementById("panel").style.visibility = "visible"
             } else {
-                document.getElementById("panel").style.visibility = "hidden"
+                panel.classList.remove("panelshow")
+                panel.classList.add("panelhide")
+                // document.getElementById("panel").style.visibility = "hidden"
             }
             prevScrollpos = currentScrollPos;
         }
     </script>
 
-    <div id="home" class="home card ">
-        <img src="images/logo.svg">
-        <p> Hello I'm <spen class="name"> Darshan Mistry</spen>, I'm <span class="deg">DevOps Engineer </span></p>
+    <div id="home" class="home card">
+        <!-- <div class="flag">
+            <p class="orange">o<p>
+            <p class="white">0<p>
+            <p class="green">o<p>
+        </div> -->
+       
+        <div class="flag">
+        
+        <div class="org">‎</div>
+        <div class="whith">‎</div>
+        <div class="green">‎</div>
+        </div>
+        <img src="images/logo.svg" />
+        <p> Hello I'm <spen class="name"> Darshan Mistry</spen>,</p>
+        <p> I'm <span class="deg">DevOps Engineer </span></p>
         <p class="headline">I'm Certified Kubernetes Administrator, Open for New DevOps Role
             And Enthusiast to take New Projects </p>
     </div>
@@ -94,7 +116,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="containt">
             I am Darshan Mistry, A DevOps Engineer.
-            I am the Certified Kubernetes Admintator by Cloud Native Computing Foundation(CNCF) and Certified DevOps Professional by IBM.
+            I am the Certified Kubernetes Admintator by Cloud Native Computing Foundation(CNCF) and Certified DevOps
+            Professional by IBM.
             I am owning exprience of 5 DevOps team.
             I worked with complex 97+ microservices deployed over kubernates base containerize Infrasructure.
             Istio mash is implemented on kubernetes cluster.
@@ -102,7 +125,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             I can automate deployment process with CI/CD using jenkins and github actions.
             I have a idea about a Agile software build life cycle.
             I can make software deployment lifecycle smother and faster using CI/CD pipelines.
-            I can build, secure and High Avalible Infrastructure using different load balancer and reverse proxies in AWS.
+            I can build, secure and High Avalible Infrastructure using different load balancer and reverse proxies in
+            AWS.
             I can build infrastructure in terraform.
             It will helpful to make quick changes in infrastructure.
             And the code in terrafrom use to create disaster recovery planes.
@@ -123,10 +147,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>
                     Certified Kubernetes Administrator from CNCF.
                     Design the HA cluster from scratch with 3 master nodes and scalable worker nodes.
-                    Experience with 97+ Deployment(Microservices) with High Traffic.
+                    Experience with 97+ Deployment (Microservices) with High Traffic.
                     Build Secure, cost-saving smart autoscaling architecture using helm chart and Istio services mash.
                     Application Lifecycle Management, Storage troubleshooting.
-                    Update cluster, Logging using elk stack. Monitoring  Prometheus and Grafana.
+                    Update cluster, Logging using elk stack. Monitoring Prometheus and Grafana.
                 </p>
             </div>
 
@@ -137,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     Handleing the private registry.
                     Maintain docker level cache.
                     Write Dockerfile.
-                    
+
                 </p>
                 <img src="./images/s02Docker.svg" height="200px" width="200px" />
             </div>
@@ -147,9 +171,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2>Linux</h2>
                 <p>
                     Shell scripting, Networking, Storage Management, Service Configuration.
-                    Troubleshoot issues and fix them, Deploy and maintain HTTP proxy servers like Apache, and Nginx. 
+                    Troubleshoot issues and fix them, Deploy and maintain HTTP proxy servers like Apache, and Nginx.
                     Automated things using scripting.
-                    
+
                 </p>
             </div>
 
@@ -167,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     dynamodb db,
                     S3,
                     Cloud Front
-                    
+
                 </p>
                 <img src="./images/s04AWS.png" height="200px" width="200px" />
             </div>
@@ -231,45 +255,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="job">
             <h3>Certified Kubernetes Administrator </h3>
             <h4>Cloud Native Computing Foundation</h4>
-            <h5>Auguest 03, 2022 - Auguest 03, 2025</h5>            
+            <h5>Auguest 03, 2022 - Auguest 03, 2025</h5>
             <a href="./cert/1.darshan-mistry-c33644e9-6815-426a-b838-c4552cffdd71-certificate.pdf">PDF</a>
         </div>
         <div class="job">
             <h3>Helm for Beginners </h3>
             <h4>KodeKloud</h4>
-            <h5>September 22, 2022</h5>            
+            <h5>September 22, 2022</h5>
             <a href="./cert/2 Course-Certificate_Helm-for-Beginners_Darshan.pdf.pdf">PDF</a>
         </div>
 
         <div class="job">
             <h3>Udamy Labs - Certified Kubernetes Administrator with Practice</h3>
             <h4>KodeKloud</h4>
-            <h5>May 25, 2022</h5>            
-            <a href="./cert/3 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Administrator-with-Practice-Tests_Darshan.pdf">PDF</a>
+            <h5>May 25, 2022</h5>
+            <a
+                href="./cert/3 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Administrator-with-Practice-Tests_Darshan.pdf">PDF</a>
         </div>
         <div class="job">
             <h3>Udemy Labs Certified Kubernetes Application Developer</h3>
             <h4>KodeKloud</h4>
-            <h5>May 25, 2022</h5>            
-            <a href="./cert/4 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Application-Developer_Darshan.pdf.pdf">PDF</a>
+            <h5>May 25, 2022</h5>
+            <a
+                href="./cert/4 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Application-Developer_Darshan.pdf.pdf">PDF</a>
         </div>
-       
+
 
         <div class="job">
             <h3>Container & KubernetesEssentials with IBM Cloud</h3>
-            <h4>Intellipaat  (IBM)</h4>
-            <h5>September 27, 2019</h5>            
+            <h4>Intellipaat (IBM)</h4>
+            <h5>September 27, 2019</h5>
             <a href="./cert/7 developerWorks CO0201EN Certificate _ Intellipaat.pdf">PDF</a>
         </div>
-       
+
 
         <div class="job">
             <h3>Docker Essentials: A Developer Introduction</h3>
-            <h4>Intellipaat  (IBM)</h4>
-            <h5>September 26, 2019</h5>            
+            <h4>Intellipaat (IBM)</h4>
+            <h5>September 26, 2019</h5>
             <a href="./cert/8 IBM CO0101EN Certificate _ Intellipaat.pdf">PDF</a>
         </div>
-       
+
     </div>
 
     <div id="work" class="work card background-experience">
