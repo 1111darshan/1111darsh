@@ -1,5 +1,6 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    text-shadow:  1px 1px 14px rgb(120, 120, 236);
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 .panel {
     background: linear-gradient(to right, #da2c2c ,#6447e4);
     background-size:  400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 7s ease infinite;
     position: fixed;
     bottom: 10%;
     left: 50%;
@@ -216,6 +217,7 @@ body {
 
 .skills img{
     box-shadow: 4px 4px 12px rgb(0, 0, 0);
+    border-radius: 5%;
 }
 .skills p {
     float: right;
@@ -340,7 +342,9 @@ body {
 }
 
 .iconlist a:hover {
-    background-color: blue;
+    background: linear-gradient(to right, #da2c2c ,#6447e4);
+    background-size:  400%;
+    animation: gradient 2s ease infinite;
 
 
 }
