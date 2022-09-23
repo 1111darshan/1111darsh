@@ -146,7 +146,7 @@ body {
 .home img {
     display: block;
     height: 30vh;
-    margin-top: -32vh;
+    margin-top: -30vh;
     margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -171,7 +171,7 @@ body {
 
 @media screen and (max-width: 600px) {
 .flag {
-
+    margin-top: 5vh;
     width: 100%; 
     margin-inline: 0;  
 }
@@ -223,7 +223,7 @@ body {
         height: 30vh;
         width: 90vw;
 
-        margin-top: -32vh;
+        margin-top: -30vh;
         margin-bottom: 3%;
         margin-left: auto;
         margin-right: auto;
@@ -235,14 +235,24 @@ body {
     
     }
     .home .name {
-        font-size: large;
-        text-shadow: 10px 1px 12px #000;
+        font-size: 5em;
+        text-shadow: 9px 3px 12px #000;
     }
     
     .home .deg {
-        font-size: small;
-        text-shadow: 5px 1px 4px #000;
+        font-size: 3em;
+        text-shadow: 3px 2px 6px #000;
     
+    }
+    .home .headline {
+        font-size: 1.2em;
+        margin-top: 1vh;
+        text-shadow: 10px 1px 12px rgb(255, 252, 252);
+        position: relative;
+        bottom: 0%;
+        /* animation-name: floating;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; */
     }
 
 }
@@ -354,6 +364,15 @@ body {
     text-align: left;
     padding-left: 10%;
 
+}
+
+@media screen and (max-width: 600px) {
+    .job {
+        text-align: left;
+        padding-left: 2%;
+        border-bottom: solid  0.001px ;
+    
+    } 
 }
 /* 
 .background-experience {
