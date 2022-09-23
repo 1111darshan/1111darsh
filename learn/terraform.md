@@ -1,0 +1,6 @@
+# Terraform Basics Training Course
+
+
+
+
+
