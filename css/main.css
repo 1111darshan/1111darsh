@@ -375,6 +375,16 @@ body {
     
     } 
 }
+
+.Roles{
+    padding-left: 3%;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+.Respossibilities{
+    padding-left: 5% ;
+}
 /* 
 .background-experience {
     background-image: url('/images/b01development.svg');
