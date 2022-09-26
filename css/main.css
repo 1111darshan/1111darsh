@@ -13,7 +13,7 @@ body {
     border: solid lightblue 0.2px;
     box-shadow: 1px 1px 12px rgb(55, 65, 68);
     position: relative;
-    background: linear-gradient(to right, #e4f3ef,#b0e2f5, #b0e1f3, #c1d1d6, #b2f0e1);
+    background: linear-gradient(to right, #acddde,#caf1de, #e1f8dc, #fef8dd, #ffe7c7,#f7d8ba);
     background-size:  400%;
     animation: gradient 15s ease infinite;
     margin-left: 2.5vw;
