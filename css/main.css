@@ -1,6 +1,6 @@
 * {
     font-family: 'Courier New', Courier, monospace;
-    text-shadow:  1px 1px 14px rgb(120, 120, 236);
+    
 }
 
 body {
@@ -13,9 +13,9 @@ body {
     border: solid lightblue 0.2px;
     box-shadow: 1px 1px 12px rgb(55, 65, 68);
     position: relative;
-    background: linear-gradient(to right, #acddde,#caf1de, #e1f8dc, #fef8dd, #ffe7c7,#f7d8ba);
-    background-size:  400%;
-    animation: gradient 15s ease infinite;
+     background: linear-gradient(to right, #acddde,#caf1de, #e1f8dc);
+    /* background-size:  400%;
+    animation: gradient 15s ease infinite; */
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     border-radius: 10px;
@@ -90,6 +90,12 @@ body {
 }
 
 
+.panel::after {
+    opacity: 7;
+    transition: 1s;
+    
+}
+
 
 .panelhide {
 
@@ -104,6 +110,7 @@ body {
     padding-right: 1rem;
     height: 2rem;
     width: 2rem;
+    transition: 0.5s;
 }
 
 .navigator:hover {
@@ -113,6 +120,8 @@ body {
     width: 4rem;
     transition: 0.7s;
 }
+
+
 
 @keyframes floating {
     0% {
@@ -144,7 +153,7 @@ body {
     text-align: center;
 }
 
-.home img {
+.home .logo {
     display: block;
     height: 30vh;
     margin-top: -30vh;
@@ -161,7 +170,7 @@ body {
 .flag{
     box-shadow: 1px 1px 12px rgb(9, 70, 90);
     overflow: hidden;
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     height: 30vh;
     width: 63vw;
@@ -201,6 +210,46 @@ body {
     text-shadow: 10px 1px 12px #000;
 }
 
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+
+
 .home .deg {
     font-size: 7vh;
     text-shadow: 5px 1px 4px #000;
@@ -213,13 +262,23 @@ body {
     text-shadow: 10px 1px 12px rgb(255, 252, 252);
     position: relative;
     bottom: 0%;
+    display: flex;
+    
     /* animation-name: floating;
     animation-duration: 10s;
     animation-iteration-count: infinite; */
 }
 
+
+.home .headline img {
+    left: 0vw;
+    position: relative;
+    height: 9vh;
+
+}
+
 @media screen and (max-width: 600px) {
-    .home img {
+    .home .logo {
         display: block;
         height: 30vh;
         width: 90vw;
@@ -255,6 +314,7 @@ body {
         animation-duration: 10s;
         animation-iteration-count: infinite; */
     }
+    
 
 }
 
