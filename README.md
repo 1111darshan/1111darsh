@@ -3,9 +3,33 @@
 
 ## Introdction
 
-1. I'm Darshan Mistry. For the last 14 months, I have been a DevOps Engineer at Borndigital. Managing AWS, GCP as a oversee access and manages all Linux servers and load balancing and auto-scaling Network created between them. Deployed CI/CD pipelines using Jenkins and GitHub action. Secure network using create a personal VPN service. I have worked closely with my project manager and other seniors and build some key relationships. I have completed a professional DevOps course from IBM and I get a certificate from IBM. I have done some courses from udamy so it will help me with my works. Altho I love my current experience, I feel I'm now ready for a more challenging assignment and this position excites me.
+### Looking For 
+	
+    Kubernetes and New technology adopting culture where I can explore my knowledge and skills. I  wanted to be part of something amazing in Techworld.
 
-2.  Skilled DevOps Engineer with 1.2+ years of hands-on experience supporting, automating, and optimizing critical deployments in AWS, leveraging configuration management, CI/CD, and DevOps processes, Git Integration, Git Branching, and Docker. Experience in planning, designing, mplementing and maintaining the system applications on-host and in AWS Cloud in Windows and Linux environments. Knowledge on AWS services IAM, EC2, VPC, S3.
+### Bio
+
+CKA | Istio | Helm | Linux | AWS | GitOps | Jenkins | CI/CD | Ansible | Terraform | Automation | Scripting | I can build low latency, HA, fault-tolerant, Secure, Robust, Auto Scalable Infrastructure
+
+### Intro
+
+I am Darshan Mistry, A DevOps Engineer.
+I am the Certified Kubernetes Administrator by Cloud Native Computing Foundation(CNCF) and Certified DevOps Professional by IBM.
+I am owning an experience with 5 DevOps teams.
+I worked with complex 97+ microservices deployed over Kubernetes base containerize Infrastructure.
+Istio mash is implemented on the Kubernetes cluster.
+To reduce the cost of infrastructure and make it highly resilient are my abilities.
+I can automate the deployment process with CI/CD using Jenkins and GitHub actions.
+I have an idea about an Agile software build life cycle.
+I can make the software deployment lifecycle smoother and faster using CI/CD pipelines.
+I can build, secure, and High Available Infrastructure using a different load balancer and reverse proxies in AWS.
+I can build infrastructure in Terraform.
+It will help to make quick changes in infrastructure.
+And the code in terraforms is used to create disaster recovery planes.
+I am using ansible to keep updating new packages on a number of servers in a short time.
+I can automate the simple task using a Shell script, or a Python script.
+I can deploy a Prometheus, Grafana, datalog, and ELK stack over Kubernetes.
+
 
 - Having a Good Professional experience with 1 year 4 Months including 7+ months "Work from Home" Experience.
 - Worked in a GCP and AWS the main cloud Platforms with overseer access
@@ -106,3 +130,81 @@ DevOps processes and successfully onboarded
 [Upwork](https://www.upwork.com/o/profiles/users/~011408d1541194b628/?s=1110580753140797440)
 
 
+
+
+
+# Skill
+- Kubernetes  [DOC](https://kubernetes.io/docs/home/)
+
+    - CKA 
+    - Helm [DOC](https://helm.sh/docs/)
+    - Istio [DOC](https://istio.io/latest/docs/)
+
+- Docker  [Doc](https://docs.docker.com/get-started/overview/)
+    - containerzes Spring boot , python node application
+    - dockerfile
+    - docker compose
+
+- Linux
+    - Disk space utilications
+    - network
+    - cron
+    - user management
+    - Scripting
+- AWS
+    - EC2
+    - vpc
+    - lambda
+    - cloud fomation
+    - ELK
+    - ASG
+    - ELB
+    - RDS
+    - Route53
+    - Redis
+
+
+- Ansible
+    - playbook
+    - module
+    - host inventory
+
+- Terraform [Doc](https://www.terraform.io/docs)
+    - apply plan stat
+    - 
+
+- GitOps
+    - git 
+    - git hub
+    - gitlab
+    - bitbucket 
+
+- CI/CD
+    - jenkins [jenkinsfile](https://github.com/hoto/jenkinsfile-examples)
+    - git hub actions
+
+- Scripting Language
+    - python
+    - go
+    - java
+    - html
+    - css
+    - javascript
+
+
+- Design Infastucture
+    -  Low lantecy base
+        - https://www.arista.com/assets/data/pdf/CloudNetworkLatency.pdf
+        - https://datatracker.ietf.org/meeting/100/materials/slides-100-intarea-architectural-considerations-for-latency-critical-communications-00
+    -  Highly scalable
+    -  falut -tolerant s
+    -  sucure
+    -  robust
+    -  Auto scaliable
+
+- Monitoring
+    - prometheus [Doc](https://prometheus.io/docs/introduction/overview/)
+    - grafana [DOC](https://grafana.com/docs/)
+    - datadog  [DOC](https://docs.datadoghq.com/?_gl=1*47b1sd*_ga*MTk2MjE3MjEyMC4xNjY1MDU5NzU2*_ga_KN80RDFSQK*MTY2NTA1OTc1Ni4xLjAuMTY2NTA1OTc1Ni42MC4wLjA.&_ga=2.20510588.579435982.1665059756-1962172120.1665059756)
+    - ELK [DOC](https://www.elastic.co/what-is/elk-stack)
+    - pinpoint

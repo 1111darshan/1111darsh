@@ -9,11 +9,11 @@ body {
 }
 
 .card {
-    margin-top: 0.3%;
+    margin-top: 1%;
     border: solid lightblue 0.2px;
     box-shadow: 1px 1px 12px rgb(55, 65, 68);
     position: relative;
-     background: linear-gradient(to right, #acddde,#caf1de, #e1f8dc);
+     background: linear-gradient( #45b6fe,#6ac5fe, #8fd3fe, #b5e2ff, #daf0ff);
     /* background-size:  400%;
     animation: gradient 15s ease infinite; */
     margin-left: 2.5vw;
@@ -346,19 +346,35 @@ body {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* border: solid 0.1px rgb(0, 0, 0); */
+    box-shadow:1px 2px 10px #000;
+    margin: 10px;
+    
+    border-radius: 5px;
 }
 
-
+.skills:hover {
+    box-shadow:2px 3px 10px #000;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(226, 106, 220, 0.13);
+}
 
 .skills img{
     box-shadow: 4px 4px 12px rgb(0, 0, 0);
     border-radius: 5%;
+    margin: 2%;
+    margin-left: 4%;
+}
+.skills h2{
+    padding: 15px;
+    width: 16%;
+    
 }
 .skills p {
-    float: right;
     text-align: justify;
-    width: 50%;
+    width: 60%;
+    
 }
 
 .skillsball {
@@ -389,7 +405,9 @@ body {
     
 }
 
-
+.cert{
+    
+}
 /* .skillsball .mainskill {
     display: inline-flex;
     border-radius: 50%;
@@ -424,6 +442,14 @@ body {
 .job {
     text-align: left;
     padding-left: 10%;
+
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: solid 0.1px rgb(0, 0, 0); */
+    box-shadow:1px 2px 10px #000;
+    margin: 10px;
+    
+    border-radius: 5px;
 
 }
 
@@ -510,8 +536,6 @@ body {
 .iconlist a {
     align-self: center;
     padding: 2%;
-    margin-bottom: 500px;
-   
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -524,6 +548,32 @@ body {
 
 
 }
+.message{
+    display: flex;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+  }
+
 
 @media screen and (max-width: 600px) {
     .iconlist {
@@ -531,7 +581,7 @@ body {
     list-style: none;
     display: block;
     flex-wrap: wrap;
-    margin-bottom: 30vh;
+   
     width: 100%;
     justify-content: space-evenly;
 }
