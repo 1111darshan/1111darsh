@@ -405,8 +405,32 @@ body {
     
 }
 
-.cert{
-    
+.cert {
+
+  
+    text-align: center;
+    align-items: center;
+}
+.Certificate{
+    position: relative;
+    display: inline-block;
+    padding: 2%;
+    box-shadow:1px 2px 10px #000;
+    margin: 10px;
+    width: 80%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Certificate:hover{
+    position: relative;
+    display: inline-block;
+    padding: 2%;
+    box-shadow:2px 4px 20px #000;
+    margin: 10px;
+    width: 80%;
+    align-items: center;
+    border-radius: 5px;
 }
 /* .skillsball .mainskill {
     display: inline-flex;
@@ -440,17 +464,38 @@ body {
 /* Work*/
 
 .job {
+    padding: 2%;
     text-align: left;
     padding-left: 10%;
 
     align-items: center;
-
+    margin: 15px;
     /* border: solid 0.1px rgb(0, 0, 0); */
     box-shadow:1px 2px 10px #000;
-    margin: 10px;
-    
+    margin-inline: 10%;
+ 
     border-radius: 5px;
 
+}
+
+.cv {
+
+    padding: 2%;
+    text-align: left;
+    padding-left: 10%;
+    box-shadow:1px 2px 10px #000;
+    margin: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.cv a{
+    height: 100%;
+    width: 100%;
+    color: #000;
+    font-size: 4vh;
+    text-decoration:none;.
+    margin: 0%;
 }
 
 @media screen and (max-width: 600px) {
