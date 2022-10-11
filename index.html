@@ -83,34 +83,21 @@
         }
     </script>
 
-    <div id="home" class="home card">
-        <!-- <div class="flag">
-            <p class="orange">o<p>
-            <p class="white">0<p>
-            <p class="green">o<p>
-        </div> -->
+    <div id="home" class="home">
 
-        <div class="flag">
-            <div class="org">‎</div>
-            <div class="whith">‎</div>
-            <div class="green">‎</div>
+        <div class="left">
+            <div class="circle"><img class="logo" src="./images/11dlogo.png" /></div>
+
         </div>
-        <img class="logo" src="images/new.png" />
-
-        <p> Hello I'm <spen class="name"> Darshan Mistry</spen>,</p>
-        <p> I'm <span class="deg">DevOps Engineer </span></p>
-        <p class="headline">
-            I'm Certified Kubernetes Administrator <a href="#certification"> <img src="./images/s01kubernetes.svg"
-                    alt="cka"> </a>
-            Open for New DevOps Role <a href="https://angel.co/u/1111darsh"><img src="./images/angelist.png"
-                    alt="cka"></a>
-            Enthusiast to take New Projects <a
-                href="https://www.upwork.com/freelancers/~019d6d7ee36627284b?viewMode=1"><img src="./images/upwork.png"
-                    alt="cka"></a>
-        </p>
+        <div class="right">
+            <p>Hello,</p>
+            <p>I'm <spen class="name"> Darshan Mistry</spen>,</p>
+            <p>I'm <span class="deg">DevOps Engineer </span></p>
+            <p class="arrow"><a href="#aboutme"><img src="./images/Polygon.svg" /></a></p>
+        </div>
     </div>
 
-    <div id="aboutme" class="aboutme card">
+    <div id="aboutme" class="aboutme">
         <div class="title">
             <h1>About Me</h1>
         </div>
@@ -136,15 +123,19 @@
         </div>
     </div>
 
-    <div id="skill" class="skill card">
+    <div id="skills" class="skills">
         <div class="title">
             <h1>Skills</h1>
         </div>
-        <div class="skillsball">
-            <div class="skills">
-                <img src="./images/s01kubernetes.svg" height="200px" width="200px" />
-                <h2>Kubernetes</h2>
-                <p>
+
+
+
+        <div class="skillboard">
+
+            <div class="skill">
+                <p class="stitle">Kubernetes</p>
+                <img src="./images/s01kubernetes.svg" />
+                <p class="details">
                     Certified Kubernetes Administrator from CNCF.
                     Design the HA cluster from scratch with 3 master nodes and scalable worker nodes.
                     Experience with 97+ Deployment(Microservices) with High Traffic.
@@ -160,10 +151,10 @@
                 </p>
             </div>
 
-            <div class="skills">
-                <img src="./images/s02Docker.svg" height="200px" width="200px" />
-                <h2>Docker</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">Docker</p>
+                <img src="./images/s02Docker.svg" />
+                <p class="details">
                     Containerized node, python, Spring boot java application.
                     Create a private registry to secure images.
                     Maintain docker level cache for the faster build of docker image.
@@ -175,10 +166,10 @@
 
             </div>
 
-            <div class="skills">
-                <img src="./images/s03NewTux.svg" height="200px" width="200px" />
-                <h2>Linux</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">Linux</p>
+                <img src="./images/s03NewTux.svg" />
+                <p class="details">
                     Shell scripting, Networking, Storage Management, Service Configuration.
                     Troubleshoot issues and fix them.
                     Deploy and maintain HTTP proxy servers like Apache, and Nginx.
@@ -188,10 +179,10 @@
                 </p>
             </div>
 
-            <div class="skills">
-                <img src="./images/s04AWS.png" height="200px" width="200px" />
-                <h2>AWS</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">AWS</p>
+                <img src="./images/s04AWS.png" />
+                <p class="details">
                     High Resilient auto-scaling Infrastructure,
                     Route 53,
                     Aws Lambda
@@ -211,10 +202,10 @@
 
             </div>
 
-            <div class="skills">
-                <img src="./images/s05Ansible_logo.svg" height="200px" width="200px" />
-                <h2>Ansible</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">Ansible</p>
+                <img src="./images/s05Ansible_logo.svg" />
+                <p class="details">
                     All security patches are done with Ansible, Playbook.
                     Update and check Module
                     Hendle invetoery.
@@ -224,111 +215,122 @@
                 </p>
             </div>
 
-            <div class="skills">
-                <img src="./images/s06Terraform_Logo.svg" height="200px" width="200px" />
-                <h2>Terraform </h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">Terraform </p>
+                <img src="./images/s06Terraform_Logo.svg" />
+                <p class="details">
                     Create and update the Infrastructure within some hours and will have a backup in disaster recovery.
-                    Create AWS infreastructure with 1 or  2 hours.
+                    Create AWS infreastructure with 1 or 2 hours.
 
                 </p>
 
             </div>
 
-            <div class="skills">
-                <img src="./images/s07redhat_openshift_onGitOps_0.png" height="200px" width="200px" />
-                <h2>GitOps</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle">GitOps</p>
+                <img src="./images/s07redhat_openshift_onGitOps_0.png" />
+                <p class="details">
                     Maintain infrastructure as code and deploy with ci cd pipeline.
                     Work with different mutiple teams.
                     Work with git github, gitlab and Bitbucket
                 </p>
             </div>
 
-            <div class="skills">
-                <img src="./images/s09Jenkins_logo.svg" height="200px" width="200px" />
-                <h2>CI/CD</h2>
-                <p>
-                    Integrated all packages using build tools like Gradle, Marven npm, and other Package and build managers. 
+            <div class="skill">
+                <p class="stitle">CI/CD</p>
+                <img src="./images/s09Jenkins_logo.svg" />
+                <p class="details">
+                    Integrated all packages using build tools like Gradle, Marven npm, and other Package and build
+                    managers.
                     Create an automated deployment pipeline with Jenkins.
-                    
+
                 </p>
 
             </div>
 
-            <div class="skills">
-                <img src="./images/s10Python-logo-notext.svg" height="200px" width="200px" />
-                <h2> Scripting Language</h2>
-                <p>
-                    Python, go and bash to automated tasks with good scripting skills.
+            <div class="skill">
+                <p class="stitle"> Scripting Language</p>
+                <img src="./images/s10Python-logo-notext.svg" />
+                <p class="details">
+                    Python, go and bash to automated tasks with good scripting skill.
                     Developed the command line tool using python.
                     Create a wiraguard cluster.
 
                 </p>
             </div>
 
-            <div class="skills">
-                <img src="./images/s11Diagrams.net_Logo.svg" height="200px" width="200px" />
-                <h2> Design Infrastructure</h2>
-                <p>
+            <div class="skill">
+                <p class="stitle"> Design Infra</p>
+                <img src="./images/s11Diagrams.net_Logo.svg" />
+                <p class="details">
                     Make a visual diagram with details to easy to understand network flow and helpful to modify it.
                 </p>
 
             </div>
         </div>
     </div>
-    <div id="certification" class="cert card">
+
+    <div id="certification" class="cert">
 
         <div class="title">
             <h1>Certificate</h1>
         </div>
-        <div class="Certificate">
+
+
+        <a class="certificate" href="./cert/1.darshan-mistry-c33644e9-6815-426a-b838-c4552cffdd71-certificate.pdf">
+            <div class="cert-image"></div>
             <h3>Certified Kubernetes Administrator </h3>
             <h4>Cloud Native Computing Foundation</h4>
             <h5>Auguest 03, 2022 - Auguest 03, 2025</h5>
-            <a href="./cert/1.darshan-mistry-c33644e9-6815-426a-b838-c4552cffdd71-certificate.pdf">PDF</a>
-        </div>
-        <div class="Certificate">
+        </a>
+
+        <a class="certificate" href="./cert/2 Course-certificate_Helm-for-Beginners_Darshan.pdf">
+            <div class="cert-image"></div>
             <h3>Helm for Beginners </h3>
             <h4>KodeKloud</h4>
             <h5>September 22, 2022</h5>
-            <a href="./cert/2 Course-Certificate_Helm-for-Beginners_Darshan.pdf">PDF</a>
-        </div>
+        </a>
 
-        <div class="Certificate">
+
+        <a class="certificate"
+            href="./cert/3 Course-certificate_Udemy-Labs-Certified-Kubernetes-Administrator-with-Practice-Tests_Darshan.pdf">
+            <div class="cert-image"></div>
             <h3>Udamy Labs - Certified Kubernetes Administrator with Practice</h3>
             <h4>KodeKloud</h4>
             <h5>May 25, 2022</h5>
-            <a
-                href="./cert/3 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Administrator-with-Practice-Tests_Darshan.pdf">PDF</a>
-        </div>
-        <div class="Certificate">
+        </a>
+
+        <a class="certificate" href="./cert/7 developerWorks CO0201EN certificate _ Intellipaat.pdf">
+            <div class="cert-image"></div>
             <h3>Udemy Labs Certified Kubernetes Application Developer</h3>
             <h4>KodeKloud</h4>
             <h5>May 25, 2022</h5>
-            <a
-                href="./cert/4 Course-Certificate_Udemy-Labs-Certified-Kubernetes-Application-Developer_Darshan.pdf">PDF</a>
-        </div>
+
+        </a>
 
 
-        <div class="Certificate">
+
+        <a class="certificate" href="./cert/7 developerWorks CO0201EN certificate _ Intellipaat.pdf">
+            
+            <div class="cert-image"></div>
             <h3>Container & KubernetesEssentials with IBM Cloud</h3>
             <h4>Intellipaat (IBM)</h4>
             <h5>September 27, 2019</h5>
-            <a href="./cert/7 developerWorks CO0201EN Certificate _ Intellipaat.pdf">PDF</a>
-        </div>
+        </a>
 
 
-        <div class="Certificate">
+
+        <a class="certificate" href="./cert/8 IBM CO0101EN certificate _ Intellipaat.pdf">
+            <div class="cert-image"></div>
             <h3>Docker Essentials: A Developer Introduction</h3>
             <h4>Intellipaat (IBM)</h4>
             <h5>September 26, 2019</h5>
-            <a href="./cert/8 IBM CO0101EN Certificate _ Intellipaat.pdf">PDF</a>
-        </div>
+        </a>
+    </div>
 
     </div>
 
-    <div id="work" class="work card background-experience">
+    <div id="work" class="work background-experience">
         <div class="title">
             <h1>Work Exprience</h1>
         </div>
@@ -456,11 +458,12 @@
             </ul>
         </div>
         <div id="cv" class="cv job">
-                <a href="Darshan Mistry DevOps.pdf" >Download my Curriculum Vitae <image src="./images/p05cv.png" style="height: 37px;"></image></a>     
+            <a href="Darshan Mistry DevOps.pdf">Download my Curriculum Vitae <image src="./images/p05cv.png"
+                    style="height: 37px;"></image></a>
         </div>
     </div>
 
-    <div id="education" class="education card background-education">
+    <div id="education" class="education background-education">
 
         <div class="title">
             <h1>Education</h1>
@@ -475,16 +478,13 @@
         </div>
 
     </div>
-
-    <!-- <div id="project" class="projects card">
+    <!-- <div id="project" class="projects">
         <div class="title">
             <h1>Projects</h1>
         </div>
     </div> -->
 
-
-
-    <!-- <div id="udamy" class="udemy card">
+    <!-- <div id="udamy" class="udemy">
             <div class="title">
                 <h1>Udemy Courses</h1>
             </div>
@@ -506,14 +506,14 @@
 
         </div> -->
 
-    <div id="contectme" class="contectme card">
+    <div id="contectme" class="contectme">
         <div class="title">
             <h1>Connect with me</h1>
         </div>
 
         <div class="iconlist">
             <a href="https://github.com/1111darsh"><img src="./images/c01github.png" alt="Github" /></a>
-            <!-- <a href="https://www.upwork.com/freelancers/~019d6d7ee36627284b"><img src="./images/c03email.png"
+            <!-- <a href="https://www.upwork.com/free class="stitle"lancers/~019d6d7ee36627284b"><img src="./images/c03email.png"
                     alt="upwork" /></a> -->
             <a href="mailto:1111darsh@gmail.com"><img src="./images/c03email.png" alt="Mail" /></a>
             <a href="tel:+91 9727977391"><img src="./images/c02phone.png" alt="call" /></a>
@@ -527,7 +527,7 @@
 
         </div>
         <div class="message">
-        <!-- <form>
+            <!-- <form>
             <label for="name">Name</label>
             
             <input type="text" id="name" name="name"/>
