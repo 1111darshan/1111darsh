@@ -274,10 +274,12 @@ body {
 }
 
 .skill img {
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     border-radius: 5%;
     margin-left: 4%;
+    margin-bottom: 4%;
+
 }
 
 .skill .stitle {
@@ -366,11 +368,17 @@ body {
 .cert-image {
     margin-left: 10%;
     position: relative;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     height: 100px;
     width: 100px;
-
+    overflow: hidden;
+    flex-wrap: wrap;
     border-radius: 50%;
+}
+
+.cert-image img{
+    height: 100px;
+    width: 100px;
 }
 
 .cert-details {
@@ -423,10 +431,11 @@ body {
     background-image: linear-gradient(#E0BBE4, #fff);
     text-align: left;
     align-items: center;
-    margin: 15px;
+    margin: 10px;
     box-shadow: 2px 3px 15px #000;
-    margin-inline: 10%;
+    margin-inline: 8%;
     border-radius: 5px;
+    transition: .5s ;
 }
 
 
@@ -475,6 +484,7 @@ body {
     width: 30%;
     flex-direction: row-reverse;
     align-items: flex-end;
+   
 
 }
 
@@ -484,19 +494,48 @@ body {
 
 }
 
+
 .RandRhide {
-    display: none;
+    transition: 2s;
     visibility: hidden;
+
+}
+.job .RandRhide  p {
+    font-size: 8px;
+    transform:  translate(-900px,150px);
+    transition: 0.3s;
+    opacity: 0;
+
+}
+.RandRhide img{ 
+    animation: dopen 2s;
+  
+} 
+
+@keyframes dopen{
+
+    0%{
+        transform: rotate(0deg);  
+    }
+    15%{
+        transform: rotate(90deg);  
+    }
+    100%{
+        transform: rotate(90deg) translate(1000px,0px); 
+    }
+
 }
 
 .RR {
     display: none;
+    overflow: hidden;
+
 }
 
 .RRshow {
     display: block;
-    transition: 0.5s;
 }
+
 
 .work a {
     height: 100%;

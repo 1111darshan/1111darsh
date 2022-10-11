@@ -134,10 +134,8 @@
         <script>
             function skillclick(i) {
 
-                console.log(i)
                 var skill = document.getElementsByClassName("skill");
                 var details = skill[i].getElementsByClassName("details");
-                console.log(skill[i])
                 skill[i].classList.toggle('skillclick')
                 details[0].classList.toggle('dshow')
 
@@ -293,7 +291,7 @@
 
 
         <a class="certificate" href="./cert/1.darshan-mistry-c33644e9-6815-426a-b838-c4552cffdd71-certificate.pdf">
-            <div class="cert-image"></div>
+            <div class="cert-image"><img src="./images/s01kubernetes.svg"/></div>
             <div class="cert-details">
                 <h3>Certified Kubernetes Administrator </h3>
                 <h4>Cloud Native Computing Foundation</h4>
@@ -303,7 +301,7 @@
         </a>
 
         <a class="certificate" href="./cert/2 Course-certificate_Helm-for-Beginners_Darshan.pdf">
-            <div class="cert-image"></div>
+            <div class="cert-image"><img src="./images/kodekloud.jpg"/></div>
             <div class="cert-details">
                 <h3>Helm for Beginners </h3>
                 <h4>KodeKloud</h4>
@@ -314,7 +312,7 @@
 
         <a class="certificate"
             href="./cert/3 Course-certificate_Udemy-Labs-Certified-Kubernetes-Administrator-with-Practice-Tests_Darshan.pdf">
-            <div class="cert-image"></div>
+            <div class="cert-image"><img src="./images/kodekloud.jpg"/></div>
             <div class="cert-details">
                 <h3>Udamy Labs - Certified Kubernetes Administrator with Practice</h3>
                 <h4>KodeKloud</h4>
@@ -323,7 +321,7 @@
         </a>
 
         <a class="certificate" href="./cert/7 developerWorks CO0201EN certificate _ Intellipaat.pdf">
-            <div class="cert-image"></div>
+            <div class="cert-image"><img src="./images/kodekloud.jpg"/></div>
             <div class="cert-details">
                 <h3>Udemy Labs Certified Kubernetes Application Developer</h3>
                 <h4>KodeKloud</h4>
@@ -363,12 +361,9 @@
         <script>
             function jobclick(i) {
 
-                console.log(i)
                 var job = document.getElementsByClassName("full-job-details");
                 var RR = job[i].getElementsByClassName("RR");
-                console.log(job[i])
                 var hidrandr = job[i].getElementsByClassName('RandR');
-                console.log()
                 hidrandr[0].classList.toggle('RandRhide')
                 RR[0].classList.toggle('RRshow')
                 
@@ -383,8 +378,6 @@
                     <h4> Omuni (Arvind Limited) </h4>
                     <div class="job-skills-stack">
                         <p>Kubernetes</p>
-
-
                         <p>Kubernetes</p>
                     </div>
                 </div>
