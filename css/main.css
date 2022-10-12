@@ -22,6 +22,8 @@ body {
 }
 
 .panel {
+    display: flex  ;
+    align-items: flex-end;
     background: linear-gradient(60deg, #da2c2c, #6447e4);
     background-size: 400%;
     animation: gradient 4s ease infinite;
@@ -29,10 +31,12 @@ body {
     box-shadow: 0px 10px 16px #000000;
     bottom: 10%;
     left: 50%;
+   
     transform: translateX(-50%);
     border-radius: 50px;
     z-index: 1;
     opacity: 0.7;
+    overflow: visible;
 }
 
 @keyframes gradient {
@@ -69,8 +73,8 @@ body {
 .navigator {
     padding-left: 1rem;
     padding-right: 1rem;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     transition: 0.5s;
 }
 
@@ -245,6 +249,7 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
+    background-color: #f3c6a5;
 
 
 }
@@ -260,7 +265,7 @@ margin: 0px;
     display: flex;
     width: 330px;
     margin: 1%;
-    background-image: linear-gradient(#E0BBE4, #ffffff);
+    background-image: linear-gradient(#faefe7, #ffffff);
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -275,7 +280,7 @@ margin: 0px;
     width: 100vw;
     height: 90vh;
     margin: 1%;
-    background-image: linear-gradient(#E0BBE4, #fff);
+    background-image: linear-gradient(#faefe7, #fff);
     flex-direction: column;
     align-items: left;
     transition: 0.3s;
@@ -311,7 +316,7 @@ margin: 0px;
     box-shadow: 5px 5px 15px #000000;
     display: flex;
     margin: 1%;
-    background-image: linear-gradient(#E0BBE4, #E0BBE4);
+    background-image: linear-gradient(#faefe7, #faefe7);
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -322,7 +327,7 @@ margin: 0px;
     box-shadow: 5px 5px 15px #000000;
     display: block;
     margin: 1%;
-    background-image: linear-gradient(#E0BBE4, #E0BBE4);
+    background-image: linear-gradient(#faefe7, #faefe7);
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -369,14 +374,14 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
-    background-image: linear-gradient(#ffffff, #E0BBE4);
+    background-image: linear-gradient(#ffffff, #9cdcaa);
     text-align: center;
     align-items: center;
 
 }
 
 .certificate {
-    background-image: linear-gradient(#E0BBE4, #ffffff);
+    background-image: linear-gradient(#9cdcaa, #ffffff);
     position: relative;
     display: inline-flex;
     padding: 2%;
@@ -435,13 +440,13 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
-    background-image: linear-gradient(#ffffff, #E0BBE4);
+    background-image: linear-gradient(#ffffff, #96caf7);
     text-align: center;
     align-items: center;
 }
 
 .full-job-details {
-    background-image: linear-gradient(#E0BBE4, #fff);
+    background-image: linear-gradient(#96caf7, #fff);
     text-align: left;
     align-items: center;
     margin: 15px;
@@ -450,6 +455,16 @@ margin: 0px;
     border-radius: 5px;
 }
 
+.full-job-details:hover {
+    background-image: linear-gradient(#96caf7, #fff);
+    text-align: left;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 2px 3px 15px #000;
+    margin-inline: 10%;
+    border-radius: 5px;
+    transition: .5s ;
+}
 .job {
 
     display: flex;
@@ -459,16 +474,7 @@ margin: 0px;
     border-radius: 5px;
 }
 
-.full-job-details:hover {
-    background-image: linear-gradient(#E0BBE4, #fff);
-    text-align: left;
-    align-items: center;
-    margin: 10px;
-    box-shadow: 2px 3px 15px #000;
-    margin-inline: 8%;
-    border-radius: 5px;
-    transition: .5s ;
-}
+
 
 
 .job .job-skills-stack {
@@ -593,13 +599,14 @@ margin: 0px;
 .education {
     border: solid 1px black;
     border-radius: 8px;
+    background-image: linear-gradient( #fff,#f8a3a8);
     margin: 16px;
     text-align: center;
     align-items: center;
 }
 
 .school {
-    background-image: linear-gradient(#E0BBE4, #fff);
+    background-image: linear-gradient(#f8a3a8, #fff);
     padding: 2%;
     align-items: center;
     margin: 15px;
@@ -639,6 +646,7 @@ margin: 0px;
 /*Conectme */
 
 .contectme {
+    background-image: linear-gradient(#e5e1ab, #fff);
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
