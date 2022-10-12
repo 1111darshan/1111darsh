@@ -257,6 +257,9 @@ margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    padding-inline:40px ;
+
 }
 
 .skill {
