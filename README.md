@@ -179,7 +179,7 @@ DevOps processes and successfully onboarded
     - gitlab
     - bitbucket 
 
-- CI/CD
+- CI/CD [Repo](https://github.com/1111darsh/CICD-Jenkins)
     - jenkins [jenkinsfile](https://github.com/hoto/jenkinsfile-examples)
     - git hub actions
 
@@ -192,7 +192,7 @@ DevOps processes and successfully onboarded
     - javascript
 
 
-- Design Infastucture
+- Design Infastucture [Repo](https://github.com/1111darsh/3-Tier-structure)
     -  Low lantecy base
         - https://www.arista.com/assets/data/pdf/CloudNetworkLatency.pdf
         - https://datatracker.ietf.org/meeting/100/materials/slides-100-intarea-architectural-considerations-for-latency-critical-communications-00
@@ -201,6 +201,7 @@ DevOps processes and successfully onboarded
     -  sucure
     -  robust
     -  Auto scaliable
+
 
 - Monitoring
     - prometheus [Doc](https://prometheus.io/docs/introduction/overview/)

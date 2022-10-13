@@ -215,7 +215,44 @@ margin: 0px;
     }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .home {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: column;
+    }
+ 
+    .home .left {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0px;
+    }
+    .home .right {
+        width: fit-content;
+        height: 50%;
+        justify-content: flex-start;
+    }
+    .home .left .circle {
+        height: 240px;
+        width: 240px;
+        margin: 80px;
+        margin-bottom: 0px;
+    }
+    .logo {
+        height: 110px;
+    }
+    .home .right .name {
+        color: #E7E6FF;
+        font-size: 56px; 
+    }
+    .home .right .deg {
+        color: #57f4ff;
+        font-size: 40px;
+        
+    }
+    
+
+}
 
 
 
