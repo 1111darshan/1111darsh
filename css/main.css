@@ -294,7 +294,6 @@ margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
     padding-inline:40px ;
 
 }
@@ -313,17 +312,13 @@ margin: 0px;
 }
 
 .skillclick {
-    box-shadow: 3px 3px 10px #000000;
     display: block;
     padding-left: 8vh;
     width: 100vw;
     height: 90vh;
     margin: 1%;
-    background-image: linear-gradient(#faefe7, #fff);
-    flex-direction: column;
     align-items: left;
     transition: 0.3s;
-    border-radius: 32px;
 }
 
 .skill img {
@@ -390,20 +385,26 @@ margin: 0px;
     .skills {
         display: block;
         align-items: center;
-        flex-wrap: unset;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
-    .skills img {
-        box-shadow: 4px 4px 12px rgb(0, 0, 0);
-        border-radius: 5%;
+    .skillboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-inline:0px ;
     }
-
-    .skills p {
-        float: none;
-        text-align: justify;
-        width: 94%;
-        padding: 2%;
+    .skillclick {
+        display: block;
+        padding-left: 1vh;
+        width: 100vw;
+        height: 90vh;
+        margin: 1%;
+        align-items: left;
+        transition: 0.3s;
+    }
+    .skillclick .details{
+        padding: 0;
     }
 
 }
