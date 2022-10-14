@@ -493,6 +493,13 @@ margin: 0px;
     border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+    .certificate {
+        width: 88%;
+        flex-direction: column;
+    }
+
+}
 
 /* Work*/
 .work {
@@ -651,6 +658,35 @@ margin: 0px;
 
 .Respossibilities {
     padding-left: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .full-job-details{
+        margin-inline:4%;
+    }
+    .full-job-details:hover{
+        margin-inline:3%;
+    }
+
+    .job {
+        width: 100%;
+        flex-direction: column;
+    }
+    .job .job-details{
+        width: 100%;
+    }
+    .job .RandR {
+        width: 90%;
+    }
+    .job .RandR p {
+        font-size: 20px;
+    }
+    .job .RandR img {
+        height: 64px;
+    }
+
+    
+
 }
 
 /* Education */
