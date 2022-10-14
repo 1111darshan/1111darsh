@@ -686,6 +686,13 @@ margin: 0px;
         height: 64px;
     }
 
+    .job .job-skills-stack {
+
+        width:95%;
+        flex-wrap: wrap;
+        padding-inline: 8px;
+        margin-left: 0px;
+    }
     
 
 }
