@@ -388,12 +388,25 @@ margin: 0px;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
     .skillboard {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding-inline:0px ;
+        padding-inline:8px ;
     }
+    .skill{
+        width: 160px;
+    }
+    .skill .stitle {
+        color: #4C0D85;
+        font-size: 20px;
+    }
+    .skill img {
+        height: 80px;
+        width: 80px;
+    }
+    
     .skillclick {
         display: block;
         padding-left: 1vh;
