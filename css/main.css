@@ -277,7 +277,13 @@ margin: 0px;
 
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .containt {
+        font-size: 18px;
+        padding: 4%;
+        padding-top: 0%;
+    }
+}
 
 
 /* Skill */
