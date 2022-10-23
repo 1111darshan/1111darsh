@@ -139,20 +139,23 @@ DevOps processes and successfully onboarded
     - CKA 
     - Helm [DOC](https://helm.sh/docs/)
     - Istio [DOC](https://istio.io/latest/docs/)
+    - Promethues [DOC](https://prometheus.io/docs/introduction/overview/)
+    - Grafana [DOC](https://grafana.com/docs/)
 
 - Docker  [Doc](https://docs.docker.com/get-started/overview/)
     - containerzes Spring boot , python node application
     - dockerfile
     - docker compose
 
-- Linux
+- Linux 
     - Disk space utilications
     - network
     - cron
     - user management
     - Scripting
-- AWS
-    - EC2
+
+- AWS [DOC](https://docs.aws.amazon.com/)
+    - EC2 
     - vpc
     - lambda
     - cloud fomation
@@ -164,7 +167,7 @@ DevOps processes and successfully onboarded
     - Redis
 
 
-- Ansible
+- Ansible  [DOC](https://docs.ansible.com/ansible/latest/index.htm)
     - playbook
     - module
     - host inventory
@@ -173,23 +176,25 @@ DevOps processes and successfully onboarded
     - apply plan stat
     - 
 
-- GitOps
+- GitOps [DOC](https://www.redhat.com/en/topics/devops/what-is-gitops#:~:text=GitOps%20gives%20you%20tools%20and,other%20necessary%20pieces%20into%20place.)
     - git 
     - git hub
     - gitlab
     - bitbucket 
+    - argo CD [DOC](https://argo-cd.readthedocs.io/en/stable/core_concepts/)
 
 - CI/CD [Repo](https://github.com/1111darsh/CICD-Jenkins)
     - jenkins [jenkinsfile](https://github.com/hoto/jenkinsfile-examples)
     - git hub actions
 
 - Scripting Language
-    - python
-    - go
+    - python [DOC](https://docs.python.org/3/x)
+    - go [DOC](https://go.dev/doc/)
     - java
     - html
     - css
     - javascript
+    - bash [DOC](https://www.gnu.org/software/bash/manual/bash.html#Introduction)
 
 
 - Design Infastucture [Repo](https://github.com/1111darsh/3-Tier-structure)
