@@ -4,14 +4,14 @@
 }
 
 body {
-    background-color: #D291BC;
+    background-color: #000000;
     margin: 0%;
 }
 
 .title h1 {
     font-size: 48px;
     text-align: center;
-    color: #10031C;
+    color: #ffffff;
 
 }
 
@@ -265,14 +265,14 @@ margin: 0px;
     margin: 16px;
    
 
-    background-image: linear-gradient(#ffffff, #E0BBE4);
+    background-image: linear-gradient(#333333, #333333);
     text-align: center;
 }
 
 .containt {
     text-shadow: 0px 0px 1px #4C0D85;
     padding: 8%;
-    color: #4C0D85;
+    color: #ffffff;
     padding-top: 0%;
     font-size: 28px;
 
@@ -292,7 +292,7 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
-    background-color: #f3c6a5;
+    background-color: #000000;
 
 
 }
@@ -310,7 +310,7 @@ margin: 0px;
     display: flex;
     width: 330px;
     margin: 1%;
-    background-image: linear-gradient(#faefe7, #ffffff);
+    background-image: linear-gradient(#222022, #1c1c1c);
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -351,13 +351,13 @@ margin: 0px;
 }
 
 .skill .stitle {
-    color: #4C0D85;
+    color: #ffffff;
     font-size: 28px;
 }
 
 
 .skill:hover {
-    background-image: linear-gradient(#faefe7, #faefe7);
+    background-image: linear-gradient(#737173, #1c1c1c);
 }
 
 
@@ -421,20 +421,20 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
-    background-image: linear-gradient(#ffffff, #9cdcaa);
+    /* background-image: linear-gradient(#222022, #1c1c1c); */
     text-align: center;
     align-items: center;
 
 }
 
 .certificate {
-    background-image: linear-gradient(#9cdcaa, #ffffff);
+    background-image: linear-gradient(#222022, #1c1c1c);
     position: relative;
     display: inline-flex;
     padding: 2%;
     box-shadow: 1px 2px 10px #000;
     margin: 10px;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     width: 60%;
     align-items: center;
@@ -476,7 +476,7 @@ margin: 0px;
     padding: 2%;
     box-shadow: 2px 4px 20px #000;
     margin: 10px;
-    width: 80%;
+    /* width: 80%; */
     align-items: center;
     border-radius: 5px;
 }
@@ -494,23 +494,24 @@ margin: 0px;
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
-    background-image: linear-gradient(#ffffff, #96caf7);
+    /* background-image: linear-gradient(#ffffff, #96caf7); */
     text-align: center;
     align-items: center;
 }
 
 .full-job-details {
-    background-image: linear-gradient(#96caf7, #fff);
+    background-image: linear-gradient(#222022, #1c1c1c);
     text-align: left;
     align-items: center;
     margin: 15px;
     box-shadow: 1px 2px 10px #000;
     margin-inline: 10%;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .full-job-details:hover {
-    background-image: linear-gradient(#96caf7, #fff);
+    background-image: linear-gradient(#737173, #1c1c1c);
     text-align: left;
     align-items: center;
     margin: 10px;
@@ -549,7 +550,7 @@ margin: 0px;
 
 .job .job-details .job-skills-stack p {
 
-    background-color: #ffffff;
+    background-color: #373434;
     width: fit-content;
     padding: 2px;
     padding-inline: 10px;
@@ -689,15 +690,16 @@ margin: 0px;
 .education {
     border: solid 1px black;
     border-radius: 8px;
-    background-image: linear-gradient( #fff,#f8a3a8);
+    /* background-image: linear-gradient( #fff,#f8a3a8); */
     margin: 16px;
     text-align: center;
     align-items: center;
 }
 
 .school {
-    background-image: linear-gradient(#f8a3a8, #fff);
+    background-image: linear-gradient(#222022, #1c1c1c);
     padding: 2%;
+    color: #ffffff;
     align-items: center;
     margin: 15px;
     box-shadow: 1px 2px 10px #000;
@@ -736,7 +738,7 @@ margin: 0px;
 /*Conectme */
 
 .contectme {
-    background-image: linear-gradient(#e5e1ab, #fff);
+    /* background-image: linear-gradient(#e5e1ab, #fff); */
     border: solid 1px black;
     border-radius: 8px;
     margin: 16px;
@@ -761,6 +763,7 @@ margin: 0px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    background: linear-gradient(-45deg, #da2c2c, #6447e4);
 }
 
 .iconlist a:hover {
