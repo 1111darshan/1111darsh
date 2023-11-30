@@ -32,7 +32,8 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/title.png" />
     <link rel="stylesheet" href="./css/main.css" />
-    <script type = "text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/skill.js"></script>
+    
 
 
 
@@ -102,596 +103,61 @@
         </div>
         <a href="DarshanMistryDevOps.pdf" style="position: absolute; top:5px; right: 5px;">
             <image src="./images/p005cv.png" style=" width: 36px;"></image>
-    </div>
-
-
-    </a>
-    </div>
-
-    <div id="aboutme" class="aboutme">
-        <div class="title">
-            <h1>About Me</h1>
-        </div>
-        <div class="containt">
-            I am Darshan Mistry, A DevOps Engineer.
-            I am the Certified Kubernetes Administrator by Cloud Native Computing Foundation(CNCF) and Certified DevOps
-            Professional by IBM.
-            I am owning an experience with 5 DevOps teams.
-            I worked with complex 97+ microservices deployed over Kubernetes base containerize Infrastructure.
-            Istio mash is implemented on the Kubernetes cluster.
-            To reduce the cost of infrastructure and make it highly resilient are my abilities.
-            I can automate the deployment process with CI/CD using Jenkins and GitHub actions.
-            I have an idea about an Agile software build life cycle.
-            I can make the software deployment lifecycle smoother and faster using CI/CD pipelines.
-            I can build, secure, and High Available Infrastructure using a different load balancer and reverse proxies
-            in AWS.
-            I can build infrastructure in Terraform.
-            It will help to make quick changes in infrastructure.
-            And the code in terraforms is used to create disaster recovery planes.
-            I am using ansible to keep updating new packages on a number of servers in a short time.
-            I can automate the simple task using a Shell script, or a Python script.
-            I can deploy a Prometheus, Grafana, Datalog, and ELK stack over Kubernetes.
-        </div>
-    </div>
-
-    <div id="skill" class="skills">
-        <div class="title">
-            <h1>Skills</h1>
-        </div>
-
-        <script>
-            function skillclick(i) {
-
-                var skill = document.getElementsByClassName("skill");
-                var details = skill[i].getElementsByClassName("details");
-                skill[i].classList.toggle('skillclick')
-                details[0].classList.toggle('dshow')
-
-
-            }
-        </script>
-
-        <div class="skillboard">
-
-            <div class="skill" onclick="skillclick('0')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Kubernetes </p>
-                    <img src="./images/s01kubernetes.svg" />
-
-                </div>
-                <div class="details">
-                    <ul style="list-style: none;">
-                        <li>Create, Maintain and Upgrade Kubernets Cluster</li>
-                        <li>Deploy Various Objects
-                            <ul style="list-style: none;">
-                                <li> Deployment,</li>
-                                <li> Stateful set,</li>
-                                <li> Job, Cronjob,</li>
-                                <li> PV, PVC,</li>
-                                <li> network policy,</li>
-                                <li> Namesapace,</li>
-                                <li> Services,</li>
-                                <li> Ingress,</li>
-                                <li> role, rolebinding, </li>
-                                <li> Cluster role, clusterrole binding,</li>
-                                <li> service account </li>
-                            </ul>
-                        </li>
-                        <li>Different user and their access management</li>
-                        <li>Take microservie deployment with zero downtime</li>
-                        <li>Auto-Scalling Management</li>
-                        <li>Workwith helm chart and Isto service mash</li>
-                        <li>Monitoring and logging</li>
-                        <li>Manage secrete and Config map</li>
-                        <li>Make zero down time using liveliness and readiness</li>
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('1')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Docker</p>
-                    <img src="./images/s02Docker.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Docker python node go java application</li>
-                        <li>Create docker file</li>
-                        <li>Manage private repo</li>
-                        <li>Manganage Container, Image, Repository, Network</li>
-                        <li>Multi stage Docker file</li>
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-
-            </div>
-
-            <div class="skill" onclick="skillclick('2')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Linux</p>
-                    <img src="./images/s03NewTux.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Process management </li>
-                        <li>Package management (web server(apache Nginx), different application)</li>
-                        <li>User, Access management</li>
-                        <li>Memory management</li>
-                        <li>Disk management</li>
-                        <li>Logging, DNS, Port, Network management</li>
-                        <li>Shell, Bash Scripting</li>
-                        <li>Troubles shooting </li>
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('3')">
-                <div class="Skill-showcase">
-                    <p class="stitle">AWS</p>
-                    <img src="./images/s04AWS.png" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Deploy application on EC2, ECS, EKS</li>
-                        <li>Design VPN from scratch with public and private subnet</li>
-                        <li>Access management</li>
-                        <li>Set up Monitoring Dashboard</li>
-                        <li>Setup Low cost consuming infra</li>
-                        <li>Manage autoscalling application</li>
-                        <li>Trigger alert using SNS, SES</li>
-                        <li>Manage traffic with route 53, Cloudfront, ELB, SQS</li>
-                        <li>Mange application serverless with Labda function</li>
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('4')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Ansible</p>
-                    <img src="./images/s05Ansible_logo.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Building an Invintory</li>
-                        <li>Creating playbook</li>
-                        <li>Installing Ansible </li>
-                        <li>Configring Ansible</li>
-                        <li>Writing task, playbook </li>
-                        <li>Working with inventory</li>
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('5')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Terraform </p>
-                    <img src="./images/s06Terraform_Logo.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Manage AWS and Kubernetes Infra</li>
-                        <li>Track Infra</li>
-                        <li>Automate quick changes</li>
-                        <li>Manage secracts </li>
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-
-            </div>
-
-            <div class="skill" onclick="skillclick('6')">
-                <div class="Skill-showcase">
-                    <p class="stitle">GitOps</p>
-                    <img src="./images/s07redhat_openshift_onGitOps_0.png" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>User Management</li>
-                        <li>Bitbucket configure</li>
-                        <li>poject and access management</li>
-                        <li>Suggent Branching model</li>
-                        <li>Create environment for IAC</li>
-                        <li>Manage release</li>
-                        <li>Set up hook to run automated CI/CD</li>
-                        <li>Impliment deployment stages</li>
-                        <li>Revert miss commit</li>
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('7')">
-                <div class="Skill-showcase">
-                    <p class="stitle">CI/CD</p>
-                    <img src="./images/s09Jenkins_logo.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-
-                        <li>Jenkins Installation and setup</li>
-                        <li>Create a multistage pipeline</li>
-                        <li>User and access management</li>
-                        <li>Create different worker nodes</li>
-                        <li>Create Jenkinsfile</li>
-                        <li>Backup and Restore jenkins data</li>
-                        <li>Upgreade version</li>
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-
-            </div>
-
-            <div class="skill" onclick="skillclick('8')">
-                <div class="Skill-showcase">
-                    <p class="stitle">Scripting</p>
-                    <img src="./images/s10Python-logo-notext.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-
-                        <li>Automate Reduendun task</li>
-                        <li>Automate log extraction and filter logic</li>
-                        <li>Create command line tool and simple API service</li>
-                        <li>Code Simple script in Bash, Python and Go</li>
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-            </div>
-
-            <div class="skill" onclick="skillclick('9')">
-                <div class="Skill-showcase">
-                    <p class="stitle"> Design Infra</p>
-                    <img src="./images/s11Diagrams.net_Logo.svg" />
-                </div>
-                <div class="details">
-                    <ul>
-                        <li>Create picturad and Clear Infra design ro easy to understand</li>
-                        <li>Configure in very details way</li>
-                        <li>Provide large network and traffic flow clearity</li>
-                        <li>Create tag vise and layer vice drawing for better way</li>
-                        <li>Secure, cost saving and robust solution</li>
-
-
-                    </ul>
-                    <a href=""><img src="./images/c01github.png" style="height: 20px; width:20px;" /></a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="certification" class="cert">
-
-        <div class="title">
-            <h1>Certificate</h1>
-        </div>
-        <div id="certificate-section"></div>
-    </div>
-
-    <div id="work" class="work background-experience">
-        <div class="title">
-            <h1>Work Exprience</h1>
-        </div>
-        <script>
-            function jobclick(i) {
-
-                var job = document.getElementsByClassName("full-job-details");
-                var RR = job[i].getElementsByClassName("RR");
-                var hidrandr = job[i].getElementsByClassName('RandR');
-                hidrandr[0].classList.toggle('RandRhide')
-                RR[0].classList.toggle('RRshow')
-
-
-
-            }
-        </script>
-        <div class="full-job-details" onclick="jobclick(0)">
-        <div class="job">
-            <div class="job-details">
-                <h3> DevOps Engineer </h3>
-                <h4> Skaud </h4>
-                <div class="job-skills-stack">
-                    <p>Kubernetes</p>
-                    <p>Helm</p>
-                    <p>Istio</p>
-                    <p>Linux</p>
-                    <p>Docker</p>
-                    <p>AWS</p>
-                    <p>GCP</p>
-                    <p>Terraform</p>
-                    <p>Kafka</p>
-                    <p>Argocd</p>
-                    <p>Prometheus</p>
-                    <p>Grafana</p>
-                    <p>Jenkins</p>
-                    <p>Mongo</p>
-                    <p>Python</p>
-                    <p>Prostgenst SQL</p>
-                    <p>Datadog</p>
-                </div>
-            </div>
-            <div class="RandR">
-                <img src="./images/RRPolygon.svg" />
-                <p>Roles and <br />Responsibilities</p>
-            </div>
-        </div>
-        <div class="RR">
-            <div class="Roles"> Roles</div>
-            <div class="Respossibilities"> Responsibilities</div>
-        </div>
-    </div>
-        <div class="full-job-details" onclick="jobclick(1)">
-            <div class="job">
-                <div class="job-details">
-                    <h3> DevOps Cloud Engineer </h3>
-                    <h4> Omuni (Arvind Limited) </h4>
-                    <div class="job-skills-stack">
-                        <p>Kubernetes</p>
-                        <p>helm</p>
-                        <p>Istio</p>
-                        <p>Linux</p>
-                        <p>Docker</p>
-                        <p>AWS</p>
-                        <p>Terraform</p>
-                        <p>Kafka</p>
-                        <p>Mysql</p>
-                        <p>Prometheus</p>
-                        <p>Grafana</p>
-                        <p>Jenkins</p>
-                        <p>Mongo</p>
-                        <p>Python</p>
-                    </div>
-                </div>
-                <div class="RandR">
-                    <img src="./images/RRPolygon.svg" />
-                    <p>Roles and <br />Responsibilities</p>
-                </div>
-            </div>
-            <div class="RR">
-                <div class="Roles"> Roles</div>
-                <div class="Respossibilities"> Responsibilities</div>
-                <div class="Roles"> Administration of Kubernetes</div>
-                <div class="Respossibilities"> Manage 97+ Microservices deploy over the Kubernetes cluster</div>
-                <div class="Respossibilities"> Maintain cluster 99.99% uptime using 3 master servers.</div>
-                <div class="Respossibilities"> Upgrade cluster version</div>
-                <div class="Respossibilities"> Increase or decrease worker node counts and HPA Count at sale time</div>
-                <div class="Respossibilities"> Create New microservices environments and deploy it.</div>
-                <div class="Respossibilities"> Create Deployment, Service and virtual service, Gateway using Istio
-                    service
-                    mash</div>
-                <div class="Respossibilities"> Take regular Sprint deployments every Wednesday</div>
-                <div class="Respossibilities"> Monitor each and microservice using Prometheus and Grafana</div>
-                <div class="Roles"> Administration of AWS cloud</div>
-                <div class="Respossibilities"> Manage ELB, ASG, Target Group, EBS, ECR, EC2 servers.</div>
-                <div class="Respossibilities"> Create new EC2 servers as per Requirements and managing their service
-                    group,
-                    key pair and volume</div>
-                <div class="Respossibilities"> Manage VPC, Route table, Subnets, Elastic IP, NAT Gateway, VPC peering,
-                    Internet gatway</div>
-                <div class="Respossibilities"> Create and manages RDS.</div>
-                <div class="Respossibilities"> Create manages and deploy python codes in Lambda Function.</div>
-                <div class="Respossibilities"> Create new subdomain and manages it using Route 53.</div>
-                <div class="Respossibilities"> Manage S3 buckets and Objects Lifecycle policy and Access.</div>
-                <div class="Respossibilities"> Manage Cloud front.</div>
-                <div class="Respossibilities"> Manage SQS Queues and IAM users, role, policies</div>
-                <div class="Respossibilities"> Manage Elastic catch and Redis</div>
-                <div class="Respossibilities"> CloudWatch and CloudTrail</div>
-                <div class="Roles"> Administration of Jenkins</div>
-                <div class="Respossibilities"> Create integration and deployment CI/CD pipeline</div>
-                <div class="Respossibilities"> Create cleaning and scripting pipeline</div>
-                <div class="Respossibilities"> Handle Jenkins build package and Maintain Users Access</div>
-                <div class="Respossibilities"> Dockerized spring boot application, NodeJS, and Python Application with
-                    Jenkins pipeline</div>
-                <div class="Roles"> Administration of Database</div>
-                <div class="Respossibilities"> Create and Delete Users, Database (SQL, NoSQL, MongoDB), Tables, RDS,
-                    Servers, collection.</div>
-                <div class="Respossibilities"> Provide required access to Users.</div>
-                <div class="Respossibilities"> Create Triggers, Index.</div>
-                <div class="Respossibilities"> Maintain database size and free space.</div>
-                <div class="Respossibilities"> Regulate clean-up using script and lambda function</div>
-                <div class="Respossibilities"> Monitor CPU, Memory, Read-Write operation.</div>
-                <div class="Respossibilities"> Maintain Connectivity and Security</div>
-                <div class="Roles"> Administration of Linux Servers</div>
-                <div class="Respossibilities"> CPU and Memory management</div>
-                <div class="Respossibilities"> Create required shell script</div>
-                <div class="Respossibilities"> Install and update packages</div>
-                <div class="Respossibilities"> Remove vulnerability</div>
-                <div class="Respossibilities"> Create and manage users and their access</div>
-                <div class="Respossibilities"> Manages disk space attach volumes</div>
-                <div class="Respossibilities"> Process and Port management</div>
-                <div class="Respossibilities"> Troubleshooting issues</div>
-                <div class="Respossibilities"> Make ssh connections keys and Provides to uses</div>
-                <div class="Respossibilities"> Creates and maintains SCP server</div>
-                <div class="Respossibilities"> Update SSL Certificate; OpenVPN, and Nessus Licences</div>
-                <div class="Roles"> Contributor Monitoring and Logging task</div>
-                <div class="Respossibilities"> Manage all Linux servers with Good monitoring using Prometheus and
-                    Grafana
-                </div>
-                <div class="Respossibilities"> Redesign and implement the ELK stack with the Kubernetes cluster</div>
-                <div class="Respossibilities"> Maintain, implications of monitoring application</div>
-                <div class="Respossibilities"> Maintain CPU, Memory, Disk space, Health check, etc. alerts</div>
-                <div class="Respossibilities"> Manage backup of Elastic Search and store old logs in S3</div>
-                <div class="Respossibilities"> Upgraded Version of Application Level Monitoring software Pinpoint.</div>
-                <div class="Roles"> Administration of Version Control System</div>
-                <div class="Respossibilities"> Create, grant and remove access in Bitbucket and Gitlab</div>
-                <div class="Respossibilities"> Handle Branching models</div>
-                <div class="Respossibilities"> Create repository, groups and projects in bitbucket</div>
-                <div class="Respossibilities"> Managed Bitbucket and Gitlab along with their user</div>
-                <div class="Roles"> Administration of Proxy and Indusface WAF</div>
-                <div class="Respossibilities"> Maintain proxy and reverse proxy</div>
-                <div class="Respossibilities"> Nginx and Apache config managements</div>
-                <div class="Respossibilities"> Create squid proxy to maintain traffic</div>
-                <div class="Respossibilities"> Analyse traffic volumes; traffic threads and block traffic Using
-                    Indusface
-                    WAF</div>
-                <div class="Roles"> Administration of Analytics (Windows servers and proxy) servers</div>
-                <div class="Respossibilities"> Attach disk restore disk from backup</div>
-                <div class="Respossibilities"> Install Required Software</div>
-                <div class="Respossibilities"> Maintain inbound and outbound traffic</div>
-                <div class="Respossibilities"> Provide RDP Access</div>
-                <div class="Roles"> DevOps Team Maintainer at small level</div>
-                <div class="Respossibilities"> Maintain and Assign prioritize task</div>
-                <div class="Respossibilities"> Lead 5 members of the DevOps Team</div>
-                <div class="Respossibilities"> Take regular report from DevOps, Help them</div>
-                <div class="Respossibilities"> Take interview and Train New freshers</div>
-                <div class="Respossibilities"> Redesign DevOps process, Create SOP documents</div>
-                <div class="Roles"> Cross team Contributor</div>
-                <div class="Respossibilities"> Solves customers issue.</div>
-                <div class="Respossibilities"> Help other team to troubleshooting Issues</div>
-                <div class="Respossibilities"> Solves third-party issue</div>
-                <div class="Respossibilities"> Create RCA reports</div>
-                <div class="Respossibilities"> Participate Audit of SOC2</div>
-                <div class="Roles"> Others</div>
-                <div class="Respossibilities"> OpenVPN, FreeIPA bastion, Jenkins Users access</div>
-                <div class="Respossibilities"> Create Ansible playbook and Terraform script</div>
-                <div class="Respossibilities"> Manage cluster of 3 Kafka servers and Manage the 3 RabbitMQ servers</div>
-                <div class="Respossibilities"> Create and Delete Kafka and RabbitMQ queues</div>
-                <div class="Respossibilities"> Create Dockerfile</div>
-                </ul>
-            </div>
-        </div>
-        <div class="full-job-details" onclick="jobclick(2)">
-            <div class="job">
-                <div class="job-details">
-                    <h3> Associate DevOps Engineer </h3>
-                    <h4> Borndigital </h4>
-                    <div class="job-skills-stack">
-                        <p>Kubernetes</p>
-                        <p>Jenkins</p>
-                        <p>Docker</p>
-                        <p>Linux</p>
-                        <p>GCP</p>
-                        <p>VPN</p>
-                    </div>
-                </div>
-                <div class="RandR">
-                    <img src="./images/RRPolygon.svg" />
-                    <p>Roles and <br />Responsibilities</p>
-                </div>
-
-            </div>
-            <div class="RR">
-                <div class="Roles"> Roles Responsibilities</div>
-                </ul>
-                <div class="Respossibilities"> Manage GCP and AWS cloud as Administrator access</div>
-                <div class="Respossibilities"> Linux administrator</div>
-                <div class="Respossibilities"> Manage all Linux server with Good monitoring</div>
-                <div class="Respossibilities"> Created a shell/bash script</div>
-                <div class="Respossibilities"> Made command-line tools and API using python scripting</div>
-                <div class="Respossibilities"> Manage monitoring tools (Nagios)</div>
-                <div class="Respossibilities"> Creates, deploys and manage private VPN to securing a network, own VPN
-                    using Wire guard</div>
-                <div class="Respossibilities"> Manage Jenkins and CI/CD Tools</div>
-                <div class="Respossibilities"> Handle Docker environment</div>
-                <div class="Respossibilities"> Created dojo bitcoin (Node)</div>
-                <div class="Respossibilities"> Manage SSL certificate and maintain it using let's encrypt</div>
-                <div class="Respossibilities"> Designed and Deployed new infrastructure in AWS with s3, VPC, subnets,
-                    Load balancer, Cloud watch</div>
-                </ul>
-            </div>
-
-        </div>
-        <a href="DarshanMistryDevOps.pdf">
-            <div id="cv" class="full-job-details">
-                <div class="job">
-                    <h3>Download My Resume <image src="./images/p005cv.png" style="height: 37px;"></image>
-                    </h3>
-                </div>
-            </div>
         </a>
     </div>
 
-    <div id="education" class="education background-education">
 
-        <div class="title">
-            <h1>Education</h1>
-        </div>
 
-        <div class="school">
-            <h3>Bachelor of Engineering</h3>
-            <h4>Computers Science and Engineering</h4>
-            <h4>2015 - 2019</h4>
-        </div>
-        <div class="school">
-            <h3>Higher Secondary School</h3>
-            <h4>Science</h4>
-            <h4>2013 - 2015</h4>
+    </div>
+
+    <div id="aboutme" class="card">
+        <h5 style="color: aliceblue;">About me</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
         </div>
 
     </div>
-    <!-- <div id="project" class="projects">
-        <div class="title">
-            <h1>Projects</h1>
-        </div>
-    </div> -->
 
-    <!-- <div id="udamy" class="udemy">
-            <div class="title">
-                <h1>Udemy Courses</h1>
-            </div>
-            <p>note: some courses are deleted because they became paid. Please,
-                send me feedback if you find a course paid.</p>
-            <div id="courses">
+    <div id="skill" class="card">
+        <h5 style="color: aliceblue;">Skills</h5>
+    </div>
 
-                <div class="click-me"><a
-                        style="text-decoration: none;"
-                        href="https://www.udemy.com/course/next-generation-firewall-jam-session-2021/?awc=6554_1660743463_6a9555db56a044a58f967083be696b33&amp;utm_source=Growth-Affiliate&amp;utm_medium=Affiliate-Window&amp;utm_campaign=Campaign-Name&amp;utm_term=330563&amp;utm_content=Placement&amp;couponCode=FREE-IN-AUG-22"><h2
-                            class="">
-                            1. CheckPoint-NGFW Security : Basic Introduction
-                            <div   class="rating"><span class="fa fa-star checked"></span><span
-                                    class="fa fa-star checked"></span><span
-                                    class="fa fa-star checked"></span><span
-                                    class="fa fa-star checked"></span><span
-                                    class="fa fa-star"></span> 4.4 English</div></h2></a></div>
-            </div>
-
-        </div> -->
-
-    <div id="contectme" class="contectme">
-        <div class="title">
-            <h1>Connect with me</h1>
+    </div>
+    <div id="certification" class="card">
+        <h5 style="color: aliceblue;">certification</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
         </div>
 
-        <div class="iconlist">
-            <a href="https://github.com/1111darsh"><img src="./images/c01github.png" alt="Github" /></a>
-            <!-- <a href="https://www.upwork.com/free class="stitle"lancers/~019d6d7ee36627284b"><img src="./images/c03email.png"
-                    alt="upwork" /></a> -->
-            <a href="mailto:1111darsh@gmail.com"><img src="./images/c03email.png" alt="Mail" /></a>
-            <a href="tel:+91 9727977391"><img src="./images/c02phone.png" alt="call" /></a>
-            <a href="https://www.youtube.com/channel/UC4sOs3hvMkolOuEOlEVvVlg"><img src="./images/c05youtube.png"
-                    alt="youtube" /></a>
-            <a href="https://www.facebook.com/1111darshan"><img src="./images/c06facebook.png" alt="facebook" /></a>
-            <a href="https://www.instagram.com/1111darsh"><img src="./images/c07instagram.png" alt="instragram" /></a>
-            <a href="https://twitter.com/1111darshan"><img src="./images/c09twitter-sign.png" alt="twitter" /></a>
-            <a href="https://www.linkedin.com/in/1111darsh"><img src="./images/c08linkedin-logo.png"
-                    alt="linkedin" /></a>
-
+    </div>
+    <div id="work" class="card">
+        <h5 style="color: aliceblue;">Work Expriences</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
         </div>
-        <div class="message">
-            <!-- <form>
-            <label for="name">Name</label>
-            
-            <input type="text" id="name" name="name"/>
-            <br/>
-            <label for="lname">Email</label>
-            <input type="email" id="email" name="email"/>
-            <br/>
-            <label for="Message">Message</label>
-            <textarea type="textbox" id="email" name="email">
-            </textarea>
-
-        </form> -->
+    </div>
+    <div id="project" class="card">
+        <h5 style="color: aliceblue;">Project</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
+        </div>
+    </div>
+    <div id="education" class="card">
+        <h5 style="color: aliceblue;">Education</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
+        </div>
+    </div>
+    <div id="contectme" class="card">
+        <h5 style="color: aliceblue;">Contect me</h5>
+        <div class="subcard">
+            <div class="title">XXXXXXXXX</div>
+            <div cladd="details">XXXXXXXX</div>
         </div>
     </div>
 
