@@ -299,7 +299,7 @@
           "fas fa-globe fa-2x": "https://www.skuad.io/"
         },
         {
-          "fas fa-building fa-2x": "link"
+          "fas fa-building fa-2x": "./3_Experience-Letter.pdf"
         },
         {
           "far fa-user fa-2x": "link"
@@ -315,7 +315,7 @@
           "fas fa-globe fa-2x": "https://omuni.com/"
         },
         {
-          "fas fa-building fa-2x": "link"
+          "fas fa-building fa-2x": "./2_Experience-Letter.pdf"
         },
         {
           "far fa-user fa-2x": "link"
@@ -328,7 +328,7 @@
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
         {
-          "fas fa-building fa-2x": "link"
+          "fas fa-building fa-2x": "./1_Experience-Letter.pdf"
         },
         {
           "far fa-user fa-2x": "link"
