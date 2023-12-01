@@ -391,3 +391,59 @@ body {
         font-size: 14px;
     }
 }
+/* work */
+
+
+.workcard {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #000;
+}
+
+.technology {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+}
+
+.technology p {
+    background-color: #6813b3;
+    width: fit-content;
+    padding: 5px 12px;
+    border: 1px solid #BDBDBD;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+.technology p:hover {
+    background-color: #6813b3; 
+    transform: scale(1.1);/* Changing background color on hover */
+}
+
+.role {
+    padding-left: 3px;
+    font-size: 24px;
+}
+
+.respossibilities {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.accomplishment p {
+    background-color: #222;
+    padding: 5px 12px;
+    border: 1px solid #BDBDBD;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.accomplishment p:hover {
+    background-color: #6813b3; 
+    transform: scale(1.1);/* Changing background color on hover */
+}

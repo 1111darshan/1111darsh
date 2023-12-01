@@ -1,0 +1,213 @@
+work:
+- title: SKUAD.IO (ALL REMOTE)
+  details: DevOps Engineer
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-globe fa-2x: https://www.skuad.io/
+  - fas fa-building fa-2x: "./3_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
+  technology:
+    - Kubernetes
+    - Helm
+    - Istio
+    - Linux
+    - Docker
+    - AWS
+    - GCP
+    - Terraform
+    - Kafka
+    - Argocd
+    - Prometheus
+    - Grafana
+    - Jenkins
+    - Mongo
+    - Python
+    - ProstgenstSQL
+    - Datadog
+  accomplishment:
+    - "Data masking in PostgreSQL led to a 10% reduction in data breach-related costs,
+      resulting in annual savings of $10000 while ensuring compliance and data security"
+    - "Through the development of Helm charts for onboarding new microservices, I accomplished
+      a significant reduction in service provisioning time by 50%, showcasing the ability
+      to streamline deployment processes and enhance operational efficiency."
+    - "Mitigated all service downtime effectively by implementing robust health checks,
+      liveliness probes, and readiness probes, ensuring uninterrupted service availability
+      and improved reliability."
+    - "Successfully implemented cluster segregation using taints, tolerations, and
+      node pools, significantly enhancing the stability and isolation of the development
+      and staging environments in a multi-cluster setup."
+    - "Seamlessly deployed SonarQube utilizing the Helm chart, streamlining code quality
+      analysis and ensuring robust software development practices."
+    - "Successfully established a graph within Grafana to enable the SonarQube matrix,
+      improving visualization and monitoring capabilities for code quality analysis
+      in our DevOps pipeline."
+    - "Completed a complex data migration project, successfully transferring over 10
+      million records with a 99% accuracy rate, resulting in minimal downtime and ensuring
+      data integrity during the transition."
+    - "Optimized infrastructure by transitioning from traditional ingress and mTLS
+      to Istio service mesh, resulting in a 30% reduction in operational costs and improved
+      network security and performance."
+    - "Implemented automated certificate renewal using the Jetpack Certificate Manager
+      Helm chart, reducing certificate expiration incidents by 95% and enhancing system
+      reliability while saving approximately 10 hours of manual effort per month."
+    - "Established a robust monitoring system with proactive health checks that integrated
+      with PagerDuty, reducing incident response times by 40% and ensuring timely incident
+      resolution and improved system reliability."
+    - "Successfully automated GitLab Runner provisioning through Terraform, reducing
+      setup time by 80% and enabling the concurrent execution of 100+ CI/CD pipelines,
+      enhancing development and deployment efficiency."
+    - "Efficiently onboarded Logstash onto GCP's Kubernetes infrastructure using a
+      streamlined Dockerfile-based deployment, resulting in improved log processing,
+      reduced operational overhead, and enhanced system observability."
+    - "Successfully established a comprehensive disaster recovery plan leveraging Google
+      Cloud CLI and Helm scripts, achieving a 99.9% recovery point objective (RPO) and
+      reducing recovery time by 40%, ensuring data resilience and business continuity."
+    - "Implemented automated commit linking to the JIRA dashboard, reducing manual
+      tracking efforts by 60%, enhancing project visibility, and enabling faster issue
+      resolution and project management."
+    - "Enhanced environment security post-removing unused ports and IP addresses, resulting
+      in a 20% reduction in potential attack vectors and strengthening the organization's
+      cybersecurity posture."
+    - "Successfully configured tag-based deployments using ArgoCD, reducing deployment
+      errors by 35% and accelerating the release cycle, resulting in a 20% improvement
+      in development efficiency and product reliability."
+  RoleandResposibility:
+   - Role :
+        -  Resposibility 
+   -  Administration of Kubernetes :
+        -  Resposibility 
+   -  Administration of AWS cloud :
+        -  Resposibility 
+
+- title: OMUNI (ARVIND LIMITED)
+  details: DEVOPS CLOUD ENGINEER
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-globe fa-2x: https://omuni.com/
+  - fas fa-building fa-2x: "./2_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
+  technology:
+    - Kubernetes
+    - helm
+    - Istio
+    - Linux
+    - Docker
+    - AWS
+    - Terraform
+    - Kafka
+    - Mysql
+    - Prometheus
+    - Grafana
+    - Jenkins
+    - Mongo
+    - Python
+  accomplishment:
+    - "Data masking in PostgreSQL led to a 10% reduction in data breach-related costs,
+      resulting in annual savings of $10000 while ensuring compliance and data security"
+    - "Through the development of Helm charts for onboarding new microservices, I accomplished
+      a significant reduction in service provisioning time by 50%, showcasing the ability
+      to streamline deployment processes and enhance operational efficiency."
+    - "Mitigated all service downtime effectively by implementing robust health checks,
+      liveliness probes, and readiness probes, ensuring uninterrupted service availability
+      and improved reliability."
+    - "Successfully implemented cluster segregation using taints, tolerations, and
+      node pools, significantly enhancing the stability and isolation of the development
+      and staging environments in a multi-cluster setup."
+    - "Seamlessly deployed SonarQube utilizing the Helm chart, streamlining code quality
+      analysis and ensuring robust software development practices."
+    - "Successfully established a graph within Grafana to enable the SonarQube matrix,
+      improving visualization and monitoring capabilities for code quality analysis
+      in our DevOps pipeline."
+    - "Completed a complex data migration project, successfully transferring over 10
+      million records with a 99% accuracy rate, resulting in minimal downtime and ensuring
+      data integrity during the transition."
+    - "Optimized infrastructure by transitioning from traditional ingress and mTLS
+      to Istio service mesh, resulting in a 30% reduction in operational costs and improved
+      network security and performance."
+    - "Implemented automated certificate renewal using the Jetpack Certificate Manager
+      Helm chart, reducing certificate expiration incidents by 95% and enhancing system
+      reliability while saving approximately 10 hours of manual effort per month."
+    - "Established a robust monitoring system with proactive health checks that integrated
+      with PagerDuty, reducing incident response times by 40% and ensuring timely incident
+      resolution and improved system reliability."
+    - "Successfully automated GitLab Runner provisioning through Terraform, reducing
+      setup time by 80% and enabling the concurrent execution of 100+ CI/CD pipelines,
+      enhancing development and deployment efficiency."
+    - "Efficiently onboarded Logstash onto GCP's Kubernetes infrastructure using a
+      streamlined Dockerfile-based deployment, resulting in improved log processing,
+      reduced operational overhead, and enhanced system observability."
+    - "Successfully established a comprehensive disaster recovery plan leveraging Google
+      Cloud CLI and Helm scripts, achieving a 99.9% recovery point objective (RPO) and
+      reducing recovery time by 40%, ensuring data resilience and business continuity."
+    - "Implemented automated commit linking to the JIRA dashboard, reducing manual
+      tracking efforts by 60%, enhancing project visibility, and enabling faster issue
+      resolution and project management."
+    - "Enhanced environment security post-removing unused ports and IP addresses, resulting
+      in a 20% reduction in potential attack vectors and strengthening the organization's
+      cybersecurity posture."
+    - "Successfully configured tag-based deployments using ArgoCD, reducing deployment
+      errors by 35% and accelerating the release cycle, resulting in a 20% improvement
+      in development efficiency and product reliability."
+
+
+
+- title: Borndigital
+  details: Associate DevOps Engineer
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-building fa-2x: "./1_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
+  technology:
+    - Kubernetes
+    - Jenkins
+    - Docker
+    - Linux
+    - GCP
+    - VPN
+  accomplishment:
+    - "Data masking in PostgreSQL led to a 10% reduction in data breach-related costs,
+      resulting in annual savings of $10000 while ensuring compliance and data security"
+    - "Through the development of Helm charts for onboarding new microservices, I accomplished
+      a significant reduction in service provisioning time by 50%, showcasing the ability
+      to streamline deployment processes and enhance operational efficiency."
+    - "Mitigated all service downtime effectively by implementing robust health checks,
+      liveliness probes, and readiness probes, ensuring uninterrupted service availability
+      and improved reliability."
+    - "Successfully implemented cluster segregation using taints, tolerations, and
+      node pools, significantly enhancing the stability and isolation of the development
+      and staging environments in a multi-cluster setup."
+    - "Seamlessly deployed SonarQube utilizing the Helm chart, streamlining code quality
+      analysis and ensuring robust software development practices."
+    - "Successfully established a graph within Grafana to enable the SonarQube matrix,
+      improving visualization and monitoring capabilities for code quality analysis
+      in our DevOps pipeline."
+    - "Completed a complex data migration project, successfully transferring over 10
+      million records with a 99% accuracy rate, resulting in minimal downtime and ensuring
+      data integrity during the transition."
+    - "Optimized infrastructure by transitioning from traditional ingress and mTLS
+      to Istio service mesh, resulting in a 30% reduction in operational costs and improved
+      network security and performance."
+    - "Implemented automated certificate renewal using the Jetpack Certificate Manager
+      Helm chart, reducing certificate expiration incidents by 95% and enhancing system
+      reliability while saving approximately 10 hours of manual effort per month."
+    - "Established a robust monitoring system with proactive health checks that integrated
+      with PagerDuty, reducing incident response times by 40% and ensuring timely incident
+      resolution and improved system reliability."
+    - "Successfully automated GitLab Runner provisioning through Terraform, reducing
+      setup time by 80% and enabling the concurrent execution of 100+ CI/CD pipelines,
+      enhancing development and deployment efficiency."
+    - "Efficiently onboarded Logstash onto GCP's Kubernetes infrastructure using a
+      streamlined Dockerfile-based deployment, resulting in improved log processing,
+      reduced operational overhead, and enhanced system observability."
+    - "Successfully established a comprehensive disaster recovery plan leveraging Google
+      Cloud CLI and Helm scripts, achieving a 99.9% recovery point objective (RPO) and
+      reducing recovery time by 40%, ensuring data resilience and business continuity."
+    - "Implemented automated commit linking to the JIRA dashboard, reducing manual
+      tracking efforts by 60%, enhancing project visibility, and enabling faster issue
+      resolution and project management."
+    - "Enhanced environment security post-removing unused ports and IP addresses, resulting
+      in a 20% reduction in potential attack vectors and strengthening the organization's
+      cybersecurity posture."
+    - "Successfully configured tag-based deployments using ArgoCD, reducing deployment
+      errors by 35% and accelerating the release cycle, resulting in a 20% improvement
+      in development efficiency and product reliability."

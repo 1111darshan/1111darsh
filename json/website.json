@@ -302,7 +302,7 @@
           "fas fa-building fa-2x": "./3_Experience-Letter.pdf"
         },
         {
-          "far fa-user fa-2x": "link"
+          "far fa-user fa-2x": "./work.html"
         }
       ]
     },
@@ -318,7 +318,7 @@
           "fas fa-building fa-2x": "./2_Experience-Letter.pdf"
         },
         {
-          "far fa-user fa-2x": "link"
+          "far fa-user fa-2x": "./work.html"
         }
       ]
     },
@@ -331,7 +331,7 @@
           "fas fa-building fa-2x": "./1_Experience-Letter.pdf"
         },
         {
-          "far fa-user fa-2x": "link"
+          "far fa-user fa-2x": "./work.html"
         }
       ]
     }

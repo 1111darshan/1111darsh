@@ -145,20 +145,20 @@ work:
   link:
   - fas fa-globe fa-2x: https://www.skuad.io/
   - fas fa-building fa-2x: ./3_Experience-Letter.pdf
-  - far fa-user fa-2x: link
+  - far fa-user fa-2x: ./work.html
 - title: Omuni (Arvind Limited)
   details: DevOps Cloud Engineer
   iicon: fa-solid fa-laptop-file fa-2xl
   link:
   - fas fa-globe fa-2x: https://omuni.com/
   - fas fa-building fa-2x: ./2_Experience-Letter.pdf
-  - far fa-user fa-2x: link
+  - far fa-user fa-2x: ./work.html
 - title: Borndigital
   details: Associate DevOps Engineer
   iicon: fa-solid fa-laptop-file fa-2xl
   link:
   - fas fa-building fa-2x: ./1_Experience-Letter.pdf
-  - far fa-user fa-2x: link
+  - far fa-user fa-2x: ./work.html
 project:
 - title: Git Branching Strategy
   iicon: fa-solid fa-code fa-2xl
