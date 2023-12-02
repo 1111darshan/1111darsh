@@ -1,8 +1,11 @@
-
-- company: SKUAD.IO (ALL REMOTE)
-  site: https://www.skuad.io/
-  jobtitle: DEVOPS ENGINEER
-  duration: November 2022 – September 2023
+work:
+- title: SKUAD.IO (ALL REMOTE)   
+  details: DevOps Engineer | November 2022 – September 2023
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-globe fa-2x: https://www.skuad.io/
+  - fas fa-building fa-2x: "./3_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
   technology:
     - Kubernetes
     - Helm
@@ -76,12 +79,13 @@
    -  Administration of AWS cloud :
         -  Resposibility 
 
-
-
-- company: OMUNI (ARVIND LIMITED)
-  site: https://omuni.com/
-  jobtitle: DEVOPS CLOUD ENGINEER
-  duration: " April 2021 – July 2022"
+- title: OMUNI (ARVIND LIMITED)  
+  details: DEVOPS CLOUD ENGINEER | April 2021 – July 2022
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-globe fa-2x: https://omuni.com/
+  - fas fa-building fa-2x: "./2_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
   technology:
     - Kubernetes
     - helm
@@ -144,10 +148,15 @@
     - "Successfully configured tag-based deployments using ArgoCD, reducing deployment
       errors by 35% and accelerating the release cycle, resulting in a 20% improvement
       in development efficiency and product reliability."
-- company: BORNDIGITAL
-  site: https://
-  jobtitle: ASSOCIATE DEVOPS ENGINEER
-  duration: " October 2019 – December 2020"
+
+
+
+- title: Borndigital 
+  details: Associate DevOps Engineer | October 2019 – December 2020
+  iicon: fa-solid fa-laptop-file fa-2xl
+  link:
+  - fas fa-building fa-2x: "./1_Experience-Letter.pdf"
+  - far fa-user fa-2x: link
   technology:
     - Kubernetes
     - Jenkins

@@ -1,5 +1,5 @@
 async function getAPI() {
-  let host = "http://127.0.0.1:5500"; // Replace with your actual API URL
+  let host = "https://1111darsh.com"; // Replace with your actual API URL
   let response = await fetch(host + "/json/work.json");
   let data = await response.json();
   console.log(data);
