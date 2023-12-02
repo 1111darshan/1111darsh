@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script type="text/javascript" src="script/website.js"></script>
-    
+    <script type="text/javascript" src="script/feedback.js"></script>
 
 
 
@@ -52,18 +52,20 @@
     <div id="panel" class="panel">
 
 
-        <a href="#top"><img class="navigator" width="50" height="50" src="./images/p01home.png"></a>
-        <a href="#aboutme"><img class="navigator" width="50" height="50" src="./images/p002information.png"></a>
-        <a href="#cv"><img class="navigator" width="50" height="50" src="images/p005cv.png"></a>
-        <a href="#skill"><img class="navigator" width="50" height="50" src="images/p007skill.png"></a>
-        <a href="#certificate"><img class="navigator" width="50" height="50" src="images/p003certificate.png"></a>
-        <a href="#work"><img class="navigator" width="50" height="50" src="./images/p008computer.png"></a>
-        
-        <a href="#education"><img class="navigator" width="50" height="50" src="images/p003scholarship.png"></a>
-        <a href="#project"><img class="navigator" width="50" height="50" src="images/p009code.png"></a>
+        <a class="nav" href="#home"><img class="navigator" width="50" height="50" src="./images/p01home.png"></a>
+        <a class="nav" href="#aboutme"><img class="navigator" width="50" height="50"
+                src="./images/p002information.png"></a>
+        <a class="nav" href="#cv"><img class="navigator" width="50" height="50" src="images/p005cv.png"></a>
+        <a class="nav" href="#skill"><img class="navigator" width="50" height="50" src="images/p007skill.png"></a>
+        <a class="nav" href="#certificate"><img class="navigator" width="50" height="50"
+                src="images/p003certificate.png"></a>
+        <a class="nav" href="#work"><img class="navigator" width="50" height="50" src="./images/p008computer.png"></a>
+        <a class="nav" href="#education"><img class="navigator" width="50" height="50"
+                src="images/p003scholarship.png"></a>
+        <a class="nav" href="#project"><img class="navigator" width="50" height="50" src="images/p009code.png"></a>
+        <a class="nav" href="#contectme"><img class="navigator" width="50" height="50" src="images/p010network.png"></a>
 
         <!-- <a href="#udamy"><img class="navigator" width="50" height="50" src="images/online-education.png"></a> -->
-        <a href="#contectme"><img class="navigator" width="50" height="50" src="images/p010network.png"></a>
         <!-- Panel Script -->
         <script>
 
@@ -101,7 +103,7 @@
             <p>Hello,</p>
             <p>I'm <spen class="name"> Darshan Mistry</spen>,</p>
             <p>I'm <span class="deg">DevOps Engineer </span></p>
-            <p class="arrow"><a href="#aboutme"><img src="./images/Polygon.svg" /></a></p>
+            <p class="arrow"><a class="nav" href="#aboutme"><img src="./images/Polygon.svg" /></a></p>
 
         </div>
         <a href="Darshan_Mistry_DevOps_Bangalore.pdf" style="position: absolute; top:5px; right: 5px;">
@@ -142,9 +144,45 @@
         <h5 style="color: aliceblue;">Contact me</h5>
     </div>
 
-    <div  class="card"></div>
-    <div  class="card"></div>
-    <div  class="card"></div>
+
+
+    <div id="feedback" class="card">
+        <h5>Give Your Feedback</h5>
+        <div id="messageBox" class="subcard">
+            <div class="center">
+                <form id="messageForm">
+                    <label class="input-label" for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" required>
+                    <label class="input-label" for="userContact">Contact Number:</label>
+                    <input type="text" id="userContact" required>
+                    <label class="input-label" for="userMessage">Message:</label>
+                    <textarea id="userMessage" placeholder="Type your message here..." required></textarea>
+                    <button type="button" onclick="sendMessage()">Send</button>
+                </form>
+            </div>
+        </div>
+        <div id="thanksMessage" class="subcard" style="display: none;">
+            <div class="center">
+                <div class="title">Thanks for your feedback!</div>
+                <button type="button" onclick="openMessageBox()">Give Another Feedback</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <br />
+    <br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="card"></div>
+
 </body>
 
 </html>

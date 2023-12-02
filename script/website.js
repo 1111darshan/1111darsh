@@ -1,5 +1,5 @@
 async function getAPI() {
-  let host = "https://1111darsh.com"; 
+  let host = "https://1111darsh.com";
   let response = await fetch(host + "/json/website.json");
   let data = await response.json();
   return data;
@@ -8,6 +8,31 @@ async function getAPI() {
 getAPI().then(data => createSite(data));
 
 function createSite(jsonData) {
+
+
+  const navLinks = document.querySelectorAll('.nav');
+  navLinks.forEach(navLink => {
+    navLink.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      const topPos = parseInt(targetSection.offsetTop)
+
+      if (targetSection) {
+        const topPos = targetSection.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: topPos,
+          behavior: 'smooth'
+        });
+      }
+      else {
+        console.log('No!');
+      }
+      console.log('Button clicked!');
+      // You can perform any action here when the button is clicked
+    });
+ });
   const categories = [
     'aboutme',
     'cv',
@@ -54,8 +79,8 @@ function createCards(data, category) {
       const ilogo = document.createElement('i');
       const classes = item.iicon.split(' ');
       classes.forEach(className => {
-            ilogo.classList.add(className);
-          });
+        ilogo.classList.add(className);
+      });
 
       icon.appendChild(ilogo);
       leftSection.appendChild(icon);
@@ -102,7 +127,12 @@ function createCards(data, category) {
 
     card.appendChild(leftSection);
     card.appendChild(links);
-
     container.appendChild(card);
   });
+
+
 }
+
+
+
+

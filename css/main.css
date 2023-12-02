@@ -391,6 +391,54 @@ body {
         font-size: 14px;
     }
 }
+
+
+/*  */
+
+/* Email and contact number input */
+#userEmail,
+#userContact {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Textarea for the message */
+#userMessage {
+  width: calc(100% - 16px);
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  resize: vertical; /* Allows vertical resizing */
+  background-color: #fff;
+  color: #333;
+}
+
+/* Send button */
+.center button[type="button"] {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6813b3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.center button[type="button"]:hover {
+  background-color: #df2020;
+}
+
 /* work */
 /* Dark mode colors */
 :root {
