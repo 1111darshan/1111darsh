@@ -29,8 +29,6 @@ function createSite(jsonData) {
       else {
         console.log('No!');
       }
-      console.log('Button clicked!');
-      // You can perform any action here when the button is clicked
     });
  });
   const categories = [
