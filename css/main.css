@@ -392,58 +392,83 @@ body {
     }
 }
 /* work */
-
-
-.workcard {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 8px;
-    padding: 16px;
-    background-color: #000;
+/* Dark mode colors */
+:root {
+  --primary-color: #6813b3; /* Primary color */
+  --background-color: #000; /* Background color */
+  --secondary-color: #222; /* Secondary color */
+  --border-color: #BDBDBD; /* Border color */
 }
 
+/* Work Card */
+.workcard {
+  max-width: 800px;
+  margin: 16px auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--background-color);
+}
+
+/* Technology */
 .technology {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 20px;
 }
 
 .technology p {
-    background-color: #6813b3;
-    width: fit-content;
-    padding: 5px 12px;
-    border: 1px solid #BDBDBD;
-    margin: 5px;
-    margin-left: 0px;
-    border-radius: 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+  background-color: var(--primary-color);
+  width: fit-content;
+  padding: 5px 12px;
+  border: 1px solid var(--border-color);
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
+
 .technology p:hover {
-    background-color: #6813b3; 
-    transform: scale(1.1);/* Changing background color on hover */
+  background-color: var(--primary-color);
+  transform: scale(1.1);
 }
 
+/* Role */
 .role {
-    padding-left: 3px;
-    font-size: 24px;
+  padding-left: 3px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 24px;
+  background-color: var(--primary-color);
 }
 
+/* Responsibilities */
 .respossibilities {
-    padding-left: 10px;
-    font-size: 18px;
+  padding-left: 20px;
+  font-size: 18px;
+  
+  line-height: 1.2;
 }
 
+.respossibilities::before  {
+    content: '\2022'; /* Bullet point Unicode character */
+    left: 100px;
+    color: #57f4ff; /* Change color if needed */
+  }
+
+/* Accomplishment */
 .accomplishment p {
-    background-color: #222;
-    padding: 5px 12px;
-    border: 1px solid #BDBDBD;
-    margin: 5px;
-    margin-left: 0px;
-    border-radius: 5px;
-    font-size: 16px;
+  background-color: var(--secondary-color);
+  padding: 5px 12px;
+  border: 1px solid var(--border-color);
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+  font-size: 16px;
 }
+
 .accomplishment p:hover {
-    background-color: #6813b3; 
-    transform: scale(1.1);/* Changing background color on hover */
+  background-color: var(--primary-color);
+  transform: scale(1.1);
 }
