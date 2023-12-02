@@ -116,32 +116,32 @@
     </div>
 
     <div id="aboutme" class="card">
-        <h5 style="color: aliceblue;">About me</h5>
+        <h5>About me</h5>
     </div>
     <div id="cv" class="card">
-        <h5 style="color: aliceblue;">Resume</h5>
+        <h5>Resume</h5>
     </div>
 
     <div id="skill" class="card">
-        <h5 style="color: aliceblue;">Skills</h5>
+        <h5>Skills</h5>
     </div>
 
     </div>
     <div id="certificate" class="card">
-        <h5 style="color: aliceblue;">Certifications</h5>
+        <h5>Certifications</h5>
     </div>
 
     <div id="work" class="card">
-        <h5 style="color: aliceblue;">Work Experiences</h5>
+        <h5>Work Experiences</h5>
     </div>
     <div id="project" class="card">
-        <h5 style="color: aliceblue;">Project</h5>
+        <h5>Project</h5>
     </div>
     <div id="education" class="card">
-        <h5 style="color: aliceblue;">Education</h5>
+        <h5>Education</h5>
     </div>
     <div id="contectme" class="card">
-        <h5 style="color: aliceblue;">Contact me</h5>
+        <h5>Contact me</h5>
     </div>
 
 
@@ -151,13 +151,17 @@
         <div id="messageBox" class="subcard">
             <div class="center">
                 <form id="messageForm">
-                    <label class="input-label" for="userEmail">Email:</label>
+                    <label class="input-label" for="userEmail"> Email: </label>
+
                     <input type="email" id="userEmail" required>
                     <label class="input-label" for="userContact">Contact Number:</label>
                     <input type="text" id="userContact" required>
                     <label class="input-label" for="userMessage">Message:</label>
                     <textarea id="userMessage" placeholder="Type your message here..." required></textarea>
-                    <button type="button" onclick="sendMessage()">Send</button>
+                    <span id="invalid"
+                        style="color: white; display: none; background-color: red; text-align: center;">Invalid
+                        Email</span>
+                    <button id="emailcheck" type="button" onclick="sendMessage()">Send</button>
                 </form>
             </div>
         </div>
@@ -167,22 +171,34 @@
                 <button type="button" onclick="openMessageBox()">Give Another Feedback</button>
             </div>
         </div>
+    
+    <script>
+        document.getElementById('userContact').addEventListener('input', function (event) {
+            const input = event.target;
+            input.value = input.value.replace(/\D/g, '').slice(0, 12); // Allow only numeric values
+        });
+        function validateEmail() {
+            const email = document.getElementById('userEmail').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            return emailRegex.test(email);
+        }
+        document.getElementById('userEmail').addEventListener('input', function () {
+            const Invalid = document.getElementById('emailcheck');
+            const Invali = document.getElementById('invalid');
+            Invali.style.display = validateEmail() ? 'none' : 'block';
+            Invalid.style.display = validateEmail() ? 'block' : 'none';
+        });
+    </script>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
 
-
-
-
-
-    <br />
-    <br /><br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="card"></div>
-
+    
 </body>
 
 </html>
