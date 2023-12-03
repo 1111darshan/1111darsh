@@ -33,12 +33,8 @@
     <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/title.png" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <script type="text/javascript" src="script/website.js"></script>
     <script type="text/javascript" src="script/feedback.js"></script>
-
-
-
 </head>
 
 
@@ -50,25 +46,19 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="panel" class="panel">
-
-
-        <a class="nav" href="#home"><img class="navigator" width="50" height="50" src="./images/p01home.png"></a>
-        <a class="nav" href="#aboutme"><img class="navigator" width="50" height="50"
-                src="./images/p002information.png"></a>
-        <a class="nav" href="#cv"><img class="navigator" width="50" height="50" src="images/p005cv.png"></a>
-        <a class="nav" href="#skill"><img class="navigator" width="50" height="50" src="images/p007skill.png"></a>
-        <a class="nav" href="#certificate"><img class="navigator" width="50" height="50"
-                src="images/p003certificate.png"></a>
-        <a class="nav" href="#work"><img class="navigator" width="50" height="50" src="./images/p008computer.png"></a>
-        <a class="nav" href="#education"><img class="navigator" width="50" height="50"
-                src="images/p003scholarship.png"></a>
-        <a class="nav" href="#project"><img class="navigator" width="50" height="50" src="images/p009code.png"></a>
-        <a class="nav" href="#contectme"><img class="navigator" width="50" height="50" src="images/p010network.png"></a>
+        <a class="nav" href="#home"><img class="navigator" src="./images/p01home.png"></a>
+        <a class="nav" href="#aboutme"><img class="navigator"src="./images/p002information.png"></a>
+        <a class="nav" href="#cv"><img class="navigator" src="images/p005cv.png"></a>
+        <a class="nav" href="#skill"><img class="navigator" src="images/p007skill.png"></a>
+        <a class="nav" href="#certificate"><img class="navigator"src="images/p003certificate.png"></a>
+        <a class="nav" href="#work"><img class="navigator" src="./images/p008computer.png"></a>
+        <a class="nav" href="#education"><img class="navigator" src="images/p003scholarship.png"></a>
+        <a class="nav" href="#project"><img class="navigator" src="images/p009code.png"></a>
+        <a class="nav" href="#contectme"><img class="navigator" src="images/p010network.png"></a>
 
         <!-- <a href="#udamy"><img class="navigator" width="50" height="50" src="images/online-education.png"></a> -->
         <!-- Panel Script -->
         <script>
-
             var panel = document.getElementById("panel")
             panel.classList.add("panelhide")
             var prevScrollpos = window.pageYOffset;
@@ -90,115 +80,34 @@
                 prevScrollpos = currentScrollPos;
             }
         </script>
-
     </div>
 
     <div id="home" class="home">
 
-        <div class="left">
-            <div class="circle"><img class="logo" src="./images/11dlogo.png" /></div>
-
-        </div>
+        <div class="left"><div class="circle"><img class="logo" src="./images/11dlogo.png" /></div></div>
         <div class="right">
             <p>Hello,</p>
             <p>I'm <spen class="name"> Darshan Mistry</spen>,</p>
             <p>I'm <span class="deg">DevOps Engineer </span></p>
             <p class="arrow"><a class="nav" href="#aboutme"><img src="./images/Polygon.svg" /></a></p>
-
         </div>
+        
         <a href="Darshan_Mistry_DevOps_Bangalore.pdf" style="position: absolute; top:5px; right: 5px;">
             <image src="./images/p005cv.png" style=" width: 36px;"></image>
         </a>
     </div>
 
-
-
-    </div>
-
-    <div id="aboutme" class="card">
-        <h5>About me</h5>
-    </div>
-    <div id="cv" class="card">
-        <h5>Resume</h5>
-    </div>
-
-    <div id="skill" class="card">
-        <h5>Skills</h5>
-    </div>
-
-    </div>
-    <div id="certificate" class="card">
-        <h5>Certifications</h5>
-    </div>
-
-    <div id="work" class="card">
-        <h5>Work Experiences</h5>
-    </div>
-    <div id="project" class="card">
-        <h5>Project</h5>
-    </div>
-    <div id="education" class="card">
-        <h5>Education</h5>
-    </div>
-    <div id="contectme" class="card">
-        <h5>Contact me</h5>
-    </div>
-
-
-
-    <div id="feedback" class="card">
-        <h5>Give Your Feedback</h5>
-        <div id="messageBox" class="subcard">
-            <div class="center">
-                <form id="messageForm">
-                    <label class="input-label" for="userEmail"> Email: </label>
-
-                    <input type="email" id="userEmail" required>
-                    <label class="input-label" for="userContact">Contact Number:</label>
-                    <input type="text" id="userContact" required>
-                    <label class="input-label" for="userMessage">Message:</label>
-                    <textarea id="userMessage" placeholder="Type your message here..." required></textarea>
-                    <span id="invalid"
-                        style="color: white; display: none; background-color: red; text-align: center;">Invalid
-                        Email</span>
-                    <button id="emailcheck" type="button" onclick="sendMessage()">Send</button>
-                </form>
-            </div>
-        </div>
-        <div id="thanksMessage" class="subcard" style="display: none;">
-            <div class="center">
-                <div class="title">Thanks for your feedback!</div>
-                <button type="button" onclick="openMessageBox()">Give Another Feedback</button>
-            </div>
-        </div>
+    <div id="aboutme" class="card"><h5>About me</h5></div>
+    <div id="cv" class="card"><h5>Resume</h5></div>
+    <div id="skill" class="card"><h5>Skills</h5></div>
+    <div id="certificate" class="card"><h5>Certifications</h5></div>
+    <div id="work" class="card"><h5>Work Experiences</h5></div>
+    <div id="project" class="card"><h5>Project</h5></div>
+    <div id="education" class="card"><h5>Education</h5></div>
+    <div id="contectme" class="card"><h5>Contact me</h5></div>
+    <div id="feedback" class="card"><h5>Give Your Feedback</h5></div>
     
-    <script>
-        document.getElementById('userContact').addEventListener('input', function (event) {
-            const input = event.target;
-            input.value = input.value.replace(/\D/g, '').slice(0, 12); // Allow only numeric values
-        });
-        function validateEmail() {
-            const email = document.getElementById('userEmail').value;
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            return emailRegex.test(email);
-        }
-        document.getElementById('userEmail').addEventListener('input', function () {
-            const Invalid = document.getElementById('emailcheck');
-            const Invali = document.getElementById('invalid');
-            Invali.style.display = validateEmail() ? 'none' : 'block';
-            Invalid.style.display = validateEmail() ? 'block' : 'none';
-        });
-    </script>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-    </div>
-
     
+    <br/><br/><br/><br/><br/><br/>
 </body>
-
 </html>
