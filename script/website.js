@@ -8,8 +8,8 @@ async function getAPI() {
 getAPI().then(data => createSite(data));
 
 function createSite(jsonData) {
-
-
+  
+  createPanel();
   const navLinks = document.querySelectorAll('.nav');
   navLinks.forEach(navLink => {
     navLink.addEventListener('click', function (e) {
@@ -65,6 +65,7 @@ function createCards(data, category) {
       const thumbnail = document.createElement('img');
       thumbnail.classList.add('thumbnail');
       thumbnail.src = item.thumbnail;
+      thumbnail.alt = "Img"
 
       icon.appendChild(thumbnail);
       leftSection.appendChild(icon);
@@ -118,7 +119,9 @@ function createCards(data, category) {
 
           linkElement.appendChild(i)
           linkElement.href = linkItem[link];
+          linkElement.ariaLabel="link"
           links.appendChild(linkElement);
+
         }
       });
     }
@@ -134,3 +137,56 @@ function createCards(data, category) {
 
 
 
+function createPanel(){
+  const panel = document.getElementById('panel');
+  const navContainer = document.createElement('div');
+
+// Define the list of nevigator and their respective hrefs
+const nevigator = [
+  { src: './images/p01home.png', href: '#home' },
+  { src: './images/p002information.png', href: '#aboutme' },
+  { src: './images/p005cv.png', href: '#cv' },
+  { src: './images/p007skill.png', href: '#skill' },
+  { src: './images/p003certificate.png', href: '#certificate' },
+  { src: './images/p008computer.png', href: '#work' },
+  { src: './images/p003scholarship.png', href: '#education' },
+  { src: './images/p009code.png', href: '#project' },
+  { src: './images/p010network.png', href: '#contectme' }
+];
+
+// Loop through the nevigator array and create anchor elements with nevigator
+  nevigator.forEach(imageData => {
+  const anchor = document.createElement('a');
+  anchor.className = 'nav';
+  anchor.href = imageData.href;
+
+  const img = document.createElement('img');
+  img.className = 'navigator';
+  img.alt = imageData.src.replace('./images/', ''); // Use src value for alt, removing './images/' from the path
+  img.src = imageData.src;
+
+  anchor.appendChild(img);
+  navContainer.appendChild(anchor);
+  panel.appendChild(navContainer);
+
+  panel.classList.add("panelhide")
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos < currentScrollPos) {
+          panel.classList.add("panelshow")
+      }
+      if (currentScrollPos != 0) {
+          panel.classList.add("panelshow")
+          panel.classList.remove("panelhide")
+      } else {
+          panel.classList.remove("panelshow")
+          panel.classList.add("panelhide")   
+      }
+      prevScrollpos = currentScrollPos;
+  }
+
+
+});
+
+}
