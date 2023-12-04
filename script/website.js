@@ -18,6 +18,7 @@ function createSite(jsonData) {
       const targetId = this.getAttribute('href').substring(1);
       const targetSection = document.getElementById(targetId);
       const topPos = parseInt(targetSection.offsetTop)
+      
 
       if (targetSection) {
         const topPos = targetSection.getBoundingClientRect().top + window.pageYOffset;
@@ -64,6 +65,8 @@ function createCards(data, category) {
       icon.classList.add('icon');
       const thumbnail = document.createElement('img');
       thumbnail.classList.add('thumbnail');
+      thumbnail.setAttribute('width', 100);
+      thumbnail.setAttribute('height', 100);
       thumbnail.src = item.thumbnail;
       thumbnail.alt = "Img"
 
@@ -162,8 +165,12 @@ const nevigator = [
 
   const img = document.createElement('img');
   img.className = 'navigator';
-  img.alt = imageData.src.replace('./images/', ''); // Use src value for alt, removing './images/' from the path
+  img.alt = imageData.src.replace('./images/', '');
   img.src = imageData.src;
+  const width = this.width;
+  const height = this.height;
+  img.setAttribute('width', width);
+  img.setAttribute('height', height);
 
   anchor.appendChild(img);
   navContainer.appendChild(anchor);
