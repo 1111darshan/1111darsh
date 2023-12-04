@@ -204,7 +204,8 @@ body {
 
 .logo {
     position: relative;
-    height: 150px;
+    height: 200px;
+    width: 306px;
 }
 
 .home .right {
@@ -276,8 +277,8 @@ body {
     }
 
     .logo {
-        height: 110px;
-        width: 168.3;
+        height: 100px;
+        width: 153px;
     }
 
     .home .right .name {
