@@ -5,35 +5,41 @@ function openMessageBox() {
 
 function sendMessage() {
     const userEmail = document.getElementById('userEmail').value;
-    const userContact = document.getElementById('userContact').value;
-    const userMessage = document.getElementById('userMessage').value;
-    const formData = {
-        email: userEmail,
-        contact: userContact,
-        message: userMessage
-    };
+    console.log(userEmail)
+    if (userEmail == "") {
+        alert("Please add email")
+    }
+    else {
+        const userContact = document.getElementById('userContact').value;
+        const userMessage = document.getElementById('userMessage').value;
+        const formData = {
+            email: userEmail,
+            contact: userContact,
+            message: userMessage
+        };
 
-    fetch('https://feedback-production-76e1.up.railway.app/api/feedback', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            // Do something after successful post, like displaying a success message
-            console.log(response.status);
-            document.getElementById('messageBox').style.display = 'none';
-            document.getElementById('thanksMessage').style.display = 'block';
+        fetch('https://feedback-production-76e1.up.railway.app/api/feedback', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
         })
-        .catch(error => {
-            // Handle errors
-            console.error('There was an error with the POST request:', error);
-            // Display an error message to the user, or retry the request, etc.
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // Do something after successful post, like displaying a success message
+                console.log(response.status);
+                document.getElementById('messageBox').style.display = 'none';
+                document.getElementById('thanksMessage').style.display = 'block';
+            })
+            .catch(error => {
+                // Handle errors
+                console.error('There was an error with the POST request:', error);
+                // Display an error message to the user, or retry the request, etc.
+            });
+    }
 }
 
 
@@ -64,7 +70,7 @@ function createFeedback() {
     const feedback = document.getElementById('feedback');
 
     const messageBox = createElementWithClass('div', 'subcard');
-    messageBox.id="messageBox"; 
+    messageBox.id = "messageBox";
     messageBox.style.display = 'block';
     const innerDiv = createElementWithClass('div', 'center');
 
@@ -101,7 +107,7 @@ function createFeedback() {
     messageBox.appendChild(innerDiv);
 
     const thanksMessage = createElementWithClass('div', 'subcard');
-    thanksMessage.id="thanksMessage"
+    thanksMessage.id = "thanksMessage"
     thanksMessage.style.display = 'none';
 
     const innerDivThanks = createElementWithClass('div', 'center');
@@ -138,4 +144,5 @@ function createFeedback() {
     });
 }
 document.addEventListener('DOMContentLoaded', function () {
-createFeedback();});
+    createFeedback();
+});
