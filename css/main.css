@@ -11,7 +11,7 @@
     /* Accent color */
     --border-color: #bdbdbd;
     /* Border color */
-    --shadow-color: #000000;
+    --shadow-color: #6813b3;
     /* Shadow color */
     --font-color: #E7E6FF;
     /* Font color */
@@ -64,7 +64,7 @@
 
 /* Global */
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 body {
@@ -329,6 +329,7 @@ body {
     padding: 16px;
     background-color: var(--background-color);
     color: var(--font-color);
+    
 }
 
 .card h5 {
@@ -347,6 +348,7 @@ body {
     background-color: var(--secondary-color);
     color: var(--text-color);
     transition: transform 0.3s ease;
+    box-shadow: 0px 0.5px 6px var(--shadow-color);
 }
 
 .subcard:hover {
