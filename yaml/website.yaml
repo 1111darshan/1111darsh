@@ -10,7 +10,6 @@ aboutme:
 cv:
 - title: Resume
   thumbnail: ./images/p005cv.png
-  details: Here are 3 resumes with different details
   link:
       - fa-regular fa-file-pdf fa-2x: ./Darshan_Mistry_DevOps_Bangalore.pdf                                                                        
 skill:
