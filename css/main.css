@@ -251,7 +251,7 @@ body {
     flex-wrap: wrap;
     box-shadow: inset 1em 1em 2em rgb(219, 218, 212),
     0 0 0 0 white,
-    1em 3em 6em rgba(0, 0, 0, 0.808);
+    1.5em 1.5em 3em -2em rgba(0, 0, 0, 0.808);
 }
 
 .logo {
