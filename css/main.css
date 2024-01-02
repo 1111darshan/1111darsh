@@ -249,6 +249,9 @@ body {
     width: 350px;
     border-radius: 50%;
     flex-wrap: wrap;
+    box-shadow: inset 1em 1em 2em rgb(219, 218, 212),
+    0 0 0 0 white,
+    1em 3em 6em rgba(0, 0, 0, 0.808);
 }
 
 .logo {
@@ -261,16 +264,19 @@ body {
     font-size: 24px;
     color: var(--font1);
     text-shadow: 10px 2px 10px var(--primary-color);
+    
 }
 
 .home .right p {
     padding: 0px;
     margin: 0px;
+    
 }
 
 .home .right .name {
     color: var(--font1);
     font-size: 88px;
+    
 }
 
 .home .right .deg {
