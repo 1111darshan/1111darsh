@@ -264,6 +264,9 @@ body {
     font-size: 24px;
     color: var(--font1);
     text-shadow: 10px 2px 10px var(--primary-color);
+    text-shadow: 1em 1em 2em rgb(219, 218, 212),
+     0 0 0 white,
+     0.2em 0.2em 0.4em rgba(0, 0, 0, 0.808);
     
 }
 
