@@ -75,66 +75,128 @@ certificate:
   - far fa-file-pdf fa-2x: ./cert/1.darshan-mistry-c33644e9-6815-426a-b838-c4552cffdd71-certificate.pdf
   - fas fa-certificate fa-2x: https://training.linuxfoundation.org/certification/verify/
   - fa-solid fa-link fa-2x: https://www.credly.com/badges/a19fad97-3fc5-4b67-b880-f087f8197d3a/linked_in_profile
-- title:  Devops Professional
+- title: Devops Professional
   details: IBM Developer Skills Network
   thumbnail: images/p003certificate.png
   link:
   - fa-solid fa-link fa-2x:  https://learn.intellipaat.com/certificates-backend/certificates/9df14a34-3636-404a-bb9f-0121d3629607
+- title: Python (Basic)
+  details: HackerRank
+  iicon: fa-brands fa-hackerrank fa-2xl
+  link:
+  - fa-solid fa-link fa-2x: https://www.hackerrank.com/certificates/62419858c156
+- title: SQL (Basic)
+  details: HackerRank
+  iicon: fa-brands fa-hackerrank fa-2xl
+  link:
+  - fa-solid fa-link fa-2x: https://www.hackerrank.com/certificates/e3cc5705f8ca
 - title: 12 Factor App
   details: KodeKloud
   thumbnail: images/kodekloud.jpg
   link:
-  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DEA95AA543B-7EE1D29B11/ 
-- title: GCP Cloud Digital Leader Certification
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2D1207151E38-7EE1D29B11/
-- title: AWS Lambda
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2D1466FE1B78-7EE1D29B11/
-- title: Terraform Associate Certification HashiCorp Certified
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-85F5CCE2A1-7EE1D29B11/
-- title: Helm for Beginners
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-85E9F0D875-7EE1D29B11/
-- title: Docker Certified Associate Exam Course
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EE77B1E37-7EE1D29B11/
-- title: Grafana Loki
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF63F6FC8D3-7EE1D29B11/
-- title: Introduction to Sealed Secrets in Kubernetes
-  details: KodeKloud
-  thumbnail: images/kodekloud.jpg
-  link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DFAE1CF5518-7EE1D29B11/
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DEA95AA543B-7EE1D29B11/
 - title: Postman Essentials
   details: KodeKloud
   thumbnail: images/kodekloud.jpg
   link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3D407AA25-7EE1D29B11/
-- title: Pulumi Essentials
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3D407AA25-7EE1D29B11/
+- title: AWS Solutions Architect Associate Certification
   details: KodeKloud
   thumbnail: images/kodekloud.jpg
   link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3C7C05DCB-7EE1D29B11/
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DFAE1EDB224-7EE1D29B11/
+- title: Amazon Simple Storage Service (Amazon S3)
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DEF31C62CD9-7EE1D29B11/
+- title: AWS Lambda
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2D1466FE1B78-7EE1D29B11/
 - title: AWS Cloud Practitioner (CLF-C02)
   details: KodeKloud
   thumbnail: images/kodekloud.jpg
   link:
-    - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3BBF2D095-7EE1D29B11/
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3BBF2D095-7EE1D29B11/
+- title: AWS RDS
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF881E62CD7-7EE1D29B11/
+- title: AWS – IAM
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DFAC43F9747-7EE1D29B11/
+- title: GCP Cloud Digital Leader Certification
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2D1207151E38-7EE1D29B11/
+- title: Shell Scripts for Beginners
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EE1FFED03-7EE1D29B11/
+- title: Docker Certified Associate Exam Course
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EE77B1E37-7EE1D29B11/
+- title: Udemy Labs – Certified Kubernetes Application Developer
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EEDDD3012-7EE1D29B11/
+- title: Udemy Labs – Certified Kubernetes Administrator with Practice Tests
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EEDDC6E51-7EE1D29B11/
+- title: Istio Service Mesh
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-8395E5B69C-7EE1D29B11/
+- title: Helm for Beginners
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-85E9F0D875-7EE1D29B11/
+- title: Introduction to Sealed Secrets in Kubernetes
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DFAE1CF5518-7EE1D29B11/
+- title: JSON Path Test – Free Course
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-7EE77B1E9B-7EE1D29B11/
+- title: Lens – Kubernetes IDE
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-8159557C27-7EE1D29B11/
+- title: Grafana Loki
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF63F6FC8D3-7EE1D29B11/
+- title: Terraform Associate Certification HashiCorp Certified
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-85F5CCE2A1-7EE1D29B11/
+- title: Pulumi Essentials
+  details: KodeKloud
+  thumbnail: images/kodekloud.jpg
+  link:
+  - fa-solid fa-link fa-2x: https://kodekloud.com/certificate-verification/7EED62F639-2DF3C7C05DCB-7EE1D29B11/
+
+
 work:
 - title: Skaud
   details: DevOps Engineer
@@ -177,8 +239,6 @@ project:
   iicon: fa-solid fa-code fa-2xl
   link:
   - fab fa-github fa-2x: https://github.com/1111darsh/Monitor-on-K8s
-
-
 education:
 - title: Bachelor of Engineering (2015 - 2019)
   details: Computers Science and Engineering
