@@ -404,7 +404,7 @@
   ],
   "work": [
     {
-      "title": "Skaud",
+      "title": "Skaud || November 2022 - September 2023 -- Gurugram, India",
       "details": "DevOps Engineer",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "title": "Omuni (Arvind Limited)",
+      "title": "Omuni (Arvind Limited) || April 2021 - July 2022 -- Bengalore, India",
       "details": "DevOps Cloud Engineer",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "title": "Borndigital",
+      "title": "Borndigital || October 2019 -  December 2020 -- Bengalore, India",
       "details": "Associate DevOps Engineer",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
@@ -499,12 +499,12 @@
   "education": [
     {
       "title": "Bachelor of Engineering (2015 - 2019)",
-      "details": "Computers Science and Engineering",
+      "details": "Computers Science and Engineering |  Gujarat Technological University",
       "iicon": "fa-solid fa-building-columns fa-2xl"
     },
     {
       "title": "Higher Secondary School (2013 - 2015)",
-      "details": "Science",
+      "details": "Science | LMP & MCZ Higher Secondary School",
       "iicon": "fa-solid fa-building-columns fa-2xl"
     }
   ],
@@ -527,10 +527,7 @@
           "fa-brands fa-x-twitter fa-2x": "https://twitter.com/1111darshan"
         },
         {
-          "fab fa-linkedin-in fa-2x": "https://wa.me/919727977391/?text=Hi%20am%20visiting%201111darsh.com"
-        },
-        {
-          "fa-brands fa-instagram fa-2x": "https://www.instagram.com/1111darsh"
+          "fab fa-whatsapp fa-2x": "https://wa.me/919727977391/?text=Hi%20am%20visiting%201111darsh.com"
         },
         {
           "fa-brands fa-youtube fa-2x": "https://www.youtube.com/channel/UC4sOs3hvMkolOuEOlEVvVlg"
