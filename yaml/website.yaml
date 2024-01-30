@@ -3,7 +3,7 @@ aboutme:
 - title: 4 YEARS OF EXPERIENCE IN DEVOPS
   details: Do you need my RESUME ? 
   link: 
-  - fa-regular fa-file-pdf fa-2x: ./Darshan_Mistry_DevOps_Bangalore.pdf 
+  - fa-regular fa-file-pdf fa-2x: ./Darshan_Mistry.pdf 
 
 - title: What I Seek in My Next Job?
   details: I aim to enhance my skills in cloud computing and security while gaining a deeper understanding of designing high-level infrastructure.
@@ -11,7 +11,7 @@ cv:
 - title: Resume
   thumbnail: ./images/p005cv.png
   link:
-      - fa-regular fa-file-pdf fa-2x: ./Darshan_Mistry_DevOps_Bangalore.pdf                                                                        
+      - fa-regular fa-file-pdf fa-2x: ./Darshan_Mistry.pdf                                                                        
 skill:
   - title: Kubernetes
     thumbnail: ./images/s01kubernetes.svg

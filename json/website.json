@@ -5,7 +5,7 @@
       "details": "Do you need my RESUME ?",
       "link": [
         {
-          "fa-regular fa-file-pdf fa-2x": "./Darshan_Mistry_DevOps_Bangalore.pdf"
+          "fa-regular fa-file-pdf fa-2x": "./Darshan_Mistry.pdf"
         }
       ]
     },
@@ -20,7 +20,7 @@
       "thumbnail": "./images/p005cv.png",
       "link": [
         {
-          "fa-regular fa-file-pdf fa-2x": "./Darshan_Mistry_DevOps_Bangalore.pdf"
+          "fa-regular fa-file-pdf fa-2x": "./Darshan_Mistry.pdf"
         }
       ]
     }
