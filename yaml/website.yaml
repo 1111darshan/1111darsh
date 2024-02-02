@@ -17,7 +17,7 @@ skill:
     thumbnail: ./images/s01kubernetes.svg
     details: 4 years of experience
     link:
-      - fab fa-github fa-2x: link1
+      - fab fa-github fa-2x: https://github.com/1111darsh/k8s
       - fas fa-certificate fa-2x: https://www.credly.com/badges/a19fad97-3fc5-4b67-b880-f087f8197d3a/linked_in_profile
   - title: Docker
     iicon: fa-brands fa-docker fa-2xl
@@ -29,7 +29,7 @@ skill:
     iicon: fa-brands fa-linux fa-2xl
     details: 4 years of experience
     link:
-      - fab fa-github fa-2x: link1
+      - fab fa-github fa-2x: https://github.com/1111darsh/Linux-Work
       - fas fa-certificate fa-2x: link2 
   - title: AWS
     iicon: fa-brands fa-aws fa-2xl
@@ -41,7 +41,7 @@ skill:
     iicon: fa-brands fa-linux fa-2xl
     details: 4 years of experience
     link:
-      - fab fa-github fa-2x: link1
+      - fab fa-github fa-2x: https://github.com/1111darsh/Concentric-AI
       - fas fa-certificate fa-2x: link2 
   - title: GitOps
     iicon: fa-brands fa-linux fa-2xl
@@ -53,13 +53,14 @@ skill:
     iicon: fa-brands fa-linux fa-2xl
     details: 4 years of experience
     link:
-      - fab fa-github fa-2x: link1
+      - fab fa-github fa-2x: https://github.com/1111darsh/CICD-Jenkins
+
       - fas fa-certificate fa-2x: link2 
   - title: Scripting
     iicon: fa-brands fa-python fa-2xl
     details: 4 years of experience
     link:
-      - fab fa-github fa-2x: link1
+      - fab fa-github fa-2x: https://github.com/1111darsh/Python-Practics
       - fas fa-certificate fa-2x: link2 
   - title: Design Infra
     iicon: fa-brands fa-linux fa-2xl
