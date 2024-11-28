@@ -8,7 +8,10 @@ async function getAPI() {
 getAPI().then(data => createSite(data));
 
 function createSite(jsonData) {
-  
+
+  const note = document.getElementById('note');
+  note.addEventListener('click', function() { note.classList.add('hidden');});
+  createAnimation();
   createPanel();
   const navLinks = document.querySelectorAll('.nav');
   navLinks.forEach(navLink => {
@@ -137,6 +140,16 @@ function createCards(data, category) {
 
 }
 
+function createAnimation(){
+  const boxes = document.querySelectorAll('.box');
+  const numBoxes = boxes.length;
+  const slow = 5
+  boxes.forEach((box, index) => {
+      box.style.animationDelay = `-${index*slow}s`;
+  });
+  document.documentElement.style.setProperty('--animation-duration', `${numBoxes*slow}s`);
+
+}
 
 
 
