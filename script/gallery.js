@@ -61,7 +61,7 @@ async function loadGallery() {
       }
     
     try {
-        const res = await fetch("https://verbose-spoon-x5rw67g4v7v525qp-8080.app.github.dev/signed-list?login=" + loginToken);
+        const res = await fetch("https://gallery.1111darsh.com/signed-list?login=" + loginToken);
         if (!res.ok) {
             hideLoader(); // Hide loader when done
             showError("Invalid Token \n\n"+ loginToken + "\n\n\n\n🚫 Access Denied! This gallery is protected by Darshan. Only users with a valid token URL can see the images."); return;
@@ -87,7 +87,7 @@ async function loadGallery() {
             // watermark
             ctx.font = "12px Arial";
             ctx.fillStyle="rgba(255,255,255,0.4)";
-          
+            ctx.fillText("© 1111darsh.com",40,40);
             canvas.addEventListener("click", () => openViewer(i));
         });
         hideLoader(); // Hide loader when done
