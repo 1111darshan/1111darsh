@@ -1,335 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Protected 3D Gallery</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-    }
-    h1 {
-      text-align: center;
-      padding: 20px;
-    }
+<html lang="en">
 
-    /* ===== GRID VIEW ===== */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-      padding: 20px;
-    }
-    .gallery canvas {
-      width: 100%;
-      height: 150px;
-      cursor: pointer;
-      border: 2px solid #444;
-      background: #000;
-    }
-
-    /* ===== VIEWER MODE ===== */
-    .viewer-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.95);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 1000;
-    }
-    .viewer {
-      position: relative;
-      width: 80%;
-      max-width: 900px;
-      height: 70%;
-      perspective: 1200px;
-      overflow: hidden;
-      touch-action: none;
-    }
-    .slide {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0; left: 0;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      transition: transform 1s ease-in-out;
-    }
-
-    /* ===== THUMBNAIL STRIP ===== */
-    .thumbnail-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      margin-top: 15px;
-      overflow-x: auto;
-      padding: 10px;
-      max-width: 90%;
-    }
-    .thumbnail-bar img {
-      width: 80px;
-      height: 60px;
-      object-fit: cover;
-      border: 2px solid #444;
-      cursor: pointer;
-      transition: transform 0.2s, border 0.2s;
-    }
-    .thumbnail-bar img.active {
-      border: 2px solid #fff;
-      transform: scale(1.1);
-    }
-
-    .controls {
-      margin-top: 15px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 18px;
-      background: #333;
-      color: #fff;
-      border: none;
-      margin: 0 8px;
-      cursor: pointer;
-    }
-    button:hover { background: #555; }
-    #close {
-      position: absolute;
-      top: 15px;
-      right: 25px;
-      font-size: 26px;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      color: #fff;
-    }
-
-    /* ===== ERROR MESSAGE ===== */
-    #error {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 1.4em;
-      color: red;
-    }
-  </style>
-</head>
-<body>
-  <h1>Protected 3D Gallery</h1>
-
-  <!-- Error message -->
-  <div id="error" style="display:none;"></div>
-
-  <!-- Grid of all images -->
-  <div class="gallery" id="gallery"></div>
-
-  <!-- Overlay Viewer -->
-  <div class="viewer-overlay" id="overlay">
-    <button id="close">✖ Close</button>
-    <div class="viewer" id="viewer"></div>
-
-    <!-- Thumbnail strip -->
-    <div class="thumbnail-bar" id="thumbBar"></div>
-
-    <div class="controls">
-      <button id="prev">⟨ Prev</button>
-      <button id="next">Next ⟩</button>
+  <head>
+       <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TSH7STT');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Darshan Mistry</title>
+    <link href="images/title.png" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="description" content="DevOps Engineer, Certified Kubernetes Administrator, CKA, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux" />
+    <meta name="keywords" content="DevOps, Darshan, Darsh, Mistry, Darshan
+            Mistry" />
+    <meta name="author" content="Darshan Mistry">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="image" content="https://1111darsh.com/images/title.png" />
+    <meta property="og:title" content="Darshan Mistry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="DevOps Engineer,CKA, Certified Kubernetes Administrator, CKA, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux" />
+    <meta property="og:url" content="https://1111darsh.com" />
+    <meta property="og:publish" content="website" />
+    <meta property="og:image" content="https://1111darsh.com/images/title.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/title.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <meta charset="UTF-8" />
+    <title>Protected 3D Gallery</title>
+    <link rel="stylesheet" href="./css/gallery.css" />
+    
+  </head>
+  <body>
+    <h1>Darshan's Protected Gallery</h1>
+    <!-- Loader -->
+    <div class="loader" id="loader"> Loading gallery... </div>
+    <!-- Error message -->
+    <div id="error" class="error" style="display:none;"></div>
+    <!-- Grid of all images -->
+    <div class="gallery" id="gallery"></div>
+    <!-- Overlay Viewer -->
+    <div class="viewer-overlay" id="overlay">
+      <button id="close">✖ Close</button>
+      <div class="viewer" id="viewer"></div>
+      <!-- Thumbnail strip -->
+      <div class="thumbnail-bar" id="thumbBar"></div>
+      <div class="controls">
+        <button id="prev">⟨ Prev</button>
+        <button id="next">Next ⟩</button>
+      </div>
     </div>
-  </div>
+    <script src="./script/gallery.js"></script>
+    
+  </body>
 
-  <script>
-    let slides = [];
-    let current = 0;
-    let urls = [];
-
-    async function loadGallery() {
-      const params = new URLSearchParams(window.location.search);
-      const loginToken = params.get("login");
-
-      if (!loginToken) {
-        showError("❌ You don’t have access. Please contact the administrator.");
-        return;
-      }
-
-      try {
-        const res = await fetch(
-          "https://gallery.1111darsh.com/signed-list?login=" + loginToken
-        );
-
-        if (!res.ok) {
-          showError("❌ You don’t have access. Please contact the administrator.");
-          return;
-        }
-
-        urls = await res.json();
-        if (!urls || urls.length === 0) {
-          showError("⚠️ No images found.");
-          return;
-        }
-
-        const gallery = document.getElementById("gallery");
-
-        urls.forEach((url, i) => {
-          const canvas = document.createElement("canvas");
-          canvas.width = 200; canvas.height = 150;
-          gallery.appendChild(canvas);
-
-          const ctx = canvas.getContext("2d");
-          const img = new Image();
-          img.onload = () => {
-            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-            ctx.font = "12px Arial";
-            ctx.fillStyle = "rgba(255,255,255,0.4)";
-            ctx.fillText("© YourSite", 10, 20);
-          };
-          img.src = url;
-
-          canvas.addEventListener("click", () => openViewer(i));
-        });
-      } catch (err) {
-        console.error(err);
-        showError("❌ You don’t have access. Please contact the administrator.");
-      }
-    }
-
-    function showError(msg) {
-      document.getElementById("gallery").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
-      const errorDiv = document.getElementById("error");
-      errorDiv.innerText = msg;
-      errorDiv.style.display = "block";
-    }
-
-    function openViewer(index) {
-      const overlay = document.getElementById("overlay");
-      const viewer = document.getElementById("viewer");
-      const thumbBar = document.getElementById("thumbBar");
-
-      overlay.style.display = "flex";
-      viewer.innerHTML = "";
-      thumbBar.innerHTML = "";
-      slides = [];
-      current = index;
-
-      urls.forEach((url, i) => {
-        // main slide
-        const div = document.createElement("div");
-        div.className = "slide";
-        div.style.transform = (i === index) ? "translateX(0)" : "translateX(100%)";
-
-        const canvas = document.createElement("canvas");
-        canvas.width = 900; canvas.height = 600;
-        div.appendChild(canvas);
-        viewer.appendChild(div);
-
-        const ctx = canvas.getContext("2d");
-        const img = new Image();
-        img.onload = () => {
-          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          ctx.font = "24px Arial";
-          ctx.fillStyle = "rgba(255,255,255,0.4)";
-          ctx.fillText("© YourSite", 50, 50);
-        };
-        img.src = url;
-
-        slides.push(div);
-
-        // thumbnail
-        const thumb = document.createElement("img");
-        thumb.src = url;
-        if (i === index) thumb.classList.add("active");
-        thumb.addEventListener("click", () => jumpToSlide(i));
-        thumbBar.appendChild(thumb);
-      });
-
-      addSwipeSupport(viewer);
-    }
-
-    function closeViewer() {
-      document.getElementById("overlay").style.display = "none";
-    }
-
-    function showSlide(nextIndex, direction) {
-      if (nextIndex < 0 || nextIndex >= slides.length) return;
-
-      const currentSlide = slides[current];
-      const nextSlide = slides[nextIndex];
-
-      nextSlide.style.transition = "none";
-      nextSlide.style.transform = `translateX(${direction * 100}%) rotateY(${-direction * 90}deg)`;
-
-      setTimeout(() => {
-        currentSlide.style.transition = "transform 1s ease-in-out";
-        nextSlide.style.transition = "transform 1s ease-in-out";
-        currentSlide.style.transform = `translateX(${-direction * 100}%) rotateY(${direction * 90}deg)`;
-        nextSlide.style.transform = "translateX(0%) rotateY(0deg)";
-      }, 50);
-
-      current = nextIndex;
-      updateThumbnails(nextIndex);
-    }
-
-    function jumpToSlide(i) {
-      if (i === current) return;
-      const direction = i > current ? 1 : -1;
-      showSlide(i, direction);
-    }
-
-    function updateThumbnails(newIndex) {
-      document.querySelectorAll(".thumbnail-bar img").forEach((thumb, idx) => {
-        thumb.classList.toggle("active", idx === newIndex);
-      });
-    }
-
-    // Buttons
-    document.getElementById("prev").addEventListener("click", () => {
-      showSlide(current - 1, -1);
-    });
-    document.getElementById("next").addEventListener("click", () => {
-      showSlide(current + 1, 1);
-    });
-    document.getElementById("close").addEventListener("click", closeViewer);
-
-    // Keyboard support
-    document.addEventListener("keydown", e => {
-      if (document.getElementById("overlay").style.display === "flex") {
-        if (e.key === "ArrowRight") showSlide(current + 1, 1);
-        if (e.key === "ArrowLeft") showSlide(current - 1, -1);
-        if (e.key === "Escape") closeViewer();
-      }
-    });
-
-    // Swipe Support
-    function addSwipeSupport(element) {
-      let startX = 0;
-      let endX = 0;
-
-      element.addEventListener("touchstart", e => {
-        startX = e.changedTouches[0].screenX;
-      });
-
-      element.addEventListener("touchend", e => {
-        endX = e.changedTouches[0].screenX;
-        let diff = endX - startX;
-        if (Math.abs(diff) > 50) {
-          if (diff > 0) {
-            showSlide(current - 1, -1); // swipe right → prev
-          } else {
-            showSlide(current + 1, 1); // swipe left → next
-          }
-        }
-      });
-    }
-
-    // Disable right-click & drag
-    document.addEventListener("contextmenu", e => e.preventDefault());
-    document.addEventListener("dragstart", e => e.preventDefault());
-
-    loadGallery();
-  </script>
-</body>
 </html>
