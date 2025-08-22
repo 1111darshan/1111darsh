@@ -44,8 +44,8 @@ async function fetchWithCache(url) {
     let response = await cache.match(cacheKey);
     if (response) return response;
 
-    response = await fetch(url);
-    if (response.ok) await cache.put(cacheKey, response.clone());
+        response = await fetch(url);
+        if (response.ok) await cache.put(cacheKey, response.clone());
     return response;
 }
 
@@ -67,16 +67,28 @@ async function preloadImages(urlList) {
     return Promise.all(urlList.map(async (url) => {
         const res = await fetchWithCache(url);
         if (!res?.ok) throw new Error("Failed to load " + url);
-
+        
         const blobUrl = URL.createObjectURL(await res.blob());
         const img = new Image();
         img.src = blobUrl;
+        try {
+            if (img.decode) {
+                await img.decode();
+                
+            } else {
+                console.log(img.src)
+                await new Promise((resolve, reject) => {
+                    img.onload = resolve;
+                    img.onerror = (e) => {
+                        console.error("Image failed to load:", e);
+                        reject(e);
+                    };
+                });
+            }
+        } catch (err) {
+            console.error("Error decoding image:", err);
+        }
 
-        if (img.decode) await img.decode();
-        else await new Promise((resolve, reject) => {
-            img.onload = resolve;
-            img.onerror = reject;
-        });
 
         updateProgress(++done, urlList.length);
         return { img, blobUrl };
