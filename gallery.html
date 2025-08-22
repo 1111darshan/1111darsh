@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-       <!-- Google Tag Manager -->
+<head>
+    <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -20,54 +19,55 @@
         })(window, document, 'script', 'dataLayer', 'GTM-TSH7STT');
     </script>
     <!-- End Google Tag Manager -->
-    <title>Darshan Mistry</title>
-    <link href="images/title.png" rel="icon">
+
     <meta charset="UTF-8">
-    <meta name="description" content="DevOps Engineer, Certified Kubernetes Administrator, CKA, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux" />
-    <meta name="keywords" content="DevOps, Darshan, Darsh, Mistry, Darshan
-            Mistry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevOps Engineer, Certified Kubernetes Administrator, CKA, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux">
+    <meta name="keywords" content="DevOps, Darshan, Mistry">
     <meta name="author" content="Darshan Mistry">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="image" content="https://1111darsh.com/images/title.png" />
-    <meta property="og:title" content="Darshan Mistry" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="DevOps Engineer,CKA, Certified Kubernetes Administrator, CKA, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux" />
-    <meta property="og:url" content="https://1111darsh.com" />
-    <meta property="og:publish" content="website" />
-    <meta property="og:image" content="https://1111darsh.com/images/title.png" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#000000">
-    <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://1111darsh.com/images/title.png" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <meta property="og:title" content="Darshan Mistry">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="DevOps Engineer,CKA, Certified Kubernetes Administrator, Kubernetes, Docker, CKAD, Helm, Terraform, Ansible, Linux">
+    <meta property="og:url" content="https://1111darsh.com">
+    <meta property="og:image" content="https://1111darsh.com/images/title.png">
+
+    <title>Darshan's Protected Gallery</title>
+    <link rel="icon" href="images/title.png">
+    <link rel="apple-touch-icon" href="https://1111darsh.com/images/title.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
-    <meta charset="UTF-8" />
-    <title>Protected 3D Gallery</title>
-    <link rel="stylesheet" href="./css/gallery.css" />
-    
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
     <h1>Darshan's Protected Gallery</h1>
+<button id="logout">Logout 🔒</button>
     <!-- Loader -->
-    <div class="loader" id="loader"> Loading gallery... </div>
+    <div id="loader">
+        <div id="progress">
+            <div id="progressBar">0%</div>
+        </div>
+    </div>
+
     <!-- Error message -->
-    <div id="error" class="error" style="display:none;"></div>
+    <div id="error" class="error"></div>
+
     <!-- Grid of all images -->
     <div class="gallery" id="gallery"></div>
+
     <!-- Overlay Viewer -->
     <div class="viewer-overlay" id="overlay">
-      <button id="close">✖ Close</button>
-      <div class="viewer" id="viewer"></div>
-      <!-- Thumbnail strip -->
-      <div class="thumbnail-bar" id="thumbBar"></div>
-      <div class="controls">
-        <button id="prev">⟨ Prev</button>
-        <button id="next">Next ⟩</button>
-      </div>
+        <button id="close">✖ Close</button>
+        <div class="viewer" id="viewer"></div>
+        <div class="thumbnail-bar" id="thumbBar"></div>
+        <div class="controls">
+            <button id="prev">⟨ Prev</button>
+            <button id="next">Next ⟩</button>
+        </div>
     </div>
-    <script src="./script/gallery.js"></script>
-    
-  </body>
 
+
+
+    <script src="./script/gallery.js"></script>
+</body>
 </html>
