@@ -171,7 +171,7 @@ async function loadGallery() {
     } catch (e) {
         console.error(e);
         hideLoader();
-        showError("🔒 Protected! Please contact Darshan for access.");
+        showError("🔒 Protected! Please contact Darshan for access." + e);
     }
 }
 
