@@ -1,6 +1,5 @@
 async function getAPI() {
-  let host = "https://1111darsh.com"; // Replace with your actual API URL
-  let response = await fetch(host + "/json/work.json");
+  let response = await fetch("./json/work.json");
   let data = await response.json();
  
   return data;

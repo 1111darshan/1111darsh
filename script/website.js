@@ -1,6 +1,5 @@
 async function getAPI() {
-  let host = "https://1111darsh.com";
-  let response = await fetch(host + "/json/website.json");
+  let response = await fetch("./json/website.json");
   let data = await response.json();
   return data;
 }
@@ -9,32 +8,28 @@ getAPI().then(data => createSite(data));
 
 function createSite(jsonData) {
 
-  const note = document.getElementById('note');
-  note.addEventListener('click', function() { note.classList.add('hidden');});
   createAnimation();
   createPanel();
-  const navLinks = document.querySelectorAll('.nav');
-  navLinks.forEach(navLink => {
-    navLink.addEventListener('click', function (e) {
-      e.preventDefault();
 
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      const topPos = parseInt(targetSection.offsetTop)
-      
-
-      if (targetSection) {
-        const topPos = targetSection.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({
-          top: topPos,
-          behavior: 'smooth'
-        });
-      }
-      else {
-        console.log('No!');
-      }
+  // Smooth scrolling for navigation links
+  setTimeout(() => {
+    const navLinks = document.querySelectorAll('.nav');
+    navLinks.forEach(navLink => {
+      navLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          const topPos = targetSection.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: topPos,
+            behavior: 'smooth'
+          });
+        }
+      });
     });
- });
+  }, 100);
+
   const categories = [
     'aboutme',
     'cv',
@@ -51,14 +46,48 @@ function createSite(jsonData) {
       createCards(jsonData, category);
     }
   });
+
+  // Scroll Reveal Animations Observer
+  setTimeout(() => {
+    const revealElements = document.querySelectorAll('.reveal');
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    };
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active-reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    revealElements.forEach(el => revealObserver.observe(el));
+  }, 100);
 }
 
 function createCards(data, category) {
   const container = document.getElementById(category);
+  if (!container) return;
 
+  let targetContainer = container;
+  const useGrid = ['skill', 'certificate', 'project'].includes(category);
+
+  if (useGrid) {
+    targetContainer = document.createElement('div');
+    targetContainer.classList.add('grid-wrapper');
+    container.appendChild(targetContainer);
+  }
+
+  let index = 0;
   data[category].forEach(item => {
     const card = document.createElement('div');
     card.classList.add('subcard');
+
+    if (category === 'certificate' && index >= 6) {
+      card.classList.add('collapsed-card');
+      card.style.display = 'none';
+    }
 
     const leftSection = document.createElement('div');
     leftSection.classList.add('left');
@@ -71,7 +100,7 @@ function createCards(data, category) {
       thumbnail.setAttribute('width', 100);
       thumbnail.setAttribute('height', 100);
       thumbnail.src = item.thumbnail;
-      thumbnail.alt = "Img"
+      thumbnail.alt = "Img";
 
       icon.appendChild(thumbnail);
       leftSection.appendChild(icon);
@@ -123,90 +152,144 @@ function createCards(data, category) {
             i.classList.add(className);
           });
 
-          linkElement.appendChild(i)
+          linkElement.appendChild(i);
           linkElement.href = linkItem[link];
-          linkElement.ariaLabel="link"
+          linkElement.ariaLabel = "link";
           links.appendChild(linkElement);
-
         }
       });
     }
 
     card.appendChild(leftSection);
     card.appendChild(links);
-    container.appendChild(card);
+    targetContainer.appendChild(card);
+    index++;
   });
 
+  if (category === 'certificate' && data[category].length > 6) {
+    const btn = document.createElement('button');
+    btn.className = 'toggle-certs-btn';
+    btn.textContent = 'Show All Certifications (' + data[category].length + ')';
+    btn.style.margin = '20px auto';
+    btn.style.display = 'block';
 
+    btn.addEventListener('click', () => {
+      const collapsedCards = targetContainer.querySelectorAll('.collapsed-card');
+      const isExpanded = btn.classList.contains('expanded');
+
+      collapsedCards.forEach(c => {
+        c.style.display = isExpanded ? 'none' : 'flex';
+      });
+
+      if (isExpanded) {
+        btn.classList.remove('expanded');
+        btn.textContent = 'Show All Certifications (' + data[category].length + ')';
+        container.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        btn.classList.add('expanded');
+        btn.textContent = 'Show Less';
+      }
+    });
+    container.appendChild(btn);
+  }
 }
 
-function createAnimation(){
-  const boxes = document.querySelectorAll('.box');
-  const numBoxes = boxes.length;
-  const slow = 5
-  boxes.forEach((box, index) => {
-      box.style.animationDelay = `-${index*slow}s`;
-  });
-  document.documentElement.style.setProperty('--animation-duration', `${numBoxes*slow}s`);
-
+function createAnimation() {
+  const duration = 25;
+  document.documentElement.style.setProperty('--animation-duration', `${duration}s`);
+  
+  const boxes = document.querySelectorAll('.axis-1 .box');
+  const count = boxes.length;
+  if (count > 0) {
+    const step = duration / count;
+    boxes.forEach((box, index) => {
+      box.style.animationDelay = `-${index * step}s`;
+    });
+  }
 }
 
-
-
-function createPanel(){
+function createPanel() {
   const panel = document.getElementById('panel');
+  if (!panel) return;
   const navContainer = document.createElement('div');
 
-// Define the list of nevigator and their respective hrefs
-const nevigator = [
-  { src: './images/p01home.png', href: '#home' },
-  { src: './images/p002information.png', href: '#aboutme' },
-  { src: './images/p005cv.png', href: '#cv' },
-  { src: './images/p007skill.png', href: '#skill' },
-  { src: './images/p003certificate.png', href: '#certificate' },
-  { src: './images/p008computer.png', href: '#work' },
-  { src: './images/p003scholarship.png', href: '#education' },
-  { src: './images/p009code.png', href: '#project' },
-  { src: './images/p010network.png', href: '#contectme' }
-];
+  const navigator = [
+    { src: './images/p01home.png', href: '#home', label: 'Home' },
+    { src: './images/p002information.png', href: '#aboutme', label: 'About Me' },
+    { src: './images/p005cv.png', href: '#cv', label: 'Resume' },
+    { src: './images/p007skill.png', href: '#skill', label: 'Skills' },
+    { src: './images/p003certificate.png', href: '#certificate', label: 'Certifications' },
+    { src: './images/p008computer.png', href: '#work', label: 'Experience' },
+    { src: './images/p003scholarship.png', href: '#education', label: 'Education' },
+    { src: './images/p009code.png', href: '#project', label: 'Projects' },
+    { src: './images/p010network.png', href: '#contectme', label: 'Contact' }
+  ];
 
-// Loop through the nevigator array and create anchor elements with nevigator
-  nevigator.forEach(imageData => {
-  const anchor = document.createElement('a');
-  anchor.className = 'nav';
-  anchor.href = imageData.href;
+  navigator.forEach(imageData => {
+    const anchor = document.createElement('a');
+    anchor.className = 'nav';
+    anchor.href = imageData.href;
+    anchor.setAttribute('data-tooltip', imageData.label);
 
-  const img = document.createElement('img');
-  img.className = 'navigator';
-  img.alt = imageData.src.replace('./images/', '');
-  img.src = imageData.src;
-  const width = this.width;
-  const height = this.height;
-  img.setAttribute('width', width);
-  img.setAttribute('height', height);
+    const img = document.createElement('img');
+    img.className = 'navigator';
+    img.alt = imageData.label;
+    img.src = imageData.src;
 
-  anchor.appendChild(img);
-  navContainer.appendChild(anchor);
+    anchor.appendChild(img);
+    navContainer.appendChild(anchor);
+  });
+
   panel.appendChild(navContainer);
 
-  panel.classList.add("panelhide")
+  const clockElement = document.createElement('div');
+  clockElement.className = 'nav-clock';
+  panel.appendChild(clockElement);
+
+  function updateClock() {
+    const now = new Date();
+    clockElement.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  panel.classList.add("panelhide");
+
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos < currentScrollPos) {
-          panel.classList.add("panelshow")
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos < currentScrollPos) {
+      panel.classList.add("panelshow");
+    }
+    if (currentScrollPos != 0) {
+      panel.classList.add("panelshow");
+      panel.classList.remove("panelhide");
+    } else {
+      panel.classList.remove("panelshow");
+      panel.classList.add("panelhide");
+    }
+    prevScrollpos = currentScrollPos;
+
+    // ScrollSpy active link toggle
+    const sections = document.querySelectorAll('.card, #home');
+    const navLinks = document.querySelectorAll('.nav');
+    let currentActiveId = '';
+    
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
+        currentActiveId = section.getAttribute('id');
       }
-      if (currentScrollPos != 0) {
-          panel.classList.add("panelshow")
-          panel.classList.remove("panelhide")
-      } else {
-          panel.classList.remove("panelshow")
-          panel.classList.add("panelhide")   
-      }
-      prevScrollpos = currentScrollPos;
+    });
+
+    if (currentActiveId) {
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === '#' + currentActiveId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
   }
-
-
-});
-
 }
