@@ -4,8 +4,8 @@
     "description": "Personal website of Darshan Mistry - DevOps Engineer",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "background_color": "#f8fafc",
+    "theme_color": "#f8fafc",
     "icons": [
       {
         "src": "images/title.png",

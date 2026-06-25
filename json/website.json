@@ -21,7 +21,7 @@
     {
       "title": "Kubernetes",
       "thumbnail": "./images/s01kubernetes.svg",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fas fa-certificate fa-2x": "https://www.credly.com/badges/a19fad97-3fc5-4b67-b880-f087f8197d3a/linked_in_profile"
@@ -31,7 +31,7 @@
     {
       "title": "Docker",
       "iicon": "fa-brands fa-docker fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fas fa-certificate fa-2x": "https://kodekloud.com/certificate-verification/7EED62F639-7EE77B1E37-7EE1D29B11/"
@@ -41,13 +41,13 @@
     {
       "title": "Linux",
       "iicon": "fa-brands fa-linux fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": null
     },
     {
       "title": "Clouds Platforms AWS, GCP",
       "iicon": "fa-brands fa-aws fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
@@ -60,7 +60,7 @@
     {
       "title": "Terraform",
       "thumbnail": "./images/terraform.svg",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
@@ -73,7 +73,7 @@
     {
       "title": "GitOps",
       "iicon": "fa-brands fa-git-alt fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
@@ -86,7 +86,7 @@
     {
       "title": "CI/CD",
       "iicon": "fa-brands fa-jenkins fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
@@ -99,7 +99,7 @@
     {
       "title": "Scripting",
       "iicon": "fa-brands fa-python fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
@@ -112,7 +112,7 @@
     {
       "title": "Design Infra",
       "iicon": "fa-solid fa-compass-drafting fa-2xl",
-      "details": "4 years of experience",
+      "details": "7 years of experience",
       "link": [
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
