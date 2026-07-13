@@ -1,4 +1,16 @@
 {
+  "dream": [
+    {
+      "thumbnail": "./images/Paa.jpeg",
+      "paragraphs": [
+        "Since childhood, I’ve always dreamed of becoming someone great in the field of computers. During my teenage years, I realised that my true ambition was to become a computer engineer 👨‍💻. Through consistent hard work 💪, calculated risks 🎲, and thoughtful decisions 🤔, I have built a successful career as a computer engineer with seven years of professional experience 🏆. Today, I hold a respectable position and take pride in being self-reliant in my profession 🌟.",
+        "However, this dream did not originate solely from within me — it has its roots in my childhood and, more deeply, in my father’s inspiration 👨‍👦. When I was in the 2nd or 3rd grade, my father introduced me to a computer for the first time 🖥️. He encouraged me to explore it, allowing me to play and experiment with digital painting 🎨. That early exposure ignited my curiosity 🔥 and shaped my future path.",
+        "My father’s first encounter with a computer was a moment of deep fascination 🤩. He was genuinely curious and eager to learn how it worked. But the environment around him wasn’t supportive 🚫. People warned him to be extremely careful ⚠️, saying that if he pressed the wrong button, he might spoil the computer 🤖. This fear-based advice discouraged him from exploring further. When he tried to learn from others, they refused to teach him 🙅‍♂️, saying they had taken formal courses and wouldn’t share their knowledge freely 📚. This left him feeling isolated in his curiosity, with no clear path to pursue his interest 😞.",
+        "Despite this, he never let go of his dream 🌠. Years later, when he saw my passion for technology 💡, he decided to give me the opportunity he never had. When I was in 4th grade, he bought me my first computer 🎁. He encouraged me to explore, learn, and grow without fear 🧑‍🏫. His support became the foundation of my journey into the world of computers—a journey he once wished to take himself.",
+        "I lost my father on September 4, 2025 💔, but his influence continues to guide me every day 🌅. Whatever I have achieved, and whatever I will accomplish in the future, is a reflection of his vision and support 🙏. My dream was never mine alone — it began as my father’s dream and lives on through me 🌟."
+      ]
+    }
+  ],
   "aboutme": [
     {
       "title": "I own 7 years of experience in DevOps",
@@ -383,7 +395,7 @@
   ],
   "work": [
     {
-      "title": "HDFC securities",
+      "title": "HDFC Securities",
       "details": "Senior DevOps Engineer || Mar 2024 - Present",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
@@ -396,8 +408,8 @@
       ]
     },
     {
-      "title": "Skaud  - Gurugram",
-      "details": "DevOps Engineer || November 2022 - September 2023",
+      "title": "SKUAD.IO (ALL REMOTE)",
+      "details": "DevOps Engineer || November 2022 – September 2023",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
         {
@@ -412,8 +424,8 @@
       ]
     },
     {
-      "title": "Omuni (Arvind Limited) - Bengalore",
-      "details": "DevOps Cloud Engineer || April 2021 - July 2022",
+      "title": "OMUNI (ARVIND LIMITED)",
+      "details": "DevOps Cloud Engineer || April 2021 – July 2022",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
         {
@@ -428,8 +440,8 @@
       ]
     },
     {
-      "title": "Borndigital  -- Bengalore",
-      "details": "Associate DevOps Engineer || October 2019 -  December 2020",
+      "title": "BORNDIGITAL",
+      "details": "Associate DevOps Engineer || October 2019 – December 2020",
       "iicon": "fa-solid fa-laptop-file fa-2xl",
       "link": [
         {
@@ -507,7 +519,7 @@
       "thumbnail": "images/Darshan.jpg",
       "link": [
         {
-          "fab fa-linkedin-in fa-2x": "https://www.linkedin.com/in/1111darsh"
+          "fab fa-linkedin-in fa-2x": "https://www.linkedin.com/in/1111darshan"
         },
         {
           "fab fa-github fa-2x": "https://github.com/1111darshan"
