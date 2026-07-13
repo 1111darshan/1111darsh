@@ -103,33 +103,59 @@ function createCards(data) {
       workcard.appendChild(technologyDiv)
     }
 
-    if (item.RoleandResposibility) {
+    if (item.RoleandResponsibility) {
       const RandR = document.createElement('div');
       RandR.classList.add('role-responsibility');
 
-      item.RoleandResposibility.forEach(item => {
-          const keys = Object.keys(item);
+      const sectionHeader = document.createElement('div');
+      sectionHeader.className = 'role-section-header';
+      sectionHeader.innerHTML = '<h4>Roles & Responsibilities</h4><span class="instruction-text">(Click categories to expand/collapse)</span>';
+      RandR.appendChild(sectionHeader);
+
+      item.RoleandResponsibility.forEach(roleGroup => {
+          const keys = Object.keys(roleGroup);
           keys.forEach(key => {
             const roleDiv = document.createElement('div');
-            roleDiv.classList.add('role');
-            roleDiv.textContent = key;
+            roleDiv.classList.add('role', 'collapsible-trigger');
+            
+            const arrow = document.createElement('span');
+            arrow.className = 'dropdown-arrow';
+            arrow.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+            
+            const titleSpan = document.createElement('span');
+            titleSpan.textContent = key;
+            
+            roleDiv.appendChild(arrow);
+            roleDiv.appendChild(titleSpan);
       
             RandR.appendChild(roleDiv);
       
             const responsibilities = document.createElement('div');
-            responsibilities.classList.add('responsibilities');
+            responsibilities.classList.add('responsibilities', 'collapsed');
       
-            item[key].forEach(responsibility => {
+            roleGroup[key].forEach(responsibility => {
               const respDiv = document.createElement('div');
               respDiv.classList.add('respossibilities');
               respDiv.textContent = responsibility;
       
               responsibilities.appendChild(respDiv);
             });
+
+            roleDiv.addEventListener('click', () => {
+              const isCollapsed = responsibilities.classList.toggle('collapsed');
+              roleDiv.classList.toggle('active-trigger', !isCollapsed);
+              const chevron = arrow.querySelector('i');
+              if (isCollapsed) {
+                chevron.className = 'fa-solid fa-chevron-right';
+              } else {
+                chevron.className = 'fa-solid fa-chevron-down';
+              }
+            });
+
             RandR.appendChild(responsibilities);
           });  
-      workcard.appendChild(RandR)
-    });
+      });
+      workcard.appendChild(RandR);
     }
 
     if (item.accomplishment) {

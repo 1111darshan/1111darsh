@@ -825,24 +825,85 @@ button[type="button"]:hover {
     margin-bottom: 24px;
 }
 
-.role {
-    padding: 8px 16px;
+.role-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 8px;
+}
+
+.role-section-header h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--font-color);
+    letter-spacing: -0.2px;
+}
+
+.role-section-header .instruction-text {
+    font-size: 12px;
+    color: var(--font-muted);
+    font-style: italic;
+}
+
+.role.collapsible-trigger {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    width: 100%;
+    padding: 10px 16px;
     border-radius: 8px;
     font-size: 15px;
     font-weight: 700;
     background: rgba(109, 40, 217, 0.03);
     color: var(--font-color);
     border-left: 4px solid var(--primary-color);
-    margin-top: 20px;
-    margin-bottom: 12px;
-    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.role.collapsible-trigger:hover {
+    background: rgba(109, 40, 217, 0.08);
+    transform: translateX(4px);
+}
+
+.role.collapsible-trigger .dropdown-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    transition: transform 0.2s ease;
+    font-size: 12px;
+}
+
+.role.collapsible-trigger.active-trigger {
+    background: rgba(109, 40, 217, 0.06);
 }
 
 .responsibilities {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-left: 8px;
+    padding-left: 12px;
+    max-height: 2000px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease, margin-bottom 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+
+.responsibilities.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    pointer-events: none;
 }
 
 .respossibilities {
