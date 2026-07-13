@@ -41,6 +41,10 @@ function createSite(jsonData) {
     'contectme'
   ];
 
+  if (jsonData['dream']) {
+    createDreamCard(jsonData['dream']);
+  }
+
   categories.forEach(category => {
     if (jsonData[category]) {
       createCards(jsonData, category);
@@ -192,6 +196,42 @@ function createCards(data, category) {
     });
     container.appendChild(btn);
   }
+}
+
+function createDreamCard(dreamData) {
+  const container = document.getElementById('Dream');
+  if (!container || !dreamData || !dreamData.length) return;
+
+  const item = dreamData[0];
+
+  const card = document.createElement('div');
+  card.className = 'subcard dream-card';
+
+  const leftDiv = document.createElement('div');
+  leftDiv.className = 'dream-left';
+
+  const img = document.createElement('img');
+  img.alt = 'paa';
+  img.src = item.thumbnail || './images/Paa.jpeg';
+  img.className = 'dream-img';
+  leftDiv.appendChild(img);
+
+  const rightDiv = document.createElement('div');
+  rightDiv.className = 'dream-right';
+
+  if (item.paragraphs) {
+    item.paragraphs.forEach((para, index) => {
+      if (index > 0) {
+        rightDiv.appendChild(document.createElement('br'));
+        rightDiv.appendChild(document.createElement('br'));
+      }
+      rightDiv.appendChild(document.createTextNode(para));
+    });
+  }
+
+  card.appendChild(leftDiv);
+  card.appendChild(rightDiv);
+  container.appendChild(card);
 }
 
 function createAnimation() {
